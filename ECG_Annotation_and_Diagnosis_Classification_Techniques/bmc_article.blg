@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bmc_article.aux
+The style file: bmc-mathphys.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bmc_article.bib
+Warning--entry type for "clifford2006web" isn't style-file defined
+--line 27 of file bmc_article.bib
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 30 items from 20.
+Reallocated global_strs (elt_size=20001) to 30 items from 20.
+Reallocated glb_str_end (elt_size=4) to 30 items from 20.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 12 entries,
+            7128 wiz_defined-function locations,
+            1193 strings with 11134 characters,
+and the built_in function-call counts, 326178 in all, are:
+= -- 61054
+> -- 450
+< -- 268
++ -- 38478
+- -- 146
+* -- 7868
+:= -- 56280
+add.period$ -- 14
+call.type$ -- 12
+change.case$ -- 162
+chr.to.int$ -- 570
+cite$ -- 12
+duplicate$ -- 1187
+empty$ -- 3523
+format.name$ -- 416
+if$ -- 84106
+int.to.chr$ -- 1
+int.to.str$ -- 41
+missing$ -- 414
+newline$ -- 393
+num.names$ -- 60
+pop$ -- 508
+preamble$ -- 1
+purify$ -- 64
+quote$ -- 24
+skip$ -- 37230
+stack$ -- 0
+substring$ -- 30726
+swap$ -- 417
+text.length$ -- 236
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 525
+warning$ -- 0
+while$ -- 472
+width$ -- 0
+write$ -- 520
+(There was 1 warning)

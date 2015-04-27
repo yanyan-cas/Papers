@@ -1,0 +1,403 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{12}
+% BibTex style file: bmc-mathphys.bst (version 2.0), 2013-07-15
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\textsf{#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem{clifford2006advanced}
+\begin{bbook}
+\bauthor{\bsnm{Clifford}, \binits{G.D.}},
+\bauthor{\bsnm{Azuaje}, \binits{F.}},
+\bauthor{\bsnm{McSharry}, \binits{P.}}, \betal:
+\bbtitle{Advanced Methods and Tools for ECG Data Analysis}.
+\bpublisher{Artech House},
+\blocation{Boston}
+(\byear{2006})
+\end{bbook}
+\endbibitem
+
+%%% 2
+\bibitem{mar2011optimization}
+\begin{barticle}
+\bauthor{\bsnm{Mar}, \binits{T.}},
+\bauthor{\bsnm{Zaunseder}, \binits{S.}},
+\bauthor{\bsnm{Martinez}, \binits{J.P.}},
+\bauthor{\bsnm{Llamedo}, \binits{M.}},
+\bauthor{\bsnm{Poll}, \binits{R.}}:
+\batitle{Optimization of ecg classification by means of feature selection}.
+\bjtitle{Biomedical Engineering, IEEE Transactions on}
+\bvolume{58}(\bissue{8}),
+\bfpage{2168}--\blpage{2177}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem{clifford2006web}
+\begin{botherref}
+\oauthor{\bsnm{Clifford}, \binits{G.D.}},
+\oauthor{\bsnm{Azuaje}, \binits{F.}},
+\oauthor{\bsnm{McScharry}}:
+Advanced Tools for ECG Analysis.
+\url{http://www.ecgtools.org/}
+\end{botherref}
+\endbibitem
+
+%%% 4
+\bibitem{silva2011dsp}
+\begin{bbook}
+\bauthor{\bsnm{Silva}, \binits{C.V.}},
+\bauthor{\bsnm{Philominraj}, \binits{A.}},
+\bauthor{\bparticle{del} \bsnm{R{\'\i}o}, \binits{C.}}:
+\bbtitle{A DSP Practical Application: Working on ECG Signal}.
+\bpublisher{INTECH Open Access Publisher}, \blocation{???}
+(\byear{2011})
+\end{bbook}
+\endbibitem
+
+%%% 5
+\bibitem{ai1996studies}
+\begin{barticle}
+\bauthor{\bsnm{Ai}, \binits{H.}},
+\bauthor{\bsnm{Cui}, \binits{X.}},
+\bauthor{\bsnm{Tang}, \binits{L.}},
+\bauthor{\bsnm{Zhu}, \binits{W.}},
+\bauthor{\bsnm{Ning}, \binits{X.}},
+\bauthor{\bsnm{Yang}, \binits{X.}}:
+\batitle{[studies on the time domain and power spectrum of high frequency ecg
+  in normal mice]}.
+\bjtitle{Sheng li xue bao:[Acta physiologica Sinica]}
+\bvolume{48}(\bissue{5}),
+\bfpage{512}--\blpage{516}
+(\byear{1996})
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem{andreao2006ecg}
+\begin{barticle}
+\bauthor{\bsnm{Andre{\~a}o}, \binits{R.V.}},
+\bauthor{\bsnm{Dorizzi}, \binits{B.}},
+\bauthor{\bsnm{Boudy}, \binits{J.}}:
+\batitle{Ecg signal analysis through hidden markov models}.
+\bjtitle{Biomedical Engineering, IEEE Transactions on}
+\bvolume{53}(\bissue{8}),
+\bfpage{1541}--\blpage{1549}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{vullings1998automated}
+\begin{bchapter}
+\bauthor{\bsnm{Vullings}, \binits{H.}},
+\bauthor{\bsnm{Verhaegen}, \binits{M.}},
+\bauthor{\bsnm{Verbruggen}, \binits{H.}}:
+\bctitle{Automated ecg segmentation with dynamic time warping}.
+In: \bbtitle{Engineering in Medicine and Biology Society, 1998. Proceedings of
+  the 20th Annual International Conference of the IEEE},
+pp. \bfpage{163}--\blpage{166}
+(\byear{1998}).
+\bcomment{IEEE}
+\end{bchapter}
+\endbibitem
+
+%%% 8
+\bibitem{vullings1997ecg}
+\begin{bchapter}
+\bauthor{\bsnm{Vullings}, \binits{H.}},
+\bauthor{\bsnm{Verhaegen}, \binits{M.}},
+\bauthor{\bsnm{Verbruggen}, \binits{H.B.}}:
+\bctitle{Ecg segmentation using time-warping}.
+In: \bbtitle{Advances in Intelligent Data Analysis Reasoning About Data},
+pp. \bfpage{275}--\blpage{285}.
+\bpublisher{Springer}, \blocation{???}
+(\byear{1997})
+\end{bchapter}
+\endbibitem
+
+%%% 9
+\bibitem{sayadi2009model}
+\begin{barticle}
+\bauthor{\bsnm{Sayadi}, \binits{O.}},
+\bauthor{\bsnm{Shamsollahi}, \binits{M.}}:
+\batitle{A model-based bayesian framework for ecg beat segmentation}.
+\bjtitle{Physiological Measurement}
+\bvolume{30}(\bissue{3}),
+\bfpage{335}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{zigel2000weighted}
+\begin{barticle}
+\bauthor{\bsnm{Zigel}, \binits{Y.}},
+\bauthor{\bsnm{Cohen}, \binits{A.}},
+\bauthor{\bsnm{Katz}, \binits{A.}}:
+\batitle{The weighted diagnostic distortion (wdd) measure for ecg signal
+  compression}.
+\bjtitle{Biomedical Engineering, IEEE Transactions on}
+\bvolume{47}(\bissue{11}),
+\bfpage{1422}--\blpage{1430}
+(\byear{2000})
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{de2004automatic}
+\begin{barticle}
+\bauthor{\bsnm{De~Chazal}, \binits{P.}},
+\bauthor{\bsnm{O'Dwyer}, \binits{M.}},
+\bauthor{\bsnm{Reilly}, \binits{R.B.}}:
+\batitle{Automatic classification of heartbeats using ecg morphology and
+  heartbeat interval features}.
+\bjtitle{Biomedical Engineering, IEEE Transactions on}
+\bvolume{51}(\bissue{7}),
+\bfpage{1196}--\blpage{1206}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem{gacek2003genetic}
+\begin{barticle}
+\bauthor{\bsnm{Gacek}, \binits{A.}},
+\bauthor{\bsnm{Pedrycz}, \binits{W.}}:
+\batitle{A genetic segmentation of ecg signals}.
+\bjtitle{Biomedical Engineering, IEEE Transactions on}
+\bvolume{50}(\bissue{10}),
+\bfpage{1203}--\blpage{1208}
+(\byear{2003})
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
+
+\newcommand{\BMCxmlcomment}[1]{}
+
+\BMCxmlcomment{
+
+<refgrp>
+
+<bibl id="B1">
+  <title><p>Advanced methods and tools for ECG data analysis</p></title>
+  <aug>
+    <au><snm>Clifford</snm><fnm>GD</fnm></au>
+    <au><snm>Azuaje</snm><fnm>F</fnm></au>
+    <au><snm>McSharry</snm><fnm>P</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <publisher>Boston: Artech House</publisher>
+  <pubdate>2006</pubdate>
+</bibl>
+
+<bibl id="B2">
+  <title><p>Optimization of ECG classification by means of feature
+  selection</p></title>
+  <aug>
+    <au><snm>Mar</snm><fnm>T</fnm></au>
+    <au><snm>Zaunseder</snm><fnm>S</fnm></au>
+    <au><snm>Martinez</snm><fnm>JP</fnm></au>
+    <au><snm>Llamedo</snm><fnm>M</fnm></au>
+    <au><snm>Poll</snm><fnm>R</fnm></au>
+  </aug>
+  <source>Biomedical Engineering, IEEE Transactions on</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2011</pubdate>
+  <volume>58</volume>
+  <issue>8</issue>
+  <fpage>2168</fpage>
+  <lpage>-2177</lpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Advanced Tools for ECG Analysis</p></title>
+  <aug>
+    <au><snm>Clifford</snm><fnm>GD</fnm></au>
+    <au><snm>Azuaje</snm><fnm>F</fnm></au>
+    <au><cnm>McScharry</cnm></au>
+  </aug>
+  <pubdate>2006</pubdate>
+  <url>http://www.ecgtools.org/</url>
+</bibl>
+
+<bibl id="B4">
+  <title><p>A DSP Practical Application: Working on ECG Signal</p></title>
+  <aug>
+    <au><snm>Silva</snm><fnm>CV</fnm></au>
+    <au><snm>Philominraj</snm><fnm>A</fnm></au>
+    <au><snm>R{\'\i}o</snm><fnm>C</fnm></au>
+  </aug>
+  <publisher>INTECH Open Access Publisher</publisher>
+  <pubdate>2011</pubdate>
+</bibl>
+
+<bibl id="B5">
+  <title><p>[Studies on the time domain and power spectrum of high frequency
+  ECG in normal mice]</p></title>
+  <aug>
+    <au><snm>Ai</snm><fnm>HB</fnm></au>
+    <au><snm>Cui</snm><fnm>XY</fnm></au>
+    <au><snm>Tang</snm><fnm>L</fnm></au>
+    <au><snm>Zhu</snm><fnm>WP</fnm></au>
+    <au><snm>Ning</snm><fnm>XB</fnm></au>
+    <au><snm>Yang</snm><fnm>XX</fnm></au>
+  </aug>
+  <source>Sheng li xue bao:[Acta physiologica Sinica]</source>
+  <pubdate>1996</pubdate>
+  <volume>48</volume>
+  <issue>5</issue>
+  <fpage>512</fpage>
+  <lpage>-516</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>ECG signal analysis through hidden Markov models</p></title>
+  <aug>
+    <au><snm>Andre{\~a}o</snm><fnm>RV</fnm></au>
+    <au><snm>Dorizzi</snm><fnm>B</fnm></au>
+    <au><snm>Boudy</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Biomedical Engineering, IEEE Transactions on</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2006</pubdate>
+  <volume>53</volume>
+  <issue>8</issue>
+  <fpage>1541</fpage>
+  <lpage>-1549</lpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>Automated ECG segmentation with dynamic time warping</p></title>
+  <aug>
+    <au><snm>Vullings</snm><fnm>HJLM</fnm></au>
+    <au><snm>Verhaegen</snm><fnm>MHG</fnm></au>
+    <au><snm>Verbruggen</snm><fnm>H</fnm></au>
+  </aug>
+  <source>Engineering in Medicine and Biology Society, 1998. Proceedings of the
+  20th Annual International Conference of the IEEE</source>
+  <pubdate>1998</pubdate>
+  <fpage>163</fpage>
+  <lpage>-166</lpage>
+</bibl>
+
+<bibl id="B8">
+  <title><p>ECG segmentation using time-warping</p></title>
+  <aug>
+    <au><snm>Vullings</snm><fnm>HJLM</fnm></au>
+    <au><snm>Verhaegen</snm><fnm>MHG</fnm></au>
+    <au><snm>Verbruggen</snm><fnm>HB</fnm></au>
+  </aug>
+  <source>Advances in Intelligent Data Analysis Reasoning about Data</source>
+  <publisher>Springer</publisher>
+  <pubdate>1997</pubdate>
+  <fpage>275</fpage>
+  <lpage>-285</lpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>A model-based Bayesian framework for ECG beat
+  segmentation</p></title>
+  <aug>
+    <au><snm>Sayadi</snm><fnm>O</fnm></au>
+    <au><snm>Shamsollahi</snm><fnm>MB</fnm></au>
+  </aug>
+  <source>Physiological Measurement</source>
+  <publisher>IOP Publishing</publisher>
+  <pubdate>2009</pubdate>
+  <volume>30</volume>
+  <issue>3</issue>
+  <fpage>335</fpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>The weighted diagnostic distortion (WDD) measure for ECG signal
+  compression</p></title>
+  <aug>
+    <au><snm>Zigel</snm><fnm>Y</fnm></au>
+    <au><snm>Cohen</snm><fnm>A</fnm></au>
+    <au><snm>Katz</snm><fnm>A</fnm></au>
+  </aug>
+  <source>Biomedical Engineering, IEEE Transactions on</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2000</pubdate>
+  <volume>47</volume>
+  <issue>11</issue>
+  <fpage>1422</fpage>
+  <lpage>-1430</lpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Automatic classification of heartbeats using ECG morphology and
+  heartbeat interval features</p></title>
+  <aug>
+    <au><snm>De Chazal</snm><fnm>P</fnm></au>
+    <au><snm>O'Dwyer</snm><fnm>M</fnm></au>
+    <au><snm>Reilly</snm><fnm>RB</fnm></au>
+  </aug>
+  <source>Biomedical Engineering, IEEE Transactions on</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2004</pubdate>
+  <volume>51</volume>
+  <issue>7</issue>
+  <fpage>1196</fpage>
+  <lpage>-1206</lpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>A genetic segmentation of ECG signals</p></title>
+  <aug>
+    <au><snm>Gacek</snm><fnm>A</fnm></au>
+    <au><snm>Pedrycz</snm><fnm>W</fnm></au>
+  </aug>
+  <source>Biomedical Engineering, IEEE Transactions on</source>
+  <publisher>IEEE</publisher>
+  <pubdate>2003</pubdate>
+  <volume>50</volume>
+  <issue>10</issue>
+  <fpage>1203</fpage>
+  <lpage>-1208</lpage>
+</bibl>
+
+</refgrp>
+} % end of \BMCxmlcomment

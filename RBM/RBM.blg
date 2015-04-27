@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: RBM.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: RBM.bib
+Warning--I didn't find a database entry for "Mi"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Xue
+
+Done.
+You've used 31 entries,
+            4039 wiz_defined-function locations,
+            1037 strings with 13007 characters,
+and the built_in function-call counts, 26948 in all, are:
+= -- 2276
+> -- 575
+< -- 284
++ -- 333
+- -- 85
+* -- 1311
+:= -- 3989
+add.period$ -- 70
+call.type$ -- 31
+change.case$ -- 32
+chr.to.int$ -- 636
+cite$ -- 32
+duplicate$ -- 1888
+empty$ -- 2034
+format.name$ -- 110
+if$ -- 6256
+int.to.chr$ -- 0
+int.to.str$ -- 31
+missing$ -- 295
+newline$ -- 118
+num.names$ -- 31
+pop$ -- 600
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2118
+stack$ -- 0
+substring$ -- 1528
+swap$ -- 1662
+text.length$ -- 72
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 31
+warning$ -- 1
+while$ -- 133
+width$ -- 33
+write$ -- 345
+(There were 2 warnings)

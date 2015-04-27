@@ -1,0 +1,224 @@
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{ECG Annotation and Diagnosis Classification Techniques}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   %noteref={n1},                        % id's of article notes, if any
+   email={yan.yan@siat.ac.cn}   % email address
+]{\inits{YY}\fnm{Yan} \snm{Yan}}
+\author[
+   addressref={aff1},
+   email={wang.lei@siat.ac.cn}
+]{\inits{LW}\fnm{Lei} \snm{Wang}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences}, % university, etc
+  \street{Xueyuan},                     %
+  %\postcode{}                                % post or zip code
+  \city{Shenzhen},                              % city
+  \cny{China}                                    % country
+}
+%\address[id=aff2]{%
+%  \orgname{Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences},
+%  \street{Xueyuan},
+%  \city{Shenzhen},
+%  \cny{China}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\begin{abstract} % abstract
+\parttitle{First part title} %if any
+Text for this section.
+
+\parttitle{Second part title} %if any
+Text for this section.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{sample}
+\kwd{article}
+\kwd{author}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+
+
+\section*{Background}
+The heart is comprised of myocardium which rhythmically contract and thus drive the circulation of blood throughout the human body.
+A wave of electrical current passes through the entire heart, which triggers myocardial contraction \cite{clifford2006advanced}.
+Electrical propagation spreads over the whole heart in a coordinated pattern generate changes on the body surface potentials which can be measured and illustrated as an electrocardiogram (ECG, or sometimes EKG).
+Metabolic abnormalities (a lack of oxygen, or ischemia etc.) and pathological changes of the heart engender variety of ECG, consequently ECG analysis has been a routine part of any complete medical evaluation or healthcare applications.
+
+Automated ECG analysis provides indispensable assist in clinical monitoring, a large number of approaches have been proposed for the task, basically the diagnosis of arrhythmic and further the inspection of heart rate variability or heart turbulence analysis \cite{mar2011optimization}. 
+Lots of  ECG annotation and diagnosis classification techniques had been proposed in industrial circles and academic communities. 
+As the general steps in a classification problem in a machine learning task, the ECG classification includes data collection, preprocessing, feature extraction, and classification with a classifier. 
+Most of literatures described models which were combined by different classifier with features which extracted from different feature extraction algorithms.
+The ECG classification methods develops at the same pace with the development of classification theories in machine learning and pattern recognition. 
+Because of the particularity in medical data collection and data annotation, the developments in ECG classification and detection were not as flourishing as the similar research topics like speech recognition, natural language processing and image processing etc.
+
+In this chapter, we first introduce the basic elements and procedures in a typical ECG classification task, then we would review the proposed literatures of ECG classification, in the last we would introduce a new method in unsupervised learning for ECG classification. 
+
+\section*{Technology Roadmap}
+ECG classification methods had been developed for decades. With the development of theories in machine learning and data mining, lots of algorithms had been adopted in this domain. Before the review about the methods, it is quite necessary to mention the common experiment settings and data sets, as well as the framework.
+
+\subsection*{ECG Acquisition}
+Acquiring and storing ECG data were the base for a analyzing task. Errors might be creep into an analysis at any possible stage, thus not only the hardware acquisition system, but also the transmission and storage should be carefully designed. The explantation for the acquisition field could be found in \cite{clifford2006web}. A raw data acquisition task related the digital signal processing and hardware design knowledges would not be further discussed in this chapter, in \cite{silva2011dsp} a typical ECG signal acquisition process was illustrated. 
+
+As for the signal acquiring process, different kinds of sample rate might be involved, for common ECG acquisition device the sample rate would be 128Hz, 250Hz, 340Hz or 500Hz, even higher. However, even in murine studies, a sampling rate of 2 kHz is considered sufficiently high \cite{ai1996studies}. Arbitrary resizing would be an ideal procedure to handle with the different sampling rate from different data source to build the datasets for mining and analysis.
+
+\subsection*{ECG Signal Preprocessing}
+Before the segmentation and feature extraction process, the ECG signals were preprocessed. As in the procedure of collecting ECG signals,  in addition to the ECG signals, the baseline wander (caused by Perspiration, respiration and body movements), power line interference and muscle noise were recorded as well, which had been described in lots of literatures %here need some references%
+When the filtering methods were proposed and adopted in the preprocessing, the desired information should not be altered. The ECG typically exhibits persistent features like P-QRS-T morphology and average RR interval,  and non-stationary features like individual RR and QT intervals, long-term heart rate trends \cite{clifford2006advanced}. Possible distortions caused by filtering should be quantified in these features.
+
+%2015/04/27
+The filtered ECG signals then were segmented into individual heartbeat waveforms depends on the detected R peaks in a classification task.  The ECG segmentation can be seen as the decoding procedure of an observation sequence in terms of beat waveforms \cite{andreao2006ecg}. Dynamic time warping \cite{vullings1998automated}, time warping \cite{vullings1997ecg}, Bayesian framework \cite{sayadi2009model}, hidden Markov models\cite{andreao2006ecg}, weighted diagnostic distortion \cite{zigel2000weighted}, morphology and heartbeat interval based methods \cite{de2004automatic} and genetic methods \cite{gacek2003genetic} had been used in this sub-task. The state accuracy rate was close to $100\%$, which would be accurate enough in most online or offline applications. 
+
+
+\subsection*{ECG Feature Extraction and Classification}
+
+
+
+\section*{Supervised learning Methods in ECG classification}
+text
+
+
+\section*{Unsupervised learning Methods in ECG classification}
+text
+
+
+\section*{Deep Learning in ECG Classification: A Preliminary Study}
+
+
+
+
+\section*{Conclusions}
+Text
+
+\section*{References}
+\bibliographystyle{bmc-mathphys} % Style BST file
+\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+
+\end{document}
