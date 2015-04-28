@@ -183,6 +183,8 @@ In this chapter, we first introduce the basic elements and procedures in a typic
 
 \section*{Technology Roadmap}
 ECG classification methods had been developed for decades. With the development of theories in machine learning and data mining, lots of algorithms had been adopted in this domain. Before the review about the methods, it is quite necessary to mention the common experiment settings and data sets, as well as the framework.
+ 
+ %Here a picture of the workflow should be illustrate.
 
 \subsection*{ECG Acquisition}
 Acquiring and storing ECG data were the base for a analyzing task. Errors might be creep into an analysis at any possible stage, thus not only the hardware acquisition system, but also the transmission and storage should be carefully designed. The explantation for the acquisition field could be found in \cite{clifford2006web}. A raw data acquisition task related the digital signal processing and hardware design knowledges would not be further discussed in this chapter, in \cite{silva2011dsp} a typical ECG signal acquisition process was illustrated. 
@@ -190,14 +192,15 @@ Acquiring and storing ECG data were the base for a analyzing task. Errors might 
 As for the signal acquiring process, different kinds of sample rate might be involved, for common ECG acquisition device the sample rate would be 128Hz, 250Hz, 340Hz or 500Hz, even higher. However, even in murine studies, a sampling rate of 2 kHz is considered sufficiently high \cite{ai1996studies}. Arbitrary resizing would be an ideal procedure to handle with the different sampling rate from different data source to build the datasets for mining and analysis.
 
 \subsection*{ECG Signal Preprocessing}
-Before the segmentation and feature extraction process, the ECG signals were preprocessed. As in the procedure of collecting ECG signals,  in addition to the ECG signals, the baseline wander (caused by Perspiration, respiration and body movements), power line interference and muscle noise were recorded as well, which had been described in lots of literatures %here need some references%
+Before the segmentation and feature extraction process, the ECG signals were preprocessed. As in the procedure of collecting ECG signals,  in addition to the ECG signals, the baseline wander (caused by Perspiration, respiration and body movements), power line interference and muscle noise were recorded as well, which had been described in lots of literatures \cite{blanco2008ecg}.
 When the filtering methods were proposed and adopted in the preprocessing, the desired information should not be altered. The ECG typically exhibits persistent features like P-QRS-T morphology and average RR interval,  and non-stationary features like individual RR and QT intervals, long-term heart rate trends \cite{clifford2006advanced}. Possible distortions caused by filtering should be quantified in these features.
 
-%2015/04/27
-The filtered ECG signals then were segmented into individual heartbeat waveforms depends on the detected R peaks in a classification task.  The ECG segmentation can be seen as the decoding procedure of an observation sequence in terms of beat waveforms \cite{andreao2006ecg}. Dynamic time warping \cite{vullings1998automated}, time warping \cite{vullings1997ecg}, Bayesian framework \cite{sayadi2009model}, hidden Markov models\cite{andreao2006ecg}, weighted diagnostic distortion \cite{zigel2000weighted}, morphology and heartbeat interval based methods \cite{de2004automatic} and genetic methods \cite{gacek2003genetic} had been used in this sub-task. The state accuracy rate was close to $100\%$, which would be accurate enough in most online or offline applications. 
+The filtered ECG signals then were segmented into individual heartbeat waveforms depends on the detected R peaks in a classification task.  The ECG segmentation can be seen as the decoding procedure of an observation sequence in terms of beat waveforms \cite{andreao2006ecg}. Dynamic time warping \cite{vullings1998automated}, time warping \cite{vullings1997ecg}, Bayesian framework \cite{sayadi2009model}, hidden Markov models\cite{andreao2006ecg}, weighted diagnostic distortion \cite{zigel2000weighted}, morphology and heartbeat interval based methods \cite{de2004automatic} and genetic methods \cite{gacek2003genetic} had been used in this sub-task. The state accuracy rate was close to $100\%$, which would be accurate enough in most online and offline applications. 
 
 
 \subsection*{ECG Feature Extraction and Classification}
+After the segmentation for the ECG records, we got plenty of ECG waveform samples with variety categories. Since different physiological disorder may reflect on different type of abnormal heartbeat rhythms. For the task of classification, it is quite important to determine the classes which would be used. In the early literatures, only limited kinds of classes were adopted, such as in %some citation
+the N P S classes, even just normal and abnormal classes. The five beat classes recommended by ANSI/AAMI EC57:1998 standard, i.e., normal beat, ventricular ectopic beat (VEB), supraventricular ectopic beat (SVEB), fusion of a normal and a VEB, or unknown beat type were used in most literature on the classification problems, which could be appropriate in the task since the widely acceptance.
 
 
 

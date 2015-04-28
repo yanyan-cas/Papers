@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 % BibTex style file: bmc-mathphys.bst (version 2.0), 2013-07-15
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -113,6 +113,21 @@ Advanced Tools for ECG Analysis.
 \endbibitem
 
 %%% 6
+\bibitem{blanco2008ecg}
+\begin{barticle}
+\bauthor{\bsnm{Blanco-Velasco}, \binits{M.}},
+\bauthor{\bsnm{Weng}, \binits{B.}},
+\bauthor{\bsnm{Barner}, \binits{K.E.}}:
+\batitle{Ecg signal denoising and baseline wander correction based on the
+  empirical mode decomposition}.
+\bjtitle{Computers in biology and medicine}
+\bvolume{38}(\bissue{1}),
+\bfpage{1}--\blpage{13}
+(\byear{2008})
+\end{barticle}
+\endbibitem
+
+%%% 7
 \bibitem{andreao2006ecg}
 \begin{barticle}
 \bauthor{\bsnm{Andre{\~a}o}, \binits{R.V.}},
@@ -126,7 +141,7 @@ Advanced Tools for ECG Analysis.
 \end{barticle}
 \endbibitem
 
-%%% 7
+%%% 8
 \bibitem{vullings1998automated}
 \begin{bchapter}
 \bauthor{\bsnm{Vullings}, \binits{H.}},
@@ -141,7 +156,7 @@ pp. \bfpage{163}--\blpage{166}
 \end{bchapter}
 \endbibitem
 
-%%% 8
+%%% 9
 \bibitem{vullings1997ecg}
 \begin{bchapter}
 \bauthor{\bsnm{Vullings}, \binits{H.}},
@@ -155,7 +170,7 @@ pp. \bfpage{275}--\blpage{285}.
 \end{bchapter}
 \endbibitem
 
-%%% 9
+%%% 10
 \bibitem{sayadi2009model}
 \begin{barticle}
 \bauthor{\bsnm{Sayadi}, \binits{O.}},
@@ -168,7 +183,7 @@ pp. \bfpage{275}--\blpage{285}.
 \end{barticle}
 \endbibitem
 
-%%% 10
+%%% 11
 \bibitem{zigel2000weighted}
 \begin{barticle}
 \bauthor{\bsnm{Zigel}, \binits{Y.}},
@@ -183,7 +198,7 @@ pp. \bfpage{275}--\blpage{285}.
 \end{barticle}
 \endbibitem
 
-%%% 11
+%%% 12
 \bibitem{de2004automatic}
 \begin{barticle}
 \bauthor{\bsnm{De~Chazal}, \binits{P.}},
@@ -198,7 +213,7 @@ pp. \bfpage{275}--\blpage{285}.
 \end{barticle}
 \endbibitem
 
-%%% 12
+%%% 13
 \bibitem{gacek2003genetic}
 \begin{barticle}
 \bauthor{\bsnm{Gacek}, \binits{A.}},
@@ -292,6 +307,23 @@ pp. \bfpage{275}--\blpage{285}.
 </bibl>
 
 <bibl id="B6">
+  <title><p>ECG signal denoising and baseline wander correction based on the
+  empirical mode decomposition</p></title>
+  <aug>
+    <au><snm>Blanco Velasco</snm><fnm>M</fnm></au>
+    <au><snm>Weng</snm><fnm>B</fnm></au>
+    <au><snm>Barner</snm><fnm>KE</fnm></au>
+  </aug>
+  <source>Computers in biology and medicine</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2008</pubdate>
+  <volume>38</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-13</lpage>
+</bibl>
+
+<bibl id="B7">
   <title><p>ECG signal analysis through hidden Markov models</p></title>
   <aug>
     <au><snm>Andre{\~a}o</snm><fnm>RV</fnm></au>
@@ -307,7 +339,7 @@ pp. \bfpage{275}--\blpage{285}.
   <lpage>-1549</lpage>
 </bibl>
 
-<bibl id="B7">
+<bibl id="B8">
   <title><p>Automated ECG segmentation with dynamic time warping</p></title>
   <aug>
     <au><snm>Vullings</snm><fnm>HJLM</fnm></au>
@@ -321,7 +353,7 @@ pp. \bfpage{275}--\blpage{285}.
   <lpage>-166</lpage>
 </bibl>
 
-<bibl id="B8">
+<bibl id="B9">
   <title><p>ECG segmentation using time-warping</p></title>
   <aug>
     <au><snm>Vullings</snm><fnm>HJLM</fnm></au>
@@ -335,7 +367,7 @@ pp. \bfpage{275}--\blpage{285}.
   <lpage>-285</lpage>
 </bibl>
 
-<bibl id="B9">
+<bibl id="B10">
   <title><p>A model-based Bayesian framework for ECG beat
   segmentation</p></title>
   <aug>
@@ -350,7 +382,7 @@ pp. \bfpage{275}--\blpage{285}.
   <fpage>335</fpage>
 </bibl>
 
-<bibl id="B10">
+<bibl id="B11">
   <title><p>The weighted diagnostic distortion (WDD) measure for ECG signal
   compression</p></title>
   <aug>
@@ -367,7 +399,7 @@ pp. \bfpage{275}--\blpage{285}.
   <lpage>-1430</lpage>
 </bibl>
 
-<bibl id="B11">
+<bibl id="B12">
   <title><p>Automatic classification of heartbeats using ECG morphology and
   heartbeat interval features</p></title>
   <aug>
@@ -384,7 +416,7 @@ pp. \bfpage{275}--\blpage{285}.
   <lpage>-1206</lpage>
 </bibl>
 
-<bibl id="B12">
+<bibl id="B13">
   <title><p>A genetic segmentation of ECG signals</p></title>
   <aug>
     <au><snm>Gacek</snm><fnm>A</fnm></au>
