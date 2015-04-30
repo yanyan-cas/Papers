@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{17}
 % BibTex style file: bmc-mathphys.bst (version 2.0), 2013-07-15
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -226,6 +226,67 @@ pp. \bfpage{275}--\blpage{285}.
 \end{barticle}
 \endbibitem
 
+%%% 14
+\bibitem{mark1982annotated}
+\begin{bchapter}
+\bauthor{\bsnm{Mark}, \binits{R.}},
+\bauthor{\bsnm{Schluter}, \binits{P.}},
+\bauthor{\bsnm{Moody}, \binits{G.}},
+\bauthor{\bsnm{Devlin}, \binits{P.}},
+\bauthor{\bsnm{Chernoff}, \binits{D.}}:
+\bctitle{An annotated ecg database for evaluating arrhythmia detectors}.
+In: \bbtitle{IEEE Transactions on Biomedical Engineering},
+vol. \bseriesno{29},
+pp. \bfpage{600}--\blpage{600}
+(\byear{1982})
+\end{bchapter}
+\endbibitem
+
+%%% 15
+\bibitem{moody1990bih}
+\begin{bchapter}
+\bauthor{\bsnm{Moody}, \binits{G.B.}},
+\bauthor{\bsnm{Mark}, \binits{R.G.}}:
+\bctitle{The mit-bih arrhythmia database on cd-rom and software for use with
+  it}.
+In: \bbtitle{Computers in Cardiology 1990, Proceedings.},
+pp. \bfpage{185}--\blpage{188}
+(\byear{1990})
+\end{bchapter}
+\endbibitem
+
+%%% 16
+\bibitem{erhan}
+\begin{bchapter}
+\bauthor{\bsnm{Erhan}, \binits{D.}},
+\bauthor{\bsnm{Manzagol}, \binits{P.-A.}},
+\bauthor{\bsnm{Bengio}, \binits{Y.}},
+\bauthor{\bsnm{Bengio}, \binits{S.}},
+\bauthor{\bsnm{Vincent}, \binits{P.}}:
+\bctitle{The difficulty of training deep architectures and the effect of
+  unsupervised pre-training}.
+In: \bbtitle{International Conference on Artificial Intelligence and
+  Statistics},
+pp. \bfpage{153}--\blpage{160}
+(\byear{2009})
+\end{bchapter}
+\endbibitem
+
+%%% 17
+\bibitem{collobert}
+\begin{bchapter}
+\bauthor{\bsnm{Collobert}, \binits{R.}},
+\bauthor{\bsnm{Weston}, \binits{J.}}:
+\bctitle{A unified architecture for natural language processing: Deep neural
+  networks with multitask learning}.
+In: \bbtitle{Proceedings of the 25th International Conference on Machine
+  Learning},
+pp. \bfpage{160}--\blpage{167}
+(\byear{2008}).
+\bcomment{ACM}
+\end{bchapter}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -429,6 +490,68 @@ pp. \bfpage{275}--\blpage{285}.
   <issue>10</issue>
   <fpage>1203</fpage>
   <lpage>-1208</lpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>An annotated ECG database for evaluating arrhythmia
+  detectors</p></title>
+  <aug>
+    <au><snm>Mark</snm><fnm>RG</fnm></au>
+    <au><snm>Schluter</snm><fnm>PS</fnm></au>
+    <au><snm>Moody</snm><fnm>G</fnm></au>
+    <au><snm>Devlin</snm><fnm>P</fnm></au>
+    <au><snm>Chernoff</snm><fnm>D</fnm></au>
+  </aug>
+  <source>IEEE Transactions on Biomedical Engineering</source>
+  <pubdate>1982</pubdate>
+  <volume>29</volume>
+  <issue>8</issue>
+  <fpage>600</fpage>
+  <lpage>-600</lpage>
+</bibl>
+
+<bibl id="B15">
+  <title><p>The MIT-BIH arrhythmia database on CD-ROM and software for use with
+  it</p></title>
+  <aug>
+    <au><snm>Moody</snm><fnm>GB</fnm></au>
+    <au><snm>Mark</snm><fnm>RG</fnm></au>
+  </aug>
+  <source>Computers in Cardiology 1990, Proceedings.</source>
+  <pubdate>1990</pubdate>
+  <fpage>185</fpage>
+  <lpage>-188</lpage>
+</bibl>
+
+<bibl id="B16">
+  <title><p>The difficulty of training deep architectures and the effect of
+  unsupervised pre-training</p></title>
+  <aug>
+    <au><snm>Erhan</snm><fnm>D</fnm></au>
+    <au><snm>Manzagol</snm><fnm>PA</fnm></au>
+    <au><snm>Bengio</snm><fnm>Y</fnm></au>
+    <au><snm>Bengio</snm><fnm>S</fnm></au>
+    <au><snm>Vincent</snm><fnm>P</fnm></au>
+  </aug>
+  <source>International Conference on Artificial Intelligence and
+  Statistics</source>
+  <pubdate>2009</pubdate>
+  <fpage>153</fpage>
+  <lpage>-160</lpage>
+</bibl>
+
+<bibl id="B17">
+  <title><p>A unified architecture for natural language processing: Deep neural
+  networks with multitask learning</p></title>
+  <aug>
+    <au><snm>Collobert</snm><fnm>R</fnm></au>
+    <au><snm>Weston</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Proceedings of the 25th international conference on Machine
+  learning</source>
+  <pubdate>2008</pubdate>
+  <fpage>160</fpage>
+  <lpage>167</lpage>
 </bibl>
 
 </refgrp>

@@ -199,20 +199,24 @@ The filtered ECG signals then were segmented into individual heartbeat waveforms
 
 
 \subsection*{ECG Feature Extraction and Classification}
-After the segmentation for the ECG records, we got plenty of ECG waveform samples with variety categories. Since different physiological disorder may reflect on different type of abnormal heartbeat rhythms. For the task of classification, it is quite important to determine the classes which would be used. In the early literatures, only limited kinds of classes were adopted, such as in %some citation
-the N P S classes, even just normal and abnormal classes. The five beat classes recommended by ANSI/AAMI EC57:1998 standard, i.e., normal beat, ventricular ectopic beat (VEB), supraventricular ectopic beat (SVEB), fusion of a normal and a VEB, or unknown beat type were used in most literature on the classification problems, which could be appropriate in the task since the widely acceptance.
+After the segmentation for the ECG records, we got plenty of ECG waveform samples with variety categories. Since different physiological disorder may reflect on different type of abnormal heartbeat rhythms. For the task of classification, it is quite important to determine the classes which would be used. In the early literatures, there were no unified class labels for an ECG classification problem. As in the open database MIT-BIH arrhythmia database annotations \cite{mark1982annotated, moody1990bih}, the class label system was build with five beat classes recommended by ANSI/AAMI EC57:1998 standard, i.e., normal beat, ventricular ectopic beat (VEB), supraventricular ectopic beat (SVEB), fusion of a normal and a VEB, or unknown beat type were used in most literature on the classification problems instead of early diversity sub class labels, which could be appropriate in the task since the widely acceptance.
 
+
+
+  
 
 
 \section*{Supervised learning Methods in ECG classification}
-text
+
 
 
 \section*{Unsupervised learning Methods in ECG classification}
-text
+
 
 
 \section*{Deep Learning in ECG Classification: A Preliminary Study}
+Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The electrocardiography interpretation has been judged by the medical professionals, which was based on the abstractions of the perceptible features. In this model we consider the higher-level abstractions as the perceptible features, with whose composition the medical professionals can make arrhythmia judgement. The deep architecture automatic learning method is especially important for high-level abstractions, which human often do not know how to specify explicitly in terms of raw sensory input \cite{erhan}. As \cite{collobert} discussed, deep learning methods are bused on learning internal representations of data, another important advantage they offer is the ability to naturally leverage: (a) unsupervised data and (b) data from similar tasks to boost performance on large and challenging problems that routinely suffer from a poverty of labelled data. In the electrocardiography classification problem, we got plenty of unsupervised data, and the labelled data was limited as well, so it is a spontaneously idea to adapt deep learning method in this classification problem.
+
 
 
 
