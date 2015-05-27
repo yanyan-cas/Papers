@@ -21,7 +21,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib
 Warning--entry type for "clifford2006web" isn't style-file defined
---line 27 of file bmc_article.bib
+--line 64 of file bmc_article.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -30,45 +30,45 @@ Reallocated global_strs (elt_size=20001) to 30 items from 20.
 Reallocated glb_str_end (elt_size=4) to 30 items from 20.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 17 entries,
+You've used 21 entries,
             7128 wiz_defined-function locations,
-            1225 strings with 12213 characters,
-and the built_in function-call counts, 487850 in all, are:
-= -- 91506
-> -- 647
-< -- 392
-+ -- 57907
-- -- 209
-* -- 11567
-:= -- 84122
-add.period$ -- 20
-call.type$ -- 17
-change.case$ -- 237
-chr.to.int$ -- 848
-cite$ -- 17
-duplicate$ -- 1699
-empty$ -- 5156
-format.name$ -- 592
-if$ -- 125888
+            1252 strings with 12877 characters,
+and the built_in function-call counts, 513966 in all, are:
+= -- 95439
+> -- 761
+< -- 456
++ -- 59599
+- -- 238
+* -- 12992
+:= -- 89105
+add.period$ -- 24
+call.type$ -- 21
+change.case$ -- 274
+chr.to.int$ -- 972
+cite$ -- 21
+duplicate$ -- 2054
+empty$ -- 6118
+format.name$ -- 708
+if$ -- 132087
 int.to.chr$ -- 1
-int.to.str$ -- 55
-missing$ -- 584
-newline$ -- 535
-num.names$ -- 85
-pop$ -- 735
+int.to.str$ -- 66
+missing$ -- 718
+newline$ -- 643
+num.names$ -- 105
+pop$ -- 882
 preamble$ -- 1
-purify$ -- 88
-quote$ -- 34
-skip$ -- 55790
+purify$ -- 107
+quote$ -- 42
+skip$ -- 57998
 stack$ -- 0
-substring$ -- 46010
-swap$ -- 606
-text.length$ -- 344
+substring$ -- 48800
+swap$ -- 718
+text.length$ -- 404
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 753
+type$ -- 932
 warning$ -- 0
-while$ -- 687
+while$ -- 816
 width$ -- 0
-write$ -- 718
+write$ -- 864
 (There was 1 warning)

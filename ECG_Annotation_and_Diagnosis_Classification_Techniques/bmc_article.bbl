@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{17}
+\begin{thebibliography}{21}
 % BibTex style file: bmc-mathphys.bst (version 2.0), 2013-07-15
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -287,6 +287,58 @@ pp. \bfpage{160}--\blpage{167}
 \end{bchapter}
 \endbibitem
 
+%%% 18
+\bibitem{hinton2006reducing}
+\begin{barticle}
+\bauthor{\bsnm{Hinton}, \binits{G.E.}},
+\bauthor{\bsnm{Salakhutdinov}, \binits{R.R.}}:
+\batitle{Reducing the dimensionality of data with neural networks}.
+\bjtitle{Science}
+\bvolume{313}(\bissue{5786}),
+\bfpage{504}--\blpage{507}
+(\byear{2006})
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem{duda2012pattern}
+\begin{bbook}
+\bauthor{\bsnm{Duda}, \binits{R.O.}},
+\bauthor{\bsnm{Hart}, \binits{P.E.}},
+\bauthor{\bsnm{Stork}, \binits{D.G.}}:
+\bbtitle{Pattern Classification}.
+\bpublisher{John Wiley \& Sons}, \blocation{???}
+(\byear{2012})
+\end{bbook}
+\endbibitem
+
+%%% 20
+\bibitem{bengio2007greedy}
+\begin{barticle}
+\bauthor{\bsnm{Bengio}, \binits{Y.}},
+\bauthor{\bsnm{Lamblin}, \binits{P.}},
+\bauthor{\bsnm{Popovici}, \binits{D.}},
+\bauthor{\bsnm{Larochelle}, \binits{H.}}, \betal:
+\batitle{Greedy layer-wise training of deep networks}.
+\bjtitle{Advances in neural information processing systems}
+\bvolume{19},
+\bfpage{153}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem{bengio2009learning}
+\begin{barticle}
+\bauthor{\bsnm{Bengio}, \binits{Y.}}:
+\batitle{Learning deep architectures for ai}.
+\bjtitle{Foundations and trends{\textregistered} in Machine Learning}
+\bvolume{2}(\bissue{1}),
+\bfpage{1}--\blpage{127}
+(\byear{2009})
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -552,6 +604,63 @@ pp. \bfpage{160}--\blpage{167}
   <pubdate>2008</pubdate>
   <fpage>160</fpage>
   <lpage>167</lpage>
+</bibl>
+
+<bibl id="B18">
+  <title><p>Reducing the dimensionality of data with neural
+  networks</p></title>
+  <aug>
+    <au><snm>Hinton</snm><fnm>GE</fnm></au>
+    <au><snm>Salakhutdinov</snm><fnm>RR</fnm></au>
+  </aug>
+  <source>Science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2006</pubdate>
+  <volume>313</volume>
+  <issue>5786</issue>
+  <fpage>504</fpage>
+  <lpage>-507</lpage>
+</bibl>
+
+<bibl id="B19">
+  <title><p>Pattern classification</p></title>
+  <aug>
+    <au><snm>Duda</snm><fnm>RO</fnm></au>
+    <au><snm>Hart</snm><fnm>PE</fnm></au>
+    <au><snm>Stork</snm><fnm>DG</fnm></au>
+  </aug>
+  <publisher>John Wiley \& Sons</publisher>
+  <pubdate>2012</pubdate>
+</bibl>
+
+<bibl id="B20">
+  <title><p>Greedy layer-wise training of deep networks</p></title>
+  <aug>
+    <au><snm>Bengio</snm><fnm>Y</fnm></au>
+    <au><snm>Lamblin</snm><fnm>P</fnm></au>
+    <au><snm>Popovici</snm><fnm>D</fnm></au>
+    <au><snm>Larochelle</snm><fnm>H</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Advances in neural information processing systems</source>
+  <publisher>MIT; 1998</publisher>
+  <pubdate>2007</pubdate>
+  <volume>19</volume>
+  <fpage>153</fpage>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Learning deep architectures for AI</p></title>
+  <aug>
+    <au><snm>Bengio</snm><fnm>Y</fnm></au>
+  </aug>
+  <source>Foundations and trends{\textregistered} in Machine Learning</source>
+  <publisher>Now Publishers Inc.</publisher>
+  <pubdate>2009</pubdate>
+  <volume>2</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-127</lpage>
 </bibl>
 
 </refgrp>
