@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{21}
+\begin{thebibliography}{25}
 % BibTex style file: bmc-mathphys.bst (version 2.0), 2013-07-15
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -339,6 +339,62 @@ pp. \bfpage{160}--\blpage{167}
 \end{barticle}
 \endbibitem
 
+%%% 22
+\bibitem{bishop2006pattern}
+\begin{bbook}
+\bauthor{\bsnm{Bishop}, \binits{C.M.}}, \betal:
+\bbtitle{Pattern Recognition and Machine Learning}
+vol. \bseriesno{4}.
+\bpublisher{springer New York}, \blocation{???}
+(\byear{2006})
+\end{bbook}
+\endbibitem
+
+%%% 23
+\bibitem{zou2012deep}
+\begin{bchapter}
+\bauthor{\bsnm{Zou}, \binits{W.}},
+\bauthor{\bsnm{Zhu}, \binits{S.}},
+\bauthor{\bsnm{Yu}, \binits{K.}},
+\bauthor{\bsnm{Ng}, \binits{A.Y.}}:
+\bctitle{Deep learning of invariant features via simulated fixations in video}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+pp. \bfpage{3212}--\blpage{3220}
+(\byear{2012})
+\end{bchapter}
+\endbibitem
+
+%%% 24
+\bibitem{ufldl}
+\begin{botherref}
+\oauthor{\bsnm{Ng}, \binits{A.}},
+\oauthor{\bsnm{Ngiam}, \binits{J.}},
+\oauthor{\bsnm{Foo}, \binits{C.Y.}},
+\oauthor{\bsnm{Mai}, \binits{Y.}},
+\oauthor{\bsnm{Suen}, \binits{C.}}:
+{UFLDL Tutorial}.
+http://ufldl.stanford.edu/wiki/index.php/UFLDL\_Tutorial
+(2010)
+\end{botherref}
+\endbibitem
+
+%%% 25
+\bibitem{ngiam2011optimization}
+\begin{bchapter}
+\bauthor{\bsnm{Ngiam}, \binits{J.}},
+\bauthor{\bsnm{Coates}, \binits{A.}},
+\bauthor{\bsnm{Lahiri}, \binits{A.}},
+\bauthor{\bsnm{Prochnow}, \binits{B.}},
+\bauthor{\bsnm{Le}, \binits{Q.V.}},
+\bauthor{\bsnm{Ng}, \binits{A.Y.}}:
+\bctitle{On optimization methods for deep learning}.
+In: \bbtitle{Proceedings of the 28th International Conference on Machine
+  Learning (ICML-11)},
+pp. \bfpage{265}--\blpage{272}
+(\byear{2011})
+\end{bchapter}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -661,6 +717,63 @@ pp. \bfpage{160}--\blpage{167}
   <issue>1</issue>
   <fpage>1</fpage>
   <lpage>-127</lpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>Pattern recognition and machine learning</p></title>
+  <aug>
+    <au><snm>Bishop</snm><fnm>CM</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <publisher>springer New York</publisher>
+  <pubdate>2006</pubdate>
+  <volume>4</volume>
+  <issue>4</issue>
+</bibl>
+
+<bibl id="B23">
+  <title><p>Deep learning of invariant features via simulated fixations in
+  video</p></title>
+  <aug>
+    <au><snm>Zou</snm><fnm>W</fnm></au>
+    <au><snm>Zhu</snm><fnm>S</fnm></au>
+    <au><snm>Yu</snm><fnm>K</fnm></au>
+    <au><snm>Ng</snm><fnm>AY</fnm></au>
+  </aug>
+  <source>Advances in Neural Information Processing Systems</source>
+  <pubdate>2012</pubdate>
+  <fpage>3212</fpage>
+  <lpage>-3220</lpage>
+</bibl>
+
+<bibl id="B24">
+  <title><p>{UFLDL Tutorial}</p></title>
+  <aug>
+    <au><snm>Ng</snm><fnm>A</fnm></au>
+    <au><snm>Ngiam</snm><fnm>J</fnm></au>
+    <au><snm>Foo</snm><fnm>CY</fnm></au>
+    <au><snm>Mai</snm><fnm>Y</fnm></au>
+    <au><snm>Suen</snm><fnm>C</fnm></au>
+  </aug>
+  <source>http://ufldl.stanford.edu/wiki/index.php/UFLDL\_Tutorial</source>
+  <pubdate>2010</pubdate>
+</bibl>
+
+<bibl id="B25">
+  <title><p>On optimization methods for deep learning</p></title>
+  <aug>
+    <au><snm>Ngiam</snm><fnm>J</fnm></au>
+    <au><snm>Coates</snm><fnm>A</fnm></au>
+    <au><snm>Lahiri</snm><fnm>A</fnm></au>
+    <au><snm>Prochnow</snm><fnm>B</fnm></au>
+    <au><snm>Le</snm><fnm>QV</fnm></au>
+    <au><snm>Ng</snm><fnm>AY</fnm></au>
+  </aug>
+  <source>Proceedings of the 28th International Conference on Machine Learning
+  (ICML-11)</source>
+  <pubdate>2011</pubdate>
+  <fpage>265</fpage>
+  <lpage>-272</lpage>
 </bibl>
 
 </refgrp>

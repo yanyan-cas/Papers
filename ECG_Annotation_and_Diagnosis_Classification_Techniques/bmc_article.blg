@@ -21,7 +21,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bmc_article.bib
 Warning--entry type for "clifford2006web" isn't style-file defined
---line 64 of file bmc_article.bib
+--line 101 of file bmc_article.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -30,45 +30,45 @@ Reallocated global_strs (elt_size=20001) to 30 items from 20.
 Reallocated glb_str_end (elt_size=4) to 30 items from 20.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 21 entries,
+You've used 25 entries,
             7128 wiz_defined-function locations,
-            1252 strings with 12877 characters,
-and the built_in function-call counts, 513966 in all, are:
-= -- 95439
-> -- 761
-< -- 456
-+ -- 59599
-- -- 238
-* -- 12992
-:= -- 89105
-add.period$ -- 24
-call.type$ -- 21
-change.case$ -- 274
-chr.to.int$ -- 972
-cite$ -- 21
-duplicate$ -- 2054
-empty$ -- 6118
-format.name$ -- 708
-if$ -- 132087
+            1271 strings with 13586 characters,
+and the built_in function-call counts, 648608 in all, are:
+= -- 121124
+> -- 899
+< -- 527
++ -- 76143
+- -- 292
+* -- 15876
+:= -- 112170
+add.period$ -- 28
+call.type$ -- 25
+change.case$ -- 334
+chr.to.int$ -- 1108
+cite$ -- 25
+duplicate$ -- 2456
+empty$ -- 7276
+format.name$ -- 875
+if$ -- 166969
 int.to.chr$ -- 1
-int.to.str$ -- 66
-missing$ -- 718
-newline$ -- 643
-num.names$ -- 105
-pop$ -- 882
+int.to.str$ -- 75
+missing$ -- 862
+newline$ -- 753
+num.names$ -- 125
+pop$ -- 1081
 preamble$ -- 1
-purify$ -- 107
-quote$ -- 42
-skip$ -- 57998
+purify$ -- 123
+quote$ -- 50
+skip$ -- 73780
 stack$ -- 0
-substring$ -- 48800
-swap$ -- 718
-text.length$ -- 404
+substring$ -- 61223
+swap$ -- 831
+text.length$ -- 480
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 932
+type$ -- 1093
 warning$ -- 0
-while$ -- 816
+while$ -- 973
 width$ -- 0
-write$ -- 864
+write$ -- 1030
 (There was 1 warning)
