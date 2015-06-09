@@ -666,7 +666,7 @@ Here, $\mu$ is denoted as initial weights. On the basis of the statistical matri
 
 \subsection{ECG preprocessing}
 
-The preprocessing works include two mainly parts, the ECG data filter and heartbeat segmentation process. The filter task is adapted to remove the artifact signal from the ECG signal. The artifact signal includes baseline wander, power line interference, and high-frequency noise. According to our pretraining works, the noise of the signal has little influence to the classifiers except for the baseline wander. So only baseline wander is removed. The massive unlabelled data we collected is extracted and a resample from 128Hz to 360Hz procedure is adopted for data consistency. In heartbeat segmentation process, average samples of each beat is 277 samples. To get more information , we allow partially overlap and a window with a length of 340 data points in one beat was defined, the R peak of the wave is located at 141th point. Most annotations of the MIT-BIH arrhythmia database is lied the R-wave. For the dataset we collect, a high accurate algorithm has been explored to determine the R pick and then divide into the heartbeat segments according to the R pick.
+The preprocessing works include two mainly parts, the ECG data filter and heartbeat segmentation process. The filter task is adapted to remove the artifact signal from the ECG signal. The artifact signal includes baseline wander, power line interference, and high-frequency noise. According to our pretraining works, the noise of the signal has little influence to the classifiers except for the baseline wander. So only baseline wander is removed. The massive unlabelled data we collected is extracted and a resample from 128Hz to 360Hz procedure is adopted for data consistency. In heartbeat segmentation process, average samples of each beat is 277 samples. To get more information , we allow partially overlap and a window with a length of 340 data points in one beat was defined, the R peak of the wave is located at 141st point. Most annotations of the MIT-BIH arrhythmia database is lied the R-wave. For the dataset we collect, a high accurate algorithm has been explored to determine the R pick and then divide into the heartbeat segments according to the R pick.
 
 \subsection{RBM training}
 
@@ -679,7 +679,7 @@ The goal of RBM learning is to maximize the product of the probabilities. The pa
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
-\caption{The original heartbeats distribution visualizing with t-SNE \cite{Van}.}
+\caption{The original heartbeats distribution visualising with t-SNE \cite{Van}.}
 \label{figure4}
 \end{figure*}
 
