@@ -57,12 +57,20 @@
 % problems with special characters
 % used in your e-mail or web address
 %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% The abstract section
+
+
 \maketitle
 \abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
 Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Background
+%%%
 
 \section{Background}
 The heart is comprised of myocardium which rhythmically contract and thus drive the circulation of blood throughout the human body.
@@ -79,8 +87,28 @@ Because of the particularity in medical data collection and data annotation, the
 
 In this chapter, we first introduce the basic elements and procedures in a typical ECG classification task, then we would review the proposed literatures of ECG classification, in the last we would introduce a new method in unsupervised learning for ECG classification. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Technology Roadmap
+
 \section{Technology Roadmap}
-ECG classification methods had been developed for decades. With the development of theories in machine learning and data mining, lots of algorithms had been adopted in this domain. Before the review about the methods, it is quite necessary to mention the common experiment settings and data sets, as well as the framework.
+ECG classification methods had been developed for decades. With the development of theories in machine learning and data mining, lots of algorithms had been adopted in this domain. Before the review about the methods, it is quite necessary to mention the common experiment settings and data sets, as well as the framework which illustrated in Figure \ref{fig:1}.
+
+
+% For figures use
+%
+\begin{figure}[]
+\sidecaption
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the graphicx style use
+\includegraphics[scale=.32]{classification}
+%
+% If no graphics program available, insert a blank space i.e. use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+\caption{The technology roadmap of an ECG classification task.}
+\label{fig:1}       % Give a unique label
+\end{figure}
+
  
  %Here a picture of the workflow should be illustrate.
 
@@ -100,17 +128,66 @@ The filtered ECG signals then were segmented into individual heartbeat waveforms
 After the segmentation for the ECG records, we got plenty of ECG waveform samples with variety categories. Since different physiological disorder may reflect on different type of abnormal heartbeat rhythms. For the task of classification, it is quite important to determine the classes which would be used. In the early literatures, there were no unified class labels for an ECG classification problem. As in the open database MIT-BIH arrhythmia database annotations \cite{mark1982annotated, moody1990bih}, the class label system was build with five beat classes recommended by ANSI/AAMI EC57:1998 standard, i.e., normal beat, ventricular ectopic beat (VEB), supraventricular ectopic beat (SVEB), fusion of a normal and a VEB, or unknown beat type were used in most literature on the classification problems instead of early diversity sub class labels, which could be appropriate in the task since the widely acceptance. 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Review on supervised learning
 \section{Supervised learning Methods in ECG classification}
 
-To be added....
+\begin{table}
+\caption{Supervised learning methods for ECG annotations}
+\label{tab:0}       % Give a unique label
+%
+% Follow this input for your own table layout
+%
+\begin{tabular}{p{2.9cm}p{2.8cm}p{2.8cm}p{2.8cm}}
+\hline\noalign{\smallskip}
+Dataset & DS1 & DS2 & DS3   \\
+\noalign{\smallskip}\svhline\noalign{\smallskip}
+Useage & Pre-training & Fine-tuning & Test   \\
+Source(samples) & AECG (9,785,500)  &   &    \\
+  & AR (50,193)   & AR (33,663) & AR (16,831) \\
+  & LT (587,347)  & LT (50,000) & LT (30,000) \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Total & 10,423,040 & 83,633 & 46,831 \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+\end{tabular}
+\end{table}
+
+The application of supervised learning methods had been widely used in ECG for the recognition and classification of different arrhythmia types.
+Lots of solutions have been proposed for the automated systems to annotate the ECG on a real-time applications \cite{osowski2001ecg}. 
+Linear discriminate systems, decision tree based methods, multilayer perceptron based methods, self-organizing maps methods, fuzzy or neuro-fuzzy systems, support vector machines classifiers and as well the hybrid systems combined by those methods had been proposed. The details of these system are out of the scope of this chapter, we make a statistic table for the typical methods as in Table \ref{tab:0}.
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Reveiw on unsupervised learning
 
 \section{Unsupervised learning Methods in ECG classification}
+% For figures use
+%
+\begin{figure}[]
+\sidecaption
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the graphicx style use
+\includegraphics[scale=.32]{clustering}
+%
+% If no graphics program available, insert a blank space i.e. use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+\caption{An overview of the basic steps constituting a clustering process}
+\label{fig:2}       % Give a unique label
+\end{figure}
 
-To be added....
+In addition to the supervised learning methods, as the development in the past decades, unsupervised learning-based approaches became crucial in exploratory visualisation-driven ECG analysis, which are useful for the detection of relevant trends, patterns, and outliers.  The most widely used methods for unsupervised learning in the recent research focused on the clustering-based techniques. Clustering based methods learn the relevant similarity relationships of patterns which generate a collections of clusters. The clusters can be referred to a group of data vectors and then the similarities were calculated for the determination of class labels. Recently with the developing in neural networks techniques, the deep learning based methods would be introduced in this chapter, as the clustering methods had been described in the recent literatures \cite{}.
 
 
 
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Deep Sparse Autoencoder
 
 \section{Deep Learning in ECG Classification: A Preliminary Study Based on Deep Sparse Autoencoder}
 Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The electrocardiography interpretation has been judged by the medical professionals, which was based on the abstractions of the perceptible features. In this model we consider the higher-level abstractions as the perceptible features, with whose composition the medical professionals can make arrhythmia judgement. The deep architecture automatic learning method is especially important for high-level abstractions, which human often do not know how to specify explicitly in terms of raw sensory input \cite{erhan}. As \cite{collobert} discussed, deep learning methods are bused on learning internal representations of data, another important advantage they offer is the ability to naturally leverage: (a) unsupervised data and (b) data from similar tasks to boost performance on large and challenging problems that routinely suffer from a poverty of labelled data. In the electrocardiography classification problem, we got plenty of unsupervised data, and the labelled data was limited as well, so it is a spontaneously idea to adapt deep learning method in this classification problem. 
@@ -290,8 +367,6 @@ Total & 10,423,040 & 83,633 & 46,831 \\
 \end{table}
 
 
-
-
 As for the pretraining, fine-tuning for our proposed task and comparison, we divided all the samples into three groups: the pretraining group as DS1, the fine-tuning group as DS2 and test group as DS3 (illustrated in Table \ref{tab:2}). Samples are chosen randomly from the original AR and LT database, the details of the sample class would be described in the experiment result analysis.
 
 \subsubsection{Classification Workflow}
@@ -423,6 +498,8 @@ $^b$ The listed percentages are based on the previous described rules.
 Through the comparisons in Table \ref{tab:6}, we can see that the proposed method offers better accuracy of classification problem. Since accuracy in lots of the literatures are good enough, the verification parameter depends on mainly on the normal class detection, but on contrary with these methods, this approach provided better performance in other kind of arrhythmia waveforms classes. Especially in the ventricular ectopic beat sensitivity, a quite large improvement had been made by the proposed method.
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Deep Belief Network
 
 \section{Deep Learning in ECG Classification: A Two-lead ECG Classification Based on Deep Belief Network}
 A restricted Boltzmann machine learning algorithm were proposed in the two-lead heart beat classification problem. A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs. In this part a deep belief network was constructed and the RBM based algorithm was used in the classification problem. 
@@ -690,75 +767,6 @@ All the annotations in the MIT-BIH arrhythmia database is use in our study and O
 
 
 
-
-\label{sec:1}
-Use the template \emph{chapter.tex} together with the Springer document class SVMono (monograph-type books) or SVMult (edited books) to style the various elements of your chapter content in the Springer layout \cite{}.
-
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations. And please note that the first line of
-text that follows a heading is not indented, whereas the first lines of
-all subsequent paragraphs are.
-
-
-
-
-
-\section{Background}
-\label{sec:2}
-% Always give a unique label
-% and use \ref{<label>} for cross-references
-% and \cite{<label>} for bibliographic references
-% use \sectionmark{}
-% to alter or adjust the section heading in the running head
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations.
-
-Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-
-Use the standard \verb|equation| environment to typeset your equations, e.g.
-%
-\begin{equation}
-a \times b = c\;,
-\end{equation}
-%
-however, for multiline equations we recommend to use the \verb|eqnarray| environment\footnote{In physics texts please activate the class option \texttt{vecphys} to depict your vectors in \textbf{\itshape boldface-italic} type - as is customary for a wide range of physical subjects}.
-\begin{eqnarray}
-a \times b = c \nonumber\\
-\vec{a} \cdot \vec{b}=\vec{c}
-\label{eq:01}
-\end{eqnarray}
-
-\subsection{Subsection Heading}
-\label{subsec:2}
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references\index{cross-references} and citations\index{citations}
-as has already been described in Sect.~\ref{sec:2}.
-
-\begin{quotation}
-Please do not use quotation marks when quoting texts! Simply use the \verb|quotation| environment -- it will automatically render Springer's preferred layout.
-\end{quotation}
-
-
-\subsubsection{Subsubsection Heading}
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations as has already been described in
-Sect.~\ref{subsec:2}, see also Fig.~\ref{fig:1}\footnote{If you copy
-text passages, figures, or tables from other works, you must obtain
-\textit{permission} from the copyright holder (usually the original
-publisher). Please enclose the signed permission with the manuscript. The
-sources\index{permission to print} must be acknowledged either in the
-captions, as footnotes or in a separate section of the book.}
-
-Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-
 % For figures use
 %
 \begin{figure}[b]
@@ -776,179 +784,6 @@ Please note that the first line of text that follows a heading is not indented, 
 \end{figure}
 
 
-\paragraph{Paragraph Heading} %
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations as has already been described in
-Sect.~\ref{sec:2}.
-
-Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-
-For typesetting numbered lists we recommend to use the \verb|enumerate| environment -- it will automatically render Springer's preferred layout.
-
-\begin{enumerate}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\begin{enumerate}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\end{enumerate}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\end{enumerate}
-
-
-\subparagraph{Subparagraph Heading} In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}, see also Fig.~\ref{fig:2}.
-
-For unnumbered list we recommend to use the \verb|itemize| environment -- it will automatically render Springer's preferred layout.
-
-\begin{itemize}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development, cf. Table~\ref{tab:1}.}
-\begin{itemize}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\end{itemize}
-\item{Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.}
-\end{itemize}
-
-\begin{figure}[t]
-\sidecaption[t]
-% Use the relevant command for your figure-insertion program
-% to insert the figure file.
-% For example, with the option graphics use
-\includegraphics[scale=.65]{figure}
-%
-% If no graphics program available, insert a blank space i.e. use
-%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
-%
-%\caption{Please write your figure caption here}
-\caption{If the width of the figure is less than 7.8 cm use the \texttt{sidecapion} command to flush the caption on the left side of the page. If the figure is positioned at the top of the page, align the sidecaption with the top of the figure -- to achieve this you simply need to use the optional argument \texttt{[t]} with the \texttt{sidecaption} command}
-\label{fig:2}       % Give a unique label
-\end{figure}
-
-\runinhead{Run-in Heading Boldface Version} Use the \LaTeX\ automatism for all your cross-references and citations as has already been described in Sect.~\ref{sec:2}.
-
-\subruninhead{Run-in Heading Italic Version} Use the \LaTeX\ automatism for all your cross-refer\-ences and citations as has already been described in Sect.~\ref{sec:2}\index{paragraph}.
-% Use the \index{} command to code your index words
-%
-% For tables use
-%
-\begin{table}
-\caption{Please write your table caption here}
-\label{tab:1}       % Give a unique label
-%
-% Follow this input for your own table layout
-%
-
-
-
-\begin{tabular}{p{2.9cm}p{2.8cm}p{2.8cm}p{2.8cm}}
-\hline\noalign{\smallskip}
-Classes & Subclass & Length & Action Mechanism  \\
-\noalign{\smallskip}\svhline\noalign{\smallskip}
-Translation & mRNA$^a$  & 22 (19--25) & Translation repression, mRNA cleavage\\
-Translation & mRNA cleavage & 21 & mRNA cleavage\\
-Translation & mRNA  & 21--22 & mRNA cleavage\\
-Translation & mRNA  & 24--26 & Histone and DNA Modification\\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-\end{tabular}
-$^a$ Table foot note (with superscript)
-\end{table}
-
-
-
-
-
-
-
-%
-\section{Section Heading}
-\label{sec:3}
-% Always give a unique label
-% and use \ref{<label>} for cross-references
-% and \cite{<label>} for bibliographic references
-% use \sectionmark{}
-% to alter or adjust the section heading in the running head
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations as has already been described in
-Sect.~\ref{sec:2}.
-
-Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-
-If you want to list definitions or the like we recommend to use the Springer-enhanced \verb|description| environment -- it will automatically render Springer's preferred layout.
-
-\begin{description}[Type 1]
-\item[Type 1]{That addresses central themes pertainng to migration, health, and disease. In Sect.~\ref{sec:1}, Wilson discusses the role of human migration in infectious disease distributions and patterns.}
-\item[Type 2]{That addresses central themes pertainng to migration, health, and disease. In Sect.~\ref{subsec:2}, Wilson discusses the role of human migration in infectious disease distributions and patterns.}
-\end{description}
-
-\subsection{Subsection Heading} %
-In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text. Use the \LaTeX\ automatism for all your cross-references and citations citations as has already been described in Sect.~\ref{sec:2}.
-
-Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-
-\begin{svgraybox}
-If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option \verb|graybox| and the newly defined environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
-
-If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option and environment \verb|svgraybox|. This will produce a 15 percent screened box 'behind' your text.
-\end{svgraybox}
-
-
-\subsubsection{Subsubsection Heading}
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations as has already been described in
-Sect.~\ref{sec:2}.
-
-Please note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-
-\begin{theorem}
-Theorem text goes here.
-\end{theorem}
-%
-% or
-%
-\begin{definition}
-Definition text goes here.
-\end{definition}
-
-\begin{proof}
-%\smartqed
-Proof text goes here.
-\qed
-\end{proof}
-
-\paragraph{Paragraph Heading} %
-Instead of simply listing headings of different levels we recommend to
-let every heading be followed by at least a short passage of text.
-Further on please use the \LaTeX\ automatism for all your
-cross-references and citations as has already been described in
-Sect.~\ref{sec:2}.
-
-Note that the first line of text that follows a heading is not indented, whereas the first lines of all subsequent paragraphs are.
-%
-% For built-in environments use
-%
-\begin{theorem}
-Theorem text goes here.
-\end{theorem}
-%
-\begin{definition}
-Definition text goes here.
-\end{definition}
-%
-\begin{proof}
-\smartqed
-Proof text goes here.
-\qed
-\end{proof}
-%
-\begin{acknowledgement}
-If you want to include acknowledgments of assistance and the like at the end of an individual chapter please use the \verb|acknowledgement| environment -- it will automatically render Springer's preferred layout.
-\end{acknowledgement}
-%
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
 %
