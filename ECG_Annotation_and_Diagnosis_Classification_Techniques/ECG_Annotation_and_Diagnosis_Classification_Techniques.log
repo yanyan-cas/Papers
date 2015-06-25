@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.18)  25 JUN 2015 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.18)  25 JUN 2015 17:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -570,7 +570,7 @@ Package epstopdf Info: Source file: <nnstructure.eps>
 (epstopdf)                    size: 321023 bytes
 (epstopdf)             Command: <repstopdf --outfile=nnstructure-eps-converted-
 to.pdf nnstructure.eps>
-(epstopdf)             \includegraphics on input line 207.
+(epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 
 <nnstructure-eps-converted-to.pdf, id=52, 650.43pt x 433.62pt>
@@ -578,17 +578,17 @@ File: nnstructure-eps-converted-to.pdf Graphic file (type pdf)
 
 <use nnstructure-eps-converted-to.pdf>
 Package pdftex.def Info: nnstructure-eps-converted-to.pdf used on input line 20
-7.
+8.
 (pdftex.def)             Requested size: 325.2142pt x 216.80946pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 207.
+using normal \caption on input line 208.
 
 [5] [6 <./nnstructure-eps-converted-to.pdf>] [7]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 259.
+               Default added (so using `htbp') on input line 260.
 
 Package epstopdf Info: Source file: <autoencoder.eps>
 (epstopdf)                    date: 2015-06-25 11:05:30
@@ -598,22 +598,22 @@ Package epstopdf Info: Source file: <autoencoder.eps>
 (epstopdf)                    size: 50963 bytes
 (epstopdf)             Command: <repstopdf --outfile=autoencoder-eps-converted-
 to.pdf autoencoder.eps>
-(epstopdf)             \includegraphics on input line 269.
+(epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
 <autoencoder-eps-converted-to.pdf, id=120, 794.97pt x 722.7pt>
 File: autoencoder-eps-converted-to.pdf Graphic file (type pdf)
 
 <use autoencoder-eps-converted-to.pdf>
-Package pdftex.def Info: autoencoder-eps-converted-to.pdf used on input line 26
-9.
+Package pdftex.def Info: autoencoder-eps-converted-to.pdf used on input line 27
+0.
 (pdftex.def)             Requested size: 317.98236pt x 289.07487pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 269.
+using normal \caption on input line 270.
 
 [8 <./autoencoder-eps-converted-to.pdf>] [9] [10]
-Overfull \hbox (0.61899pt too wide) in paragraph at lines 389--401
+Overfull \hbox (0.61899pt too wide) in paragraph at lines 390--402
 [][] 
  []
 
@@ -637,52 +637,31 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 457--471
+Underfull \hbox (badness 10000) in paragraph at lines 458--472
 [][]
  []
 
-
-LaTeX Warning: Reference `table9' on page 13 undefined on input line 503.
-
-
-Package natbib Warning: Citation `melgan' on page 13 undefined on input line 50
-3.
-
-
-LaTeX Warning: Reference `table9' on page 13 undefined on input line 504.
-
 [13]
-
-Package natbib Warning: Citation `mar' on page 14 undefined on input line 520.
-
-
-Package natbib Warning: Citation `chaza' on page 14 undefined on input line 521
-.
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+[]\OT1/ptm/m/n/8.5 Melgani and Bazi
+ []
 
 
-Package natbib Warning: Citation `melgan' on page 14 undefined on input line 52
-2.
-
-
-Package natbib Warning: Citation `jiang' on page 14 undefined on input line 523
-.
-
-
-Overfull \hbox (0.9285pt too wide) in paragraph at lines 515--526
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
+[]\OT1/ptm/m/n/8.5 Jiang and Kong
  []
 
 [14] [15]
 
-Package natbib Warning: Citation `Leon' on page 16 undefined on input line 570.
+Package natbib Warning: Citation `Leon' on page 16 undefined on input line 571.
 
 
 
 Package natbib Warning: Citation `Hinton02' on page 16 undefined on input line 
-579.
+580.
 
 
-Package natbib Warning: Citation `Peng' on page 16 undefined on input line 582.
+Package natbib Warning: Citation `Peng' on page 16 undefined on input line 583.
 
 
 [16]
@@ -694,122 +673,122 @@ Package epstopdf Info: Source file: <dbn.eps>
 (epstopdf)                    size: 180570 bytes
 (epstopdf)             Command: <repstopdf --outfile=dbn-eps-converted-to.pdf d
 bn.eps>
-(epstopdf)             \includegraphics on input line 616.
+(epstopdf)             \includegraphics on input line 617.
 Package epstopdf Info: Output file is already uptodate.
  <dbn-eps-converted-to.pdf, id=170, 1120.185pt x 578.16pt>
 File: dbn-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dbn-eps-converted-to.pdf>
-Package pdftex.def Info: dbn-eps-converted-to.pdf used on input line 616.
+Package pdftex.def Info: dbn-eps-converted-to.pdf used on input line 617.
 (pdftex.def)             Requested size: 336.05809pt x 173.44933pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 616.
+using normal \caption on input line 617.
 
 
-Overfull \hbox (3.16086pt too wide) in paragraph at lines 616--616
+Overfull \hbox (3.16086pt too wide) in paragraph at lines 617--617
 [][] 
  []
 
 
 Package natbib Warning: Citation `Juergen' on page 17 undefined on input line 6
-20.
+21.
 
 
 Package natbib Warning: Citation `Bengio2009' on page 17 undefined on input lin
-e 620.
+e 621.
 
 
-LaTeX Warning: Reference `figure2' on page 17 undefined on input line 620.
+LaTeX Warning: Reference `figure2' on page 17 undefined on input line 621.
 
 [17 <./dbn-eps-converted-to.pdf>] [18] [19]
-Overfull \hbox (2.687pt too wide) in paragraph at lines 692--692
+Overfull \hbox (2.687pt too wide) in paragraph at lines 693--693
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 696--696
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 697--697
 []\OT1/ptm/m/n/8.5 1,104| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--708
+Underfull \hbox (badness 10000) in paragraph at lines 687--709
 [][]
  []
 
 
-Overfull \hbox (2.687pt too wide) in paragraph at lines 724--724
+Overfull \hbox (2.687pt too wide) in paragraph at lines 725--725
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 728--728
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 729--729
 []\OT1/ptm/m/n/8.5 1,048| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 718--739
+Underfull \hbox (badness 10000) in paragraph at lines 719--740
 [][]
  []
 
 
-Overfull \hbox (2.687pt too wide) in paragraph at lines 753--753
+Overfull \hbox (2.687pt too wide) in paragraph at lines 754--754
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 757--757
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 758--758
 []\OT1/ptm/m/n/8.5 1,108| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 747--768
+Underfull \hbox (badness 10000) in paragraph at lines 748--769
 [][]
  []
 
 
 Package natbib Warning: Citation `Andreao' on page 20 undefined on input line 7
-73.
+74.
 
 
-Package natbib Warning: Citation `Asl' on page 20 undefined on input line 773.
+Package natbib Warning: Citation `Asl' on page 20 undefined on input line 774.
 
 
 Package natbib Warning: Citation `Melgani' on page 20 undefined on input line 7
-73.
+74.
 
 
-Package natbib Warning: Citation `Sung' on page 20 undefined on input line 773.
+Package natbib Warning: Citation `Sung' on page 20 undefined on input line 774.
 
 
 [20]
 
 Package natbib Warning: Citation `Tadejko' on page 21 undefined on input line 7
-86.
+87.
 
 
 Package natbib Warning: Citation `Banerjee' on page 21 undefined on input line 
-787.
+788.
 
 
-Package natbib Warning: Citation `Can' on page 21 undefined on input line 788.
+Package natbib Warning: Citation `Can' on page 21 undefined on input line 789.
 
 
 Package natbib Warning: Citation `Osowski' on page 21 undefined on input line 7
-89.
+90.
 
 
-Overfull \hbox (0.61899pt too wide) in paragraph at lines 781--793
+Overfull \hbox (0.61899pt too wide) in paragraph at lines 782--794
 [][]
  []
 
 
 Package natbib Warning: Citation `Osowski' on page 21 undefined on input line 8
-00.
+01.
 
 
-Package natbib Warning: Citation `Can' on page 21 undefined on input line 800.
+Package natbib Warning: Citation `Can' on page 21 undefined on input line 801.
 
 [21] (./referenc.tex
 (./ECG_Annotation_and_Diagnosis_Classification_Techniques.bbl
@@ -820,13 +799,31 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
- [22]
-Underfull \hbox (badness 6526) in paragraph at lines 97--99
+ [22] [23]
+Underfull \hbox (badness 1983) in paragraph at lines 119--123
+[]\OT1/ptm/m/n/10 Melgani F, Bazi Y (2008) Clas-si-fi-ca-tion of elec-tro-car-d
+io-gram sig-nals with
+ []
+
+
+Underfull \hbox (badness 5924) in paragraph at lines 119--123
+\OT1/ptm/m/n/10 sup-port vec-tor ma-chines and par-ti-cle swarm op-ti-miza-tion
+. In-for-ma-tion
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 119--123
+\OT1/ptm/m/n/10 Tech-nol-ogy in Biomedicine, IEEE Trans-ac-tions on 12(5):667--
+677, DOI 
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 129--131
 []\OT1/ptm/m/n/10 Ng A, Ngiam J, Foo CY, Mai Y, Suen C (2010) UFLDL Tu-to-rial.
 
  []
 
-[23]))
+))
 
 Package natbib Warning: There were undefined citations.
 
@@ -836,13 +833,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3826 strings out of 493117
- 52826 string characters out of 6135432
- 175018 words of memory out of 5000000
- 7154 multiletter control sequences out of 15000+600000
+ 3849 strings out of 493117
+ 53411 string characters out of 6135432
+ 175626 words of memory out of 5000000
+ 7177 multiletter control sequences out of 15000+600000
  49975 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,23p,1671b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,25p,1675b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -855,7 +852,7 @@ w/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
 Output written on ECG_Annotation_and_Diagnosis_Classification_Techniques.pdf (2
-4 pages, 789271 bytes).
+4 pages, 791223 bytes).
 PDF statistics:
  249 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams

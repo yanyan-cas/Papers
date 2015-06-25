@@ -172,12 +172,12 @@ Linear discriminate systems, decision tree based methods, multilayer perceptron 
 % If no graphics program available, insert a blank space i.e. use
 %\picplace{5cm}{2cm} % Give the correct figure height and width in cm
 %
-\caption{An overview of the basic steps constituting a clustering process}
+\caption{An overview of the basic steps constituting a clustering process \citep{clifford2006advanced}.}
 \label{fig:2}       % Give a unique label
 \end{figure}
 
-In addition to the supervised learning methods, as the development in the past decades, unsupervised learning-based approaches became crucial in exploratory visualisation-driven ECG analysis, which are useful for the detection of relevant trends, patterns, and outliers. 
-The most widely used methods for unsupervised learning in the recent research focused on the clustering-based techniques. Clustering based methods learn the relevant similarity relationships of patterns which generate a collections of clusters. The clusters can be referred to a group of data vectors and then the similarities were calculated for the determination of class labels. Recently with the developing in neural networks techniques, the deep learning based methods would be introduced in this chapter, as the clustering methods had been described in the recent literatures \cite{}.
+In addition to the supervised learning methods, as the development in the past decades, unsupervised learning-based approaches became crucial in exploratory visualisation-driven ECG analysis, which are useful for the detection of relevant trends, patterns, and outliers \citep[e.g.][]{silipo1996supervised, lagerholm2000clustering}. 
+The most widely used methods for unsupervised learning in the recent research focused on the clustering-based techniques. Clustering based methods learn the relevant similarity relationships of patterns which generate a collections of clusters \citep{bezdek1998some}. The clusters can be referred to a group of data vectors and then the similarities were calculated for the determination of class labels. Recently with the developing in neural networks techniques, the deep learning based methods would be introduced in this chapter, as the clustering methods had been described in the recent literatures \citep[e.g.][]{yeh2012analyzing, rodriguez2012unsupervised}.
 
 
 
@@ -188,7 +188,7 @@ The most widely used methods for unsupervised learning in the recent research fo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Deep Sparse Autoencoder
 
 \section{Deep Learning in ECG Classification: A Preliminary Study Based on Deep Sparse Autoencoder}
-Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The electrocardiography interpretation has been judged by the medical professionals, which was based on the abstractions of the perceptible features. In this model we consider the higher-level abstractions as the perceptible features, with whose composition the medical professionals can make arrhythmia judgement. The deep architecture automatic learning method is especially important for high-level abstractions, which human often do not know how to specify explicitly in terms of raw sensory input \cite{erhan}. As \cite{collobert} discussed, deep learning methods are bused on learning internal representations of data, another important advantage they offer is the ability to naturally leverage: (a) unsupervised data and (b) data from similar tasks to boost performance on large and challenging problems that routinely suffer from a poverty of labelled data. In the electrocardiography classification problem, we got plenty of unsupervised data, and the labelled data was limited as well, so it is a spontaneously idea to adapt deep learning method in this classification problem. 
+Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The electrocardiography interpretation has been judged by the medical professionals, which was based on the abstractions of the perceptible features. In this model we consider the higher-level abstractions as the perceptible features, with whose composition the medical professionals can make arrhythmia judgement. The deep architecture automatic learning method is especially important for high-level abstractions, which human often do not know how to specify explicitly in terms of raw sensory input \citep{erhan}. As \citep{collobert} discussed, deep learning methods are bused on learning internal representations of data, another important advantage they offer is the ability to naturally leverage: (a) unsupervised data and (b) data from similar tasks to boost performance on large and challenging problems that routinely suffer from a poverty of labelled data. In the electrocardiography classification problem, we got plenty of unsupervised data, and the labelled data was limited as well, so it is a spontaneously idea to adapt deep learning method in this classification problem. 
 
 \subsection{Deep Neural Networks}
 The artificial neural network had been widely used in different applications, the basic 3-layer model (with only one hidden layer) is a fairly shallow network which means only shallow features can be learned via the structure. Deep neural networks were the structures in which we have multiple hidden layers, with which we can compute much more complex features from the input. Each hidden layer computes a non-linear transformation of the previous layer, a deep network can have significantly greater representational power (i.e., can learn significantly more complex functions) than a shallow one. A typical deep neural network structure as in Figure 3 makes no different from the normal multi layer neural network.
@@ -212,9 +212,9 @@ The artificial neural network had been widely used in different applications, th
 
 
 \subsection{Autoencoders and Sparsity}
-An autoencoder is trained to encode the input $x$ into some representation $c(x)$ so that the inputs can be reconstructed from that representation. High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors and such "autoencoder" networks works better than principal components analysis as a tool to reduce the dimensionality of data \cite{hinton2006reducing}. Principal Component Analysis (PCA) is a linear reduction technique that seeks projection of the data into the directions of highest variability \cite{duda2012pattern}, while autoencoders do the same task in a different way with a wider scope (PCA is method that assumes linear systems where as autoencoders do not). Since in the neural network the hidden layer is nonlinear, the autoencoder behaves differently from PCA, which has the ability to capture multi-modal aspects of the input distribution (the representation of the input). The related literature experiments reported in \cite{bengio2007greedy} suggest that in practice, when trained with stochastic gradient descent, nonlinear autoencoders with more hidden units than inputs (called overcomplete) yield useful representations (in the sense of classification error measured on a network taking this representation in input). A farther defence of autoencoder can be accessed from \cite{bengio2009learning}. As the theory illustrated, the electrocardiography signal representations can be learned via the autoencoder structure and learning algorithms.
+An autoencoder is trained to encode the input $x$ into some representation $c(x)$ so that the inputs can be reconstructed from that representation. High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors and such "autoencoder" networks works better than principal components analysis as a tool to reduce the dimensionality of data \citep{hinton2006reducing}. Principal Component Analysis (PCA) is a linear reduction technique that seeks projection of the data into the directions of highest variability \citep{duda2012pattern}, while autoencoders do the same task in a different way with a wider scope (PCA is method that assumes linear systems where as autoencoders do not). Since in the neural network the hidden layer is nonlinear, the autoencoder behaves differently from PCA, which has the ability to capture multi-modal aspects of the input distribution (the representation of the input). The related literature experiments reported in \citep{bengio2007greedy} suggest that in practice, when trained with stochastic gradient descent, nonlinear autoencoders with more hidden units than inputs (called overcomplete) yield useful representations (in the sense of classification error measured on a network taking this representation in input). A farther defence of autoencoder can be accessed from \citep{bengio2009learning}. As the theory illustrated, the electrocardiography signal representations can be learned via the autoencoder structure and learning algorithms.
 
-The structures and learning algorithms used were illustrated in lots of literatures \cite{duda2012pattern, bishop2006pattern}. Here we impose a sparsity constraint on the hidden units to guarantee the representations expression ability. So for the neuron in the neuron network would be "active" if its output value is close to 1, or as being "inactive" if its output value is close to 0 due to the adopted sigmoid activation function. Here $a_j^{(2)}(x)$ denote the activation of hidden unit j in the autoencoder with the given input of x. Fatherly, let 
+The structures and learning algorithms used were illustrated in lots of literatures \citep{duda2012pattern, bishop2006pattern}. Here we impose a sparsity constraint on the hidden units to guarantee the representations expression ability. So for the neuron in the neuron network would be "active" if its output value is close to 1, or as being "inactive" if its output value is close to 0 due to the adopted sigmoid activation function. Here $a_j^{(2)}(x)$ denote the activation of hidden unit j in the autoencoder with the given input of x. Fatherly, let 
 
 \begin{equation}
 \hat{\rho}_j = \frac{1}{m} \sum_{i=1}^m [{a_j^{(2)}}{(x^{(i)})}]
@@ -249,7 +249,7 @@ J(W,b) = [\frac{1}{m}\sum_{i=1}^m(\frac{1}{2}{\|{h_{W,b}(x^{(i)})} - y^{(i)}\|}^
 J_{sparse}(W,b) = J(W,b) + \beta \sum_{j=1}^{s_2}KL(\rho||\hat{\rho_j})
 \end{equation}
 \noindent $\beta$ denotes the weight of the sparsity penalty term.
-The above theories were cited from the recent research literatures \cite{zou2012deep} and open source \cite{ufldl} on the topic of deep learning.
+The above theories were cited from the recent research literatures \citep[e.g.][]{zou2012deep} and open source \citep{ufldl} on the topic of deep learning.
 
 
 \subsection{Representation Learning}
@@ -272,7 +272,7 @@ The above theories were cited from the recent research literatures \cite{zou2012
 \end{figure}
 
 
-The autoencoder base on neuron network had been used to learn representations (features) from unlabelled data. Autoencoders have been used as building blocks to build and initialize a deep multi-layer neural network. The training procedure would be \cite{bengio2009learning} as illustrated in Figure \ref{fig:4}:
+The autoencoder base on neuro network had been used to learn representations (features) from unlabelled data. Autoencoders have been used as building blocks to build and initialize a deep multi-layer neural network. The training procedures are illustrated in Figure \ref{fig:4} \citep{bengio2009learning}:
 \begin{enumerate}
 \item Train the first layer as an autoencoder to minimise some form for reconstruction error of the raw input. This is unsupervised.
 \item The hidden units' outputs of the autoencoder are now used as input for another layer, also trained to be an autoencoder. Here unlabelled representations were used as well.
@@ -284,7 +284,7 @@ The greedy layer-wise approach for pretraining a deep network works by training 
 
 
 \subsection{Fine-tuning and Classifier}
-For the training method of stacked autoencoders, when the parameters of one layer are being trained, parameters in other layer are kept fixed. In order to achieve better result, fine-tuning using backpropagation can be used to improve the model performance by tuning the parameters of all layers are changed at the same time after the layer-wise train phase. After the fine-tuning process the optimised network structure would learn a good representation of the inputs, which can be used as the features similar to the traditional methods. The cardiac arrhythmia classification problem is a multi-classs classification problems where the class label $y$ may take more than two possible values.So the softmax regression is selected as the supervised learning algorithm which would be adapted as the classifier in conduction with the deep network.
+For the training method of stacked autoencoders, when the parameters of one layer are being trained, parameters in other layer are kept fixed. In order to achieve better result, fine-tuning using backpropagation can be used to improve the model performance by tuning the parameters of all layers are changed at the same time after the layer-wise train phase. After the fine-tuning process the optimised network structure would learn a good representation of the inputs, which can be used as the features similar to the traditional methods. The cardiac arrhythmia classification problem is a multi-class classification problems where the class label $y$ may take more than two possible values.So the softmax regression is selected as the supervised learning algorithm which would be adapted as the classifier in conduction with the deep network.
 
 Softmax regression model was generalized  from the logistic regression. Similar to the logistic regression, the training set
 
@@ -329,7 +329,7 @@ The cost function adopted for softmax regression is:
 J(\theta) = -\frac{1}{m}[\sum_{i=1}^m\sum_{j=1}^k1\{y^{(i)}=j\}\text{log}{\frac{e^{\theta_j^Tx^{(i)}}}{\sum_{l=1}^ke^{\theta_l^Tx^{(i)}}}}]
 \end{equation}
 where $1\{\cdot\}$ is the indicator function.
-There is no known closed-form way to solve for the minimum of $J(\theta)$, and an iterative optimisation algorithm synch as gradient descent of L-BFGS could be used for the minimal value (some other iterative optimisation algorithms were mentioned in \cite{ngiam2011optimization}).
+There is no known closed-form way to solve for the minimum of $J(\theta)$, and an iterative optimisation algorithm synch as gradient descent of L-BFGS could be used for the minimal value (some other iterative optimisation algorithms were mentioned in \citep{ngiam2011optimization}).
 So the cost function and iteration equations would be:
 
 \begin{equation}
@@ -349,15 +349,15 @@ By minimizing $J(\theta)$ with respect to $\theta$, the softmax regression class
 
 \subsection{Experiments and Results}
 \subsubsection{Datasets Preparation}
-As illustrated in the above section, the preprocessing and segmentation had been described. In the preprocessing stage, filtering algorithms were adapted to remove the artefact signals from the ECG signal. The signals include baseline wander, power line interference, and high-frequency noise. The segmentation method was based on the program of Laguna et al.\footnote{``ecgpuwave", check the website of Physionet} was adapted, which also had been validated by other related work \cite{de2004automatic}.
+As illustrated in the above section, the preprocessing and segmentation had been described. In the preprocessing stage, filtering algorithms were adapted to remove the artefact signals from the ECG signal. The signals include baseline wander, power line interference, and high-frequency noise. The segmentation method was based on the program of Laguna et al.\footnote{``ecgpuwave", check the website of Physionet} was adapted, which also had been validated by other related work \citep{de2004automatic}.
 The experiment was based on three datasets:
 
 \begin{enumerate}
-\item Ambulatory electrocardiography database were used in this study, which includes recordings of 100 subjects with arrhythmia along with normal sinus rhythm. The database contains 100 recordings, each containing a 3- lead 24-hour long electrocardiography which were bandpass filtered at 0.1-100Hz and sampled at 128Hz. In this study, only the lead I data were adapted after preprocessing in the classification task. The reference average heart beats for each sample has 97,855 beats for the 24-hour long recording, and the reference arrhythmia average is 1,810 beats which were estimated by a commercial software (this statistics aim to indicate the existence for arrhythmia samples, which should not be consider as a experiment preset).
+\item Ambulatory electrocardiography database were used in this study, which includes recordings of 100 subjects with arrhythmia along with normal sinus rhythm. The database contains 100 recordings, each containing a $3-lead$ $24-hour$ long electrocardiography which were bandpass filtered at $0.1-100Hz$ and sampled at $128Hz$. In this study, only the lead I data were adapted after preprocessing in the classification task. The reference average heart beats for each sample has 97,855 beats for the $24-hour$ long recording, and the reference arrhythmia average is 1,810 beats which were estimated by a commercial software (this statistics aim to indicate the existence for arrhythmia samples, which should not be consider as a experiment preset).
 
-\item The MIT-BIH Arrhythmia Database [23] contains 48 half- hour recordings each containing two 30-min ECG lead signals (lead A and lead B), sampled at 360Hz. As well only the lead I data were used in the proposed method. In agreement with the AAMI recommended practice, the four recordings with paced beats were removed from the analysis.Five records randomly selected were used to verify the real time application. The remaining recordings were divided into two datasets, with small part of which were used as the training set of the fine- tuning process (details would be described in the following part).
+\item The MIT-BIH Arrhythmia Database \citep{PhysioNet} contains 48 half- hour recordings each containing two $30min$ ECG lead signals (lead A and lead B), sampled at 360Hz. As well only the lead I data were used in the proposed method. In agreement with the AAMI recommended practice, the four recordings with paced beats were removed from the analysis.Five records randomly selected were used to verify the real time application. The remaining recordings were divided into two datasets, with small part of which were used as the training set of the fine-tuning process (details would be described in the following part).
 
-\item The MIT-BIT Long-term Database is also used in this study for training and verification, which contains 7 long-term ECG recordings (14 to 22 hours each), with manually reviewed beat annotations and sampled at 128Hz. Similarly, the 7 recordings were divided into two datasets, with part used as the fine- tuning training set. 
+\item The MIT-BIT Long-term Database is also used in this study for training and verification, which contains 7 long-term ECG recordings (14 to 22 hours each), with manually reviewed beat annotations and sampled at $128Hz$. Similarly, the 7 recordings were divided into two datasets, with part used as the fine- tuning training set. 
 
 \end{enumerate}
 
@@ -407,7 +407,7 @@ As for the pretraining, fine-tuning for our proposed task and comparison, we div
 \subsubsection{Classification Workflow}
 The stack autoencoder use multilayer “encoder” network to transform high dimensional data into low dimensional code, similarly a “decoder” network can be adopted to recover from the code, which we previously described. For the one-hidden-layer autoencoder input layer and hidden layer, the output was set equal to the input, starting with random weights in the one-hidden layer neural networks, they can be trained together by minimizing the discrepancy between the original input data and the reconstruction. The gradients were obtained by using chain rule of backpropagate error derivatives, the decoder means the raw input can be reconstructed by the learned feature with the trained weight. With large initial weights, autoencoders typically find poor local minima; with small initial weights, the gradients in the early layers are tiny, making it infeasible to train autoencoders with many hidden layers. After learning the feature and network weight in the first layer, we can add hidden layer one by one to get deeper representations, as well the learned weight can be used to reconstruct the input. When training the weight of layer 2, we take the weight in layer 1 fixed replace random initialize because the learned weights are close to a good solution, which means training the parameters of each layer individually while freezing parameters for the remainder of the model. In the experiment, we adopted 2-hidden-layer, 3-hidden- layer, 4-hidden-layer stacked autoencoder for the test and verification.
 
-Fine tuning is a strategy that widely used in deep learning, which can be used to greatly improve the performance of a stacked autoencoder. After pretraining multiple layers of feature detectors, the model is “unfold” to produce encoder and decoder networks that initially use the same weights [37]. The weights learned can be used for classification implementation after adding one classifier after the feature layer. In this study, a softmax classifier was added (Figure 3). In the fine-tuning initialization, the parameters learned in the autoencoder pretraining were used, and the weights W and biases b of softmax classifier (the last layer of the network) were initialized randomly. The training set of DS2 were used in the supervised learning pretraining while the backpropagation algorithm as usual of multi-layer perceptrons to minimize the output prediction error has been adopted.
+Fine tuning is a strategy that widely used in deep learning, which can be used to greatly improve the performance of a stacked autoencoder. After pretraining multiple layers of feature detectors, the model is “unfold” to produce encoder and decoder networks that initially use the same weights. The weights learned can be used for classification implementation after adding one classifier after the feature layer. In this study, a softmax classifier was added. The parameters learned in the autoencoder pretraining were used in the fine-tuning initialization, and the weights $W$ and biases b of softmax classifier (the last layer of the network) were initialized randomly. The training set of DS2 were used in the supervised learning pretraining while the backpropagation algorithm as usual of multi-layer perceptrons to minimize the output prediction error has been adopted.
 
 \subsubsection{Classifier Performance Assessment}
 After the pretraining and fine-tuning process, the deep network parameters were acquired. Then we use the parameters and the test data set DS3 to predict the class of samples. It is necessary to mention that in DS2 and DS3, the labelled data used in pretraining and fine-tuning were divided randomly, which satisfy the requirement of Holdout cross-validation scheme so that the test results were meaningful for the classification task performance improvement.
@@ -501,8 +501,8 @@ In the 4-hidden-layer autoencoder network, we got a accuracy of $99.34\%$. For t
 
 
 \subsubsection{Comparison with Other Work}
-Different kinds of performance assessment criteria had been adopted in the ECG arrhythmia classification problem. In the comparison part, we adopt several ordinary indicators for the performance assessment, which brought in the above sections. The accuracies, N-class specificities (N-spe), S-class sensitivities (S-sen), V-class sensitivities (V-sen) and the F-class sensitivities(F-sen) in Table \ref{table9} are presented for the comparison. The percentages are calculated from the literatures' test results, in which some of the classes are ignored like \cite{melgan}, we use a $*$ symbol to represent the result are not available. 
-In Table \ref{table9}, we use the highest value (2 to 4 hidden layers based structures) for the verification which illustrated in ``proposed" line.
+Different kinds of performance assessment criteria had been adopted in the ECG arrhythmia classification problem. In the comparison part, we adopt several ordinary indicators for the performance assessment, which brought in the above sections. The accuracies, N-class specificities (N-spe), S-class sensitivities (S-sen), V-class sensitivities (V-sen) and the F-class sensitivities(F-sen) in Table \ref{tab:6} are presented for the comparison. The percentages are calculated from the literatures' test results, in which some of the classes are ignored like \citep{melgan}, we use a $*$ symbol to represent the result are not available. 
+In Table \ref{tab:6}, we use the highest value (2 to 4 hidden layers based structures) for the verification which illustrated in ``proposed" line.
 
 
 
@@ -513,19 +513,19 @@ In Table \ref{table9}, we use the highest value (2 to 4 hidden layers based stru
 %
 % Follow this input for your own table layout
 %
-\begin{tabular}{p{2cm}p{1.9cm}p{1.8cm}p{1.8cm}p{1.8cm}p{1.8cm}}
+\begin{tabular}{p{2.6cm}p{1.7cm}p{1.7cm}p{1.7cm}p{1.7cm}p{1.6cm}}
 \hline\noalign{\smallskip}
  Approaches     &  Accuracy & N-spe & S-sen & V-sen & F-sen  \\
 \noalign{\smallskip}\svhline\noalign{\smallskip}
-Proposed             & \textbf{99.34\%}  & \textbf{99.76\%} &  82.29\% & \textbf{98.31\%} & 87.71\% \\
- Mar\cite{mar}        & 84.63\%  & 84.85\% & 82.90\%  & 86.72\% & 51.55\% \\
- Chazal\cite{chaza}   & 86.19 \% & 86.86\% & \textbf{83.83\%}  & 77.74\% & \textbf{89.43\%} \\
- Melgani\cite{melgan} & 90.52\%  & 89.12\% & *$^a$    & 89.97\% & * \\
- Jiang \cite{jiang}   & 94.51\%  & 98.73\% & 50.59\%  & 86.61\% & 35.78\% \\
+Proposed             &  \textbf{99.34\%}  & \textbf{99.76\%} &  82.29\% & \textbf{98.31\%} & 87.71\% \\
+ \citet{mar2011optimization}        &  84.63\%  & 84.85\% & 82.90\%  & 86.72\% & 51.55\% \\
+ \citet{chaza}   &  86.19 \% & 86.86\% & \textbf{83.83\%}  & 77.74\% & \textbf{89.43\%} \\
+ \citet{melgan} &   90.52\%  & 89.12\% & *$^a$    & 89.97\% & * \\
+  \citet{jiang2007block}   &  94.51\%  & 98.73\% & 50.59\%  & 86.61\% & 35.78\% \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 \end{tabular}
 
-$^a$ *NR means the results were not available.
+$^a$ * means the results were not available.
 
 $^b$ The listed percentages are based on the previous described rules.
 \end{table}

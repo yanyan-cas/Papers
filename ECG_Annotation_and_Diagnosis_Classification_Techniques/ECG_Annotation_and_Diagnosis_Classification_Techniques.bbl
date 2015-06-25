@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -28,6 +28,10 @@ Bengio Y, Lamblin P, Popovici D, Larochelle H, et~al (2007) Greedy layer-wise
   training of deep networks. Advances in neural information processing systems
   19:153
 
+\bibitem[{Bezdek and Pal(1998)}]{bezdek1998some}
+Bezdek JC, Pal NR (1998) Some new indexes of cluster validity. Systems, Man,
+  and Cybernetics, Part B: Cybernetics, IEEE Transactions on 28(3):301--315
+
 \bibitem[{Bishop et~al(2006)}]{bishop2006pattern}
 Bishop CM, et~al (2006) Pattern recognition and machine learning, vol~4.
   springer New York
@@ -37,6 +41,11 @@ Bishop CM, et~al (2006) Pattern recognition and machine learning, vol~4.
 Blanco-Velasco M, Weng B, Barner KE (2008) Ecg signal denoising and baseline
   wander correction based on the empirical mode decomposition. Computers in
   biology and medicine 38(1):1--13
+
+\bibitem[{Chazal et~al(2004)Chazal, O'Dwyer, and Reilly}]{chaza}
+Chazal P, O'Dwyer M, Reilly R (2004) Automatic classification of heartbeats
+  using ecg morphology and heartbeat interval features. IEEE Transactions on
+  Biomedical Engineering 51(7):1196--1206
 
 \bibitem[{Clifford et~al(2006{\natexlab{a}})Clifford, Azuaje, and
   McScharry}]{clifford2006web}
@@ -73,9 +82,26 @@ Erhan D, Manzagol PA, Bengio Y, Bengio S, Vincent P (2009) The difficulty of
 Gacek A, Pedrycz W (2003) A genetic segmentation of ecg signals. Biomedical
   Engineering, IEEE Transactions on 50(10):1203--1208
 
+\bibitem[{Goldberger et~al(2000)Goldberger, Amaral, Glass, Hausdorff, Ivanov,
+  Mark, Mietus, Moody, Peng, and Stanley}]{PhysioNet}
+Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PC, Mark RG, Mietus
+  JE, Moody GB, Peng CK, Stanley HE (2000) {PhysioBank, PhysioToolkit, and
+  PhysioNet}: Components of a new research resource for complex physiologic
+  signals. Circulation 101(23):e215--e220
+
 \bibitem[{Hinton and Salakhutdinov(2006)}]{hinton2006reducing}
 Hinton GE, Salakhutdinov RR (2006) Reducing the dimensionality of data with
   neural networks. Science 313(5786):504--507
+
+\bibitem[{Jiang and Kong(2007)}]{jiang2007block}
+Jiang W, Kong S (2007) Block-based neural networks for personalized ecg signal
+  classification. Neural Networks, IEEE Transactions on 18(6):1750--1761
+
+\bibitem[{Lagerholm et~al(2000)Lagerholm, Peterson, Braccini, Edenbrandt, and
+  S{\"o}rnmo}]{lagerholm2000clustering}
+Lagerholm M, Peterson C, Braccini G, Edenbrandt L, S{\"o}rnmo L (2000)
+  Clustering ecg complexes using hermite functions and self-organizing maps.
+  Biomedical Engineering, IEEE Transactions on 47(7):838--848
 
 \bibitem[{Mar et~al(2011)Mar, Zaunseder, Martinez, Llamedo, and
   Poll}]{mar2011optimization}
@@ -88,6 +114,12 @@ Mar T, Zaunseder S, Martinez JP, Llamedo M, Poll R (2011) Optimization of ecg
 Mark R, Schluter P, Moody G, Devlin P, Chernoff D (1982) An annotated ecg
   database for evaluating arrhythmia detectors. In: IEEE Transactions on
   Biomedical Engineering, vol~29, pp 600--600
+
+\bibitem[{Melgani and Bazi(2008)}]{melgan}
+Melgani F, Bazi Y (2008) Classification of electrocardiogram signals with
+  support vector machines and particle swarm optimization. Information
+  Technology in Biomedicine, IEEE Transactions on 12(5):667--677,
+  \doi{10.1109/TITB.2008.923147}
 
 \bibitem[{Moody and Mark(1990)}]{moody1990bih}
 Moody GB, Mark RG (1990) The mit-bih arrhythmia database on cd-rom and software
@@ -107,9 +139,24 @@ Ngiam J, Coates A, Lahiri A, Prochnow B, Le QV, Ng AY (2011) On optimization
 Osowski S, Linh TH (2001) Ecg beat recognition using fuzzy hybrid neural
   network. Biomedical Engineering, IEEE Transactions on 48(11):1265--1271
 
+\bibitem[{Rodr{\'\i}guez-Sotelo et~al(2012)Rodr{\'\i}guez-Sotelo,
+  Peluffo-Ordonez, Cuesta-Frau, and
+  Castellanos-Dom{\'\i}nguez}]{rodriguez2012unsupervised}
+Rodr{\'\i}guez-Sotelo JL, Peluffo-Ordonez D, Cuesta-Frau D,
+  Castellanos-Dom{\'\i}nguez G (2012) Unsupervised feature relevance analysis
+  applied to improve ecg heartbeat clustering. Computer methods and programs in
+  biomedicine 108(1):250--261
+
 \bibitem[{Sayadi and Shamsollahi(2009)}]{sayadi2009model}
 Sayadi O, Shamsollahi M (2009) A model-based bayesian framework for ecg beat
   segmentation. Physiological Measurement 30(3):335
+
+\bibitem[{Silipo et~al(1996)Silipo, Bortolan, and
+  Marchesi}]{silipo1996supervised}
+Silipo R, Bortolan G, Marchesi C (1996) Supervised and unsupervised learning
+  for diagnostic ecg classification. In: Engineering in Medicine and Biology
+  Society, 1996. Bridging Disciplines for Biomedicine. Proceedings of the 18th
+  Annual International Conference of the IEEE, IEEE, vol~3, pp 931--932
 
 \bibitem[{Silva et~al(2011)Silva, Philominraj, and del R{\'\i}o}]{silva2011dsp}
 Silva CV, Philominraj A, del R{\'\i}o C (2011) A DSP Practical Application:
@@ -127,6 +174,10 @@ Vullings H, Verhaegen M, Verbruggen H (1998) Automated ecg segmentation with
   dynamic time warping. In: Engineering in Medicine and Biology Society, 1998.
   Proceedings of the 20th Annual International Conference of the IEEE, IEEE, pp
   163--166
+
+\bibitem[{Yeh et~al(2012)Yeh, Chiou, and Lin}]{yeh2012analyzing}
+Yeh YC, Chiou CW, Lin HJ (2012) Analyzing ecg for cardiac arrhythmia using
+  cluster analysis. Expert Systems with Applications 39(1):1000--1010
 
 \bibitem[{Zigel et~al(2000)Zigel, Cohen, and Katz}]{zigel2000weighted}
 Zigel Y, Cohen A, Katz A (2000) The weighted diagnostic distortion (wdd)
