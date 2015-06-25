@@ -1,51 +1,51 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: bib2bbl.aux
-I couldn't open style file svmult.bst
----line 4 of file bib2bbl.aux
- : \bibstyle{svmult
- :                 }
-I'm skipping whatever remains of this command
-I found no style file---while reading file bib2bbl.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            84 strings with 494 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+The style file: spmpsci.bst
+Database file #1: bib2bbl.bib
+Warning--entry type for "clifford2006web" isn't style-file defined
+--line 144 of file bib2bbl.bib
+Warning--can't use both volume and number fields in bishop2006pattern
+Warning--can't use both volume and number fields in mark1982annotated
+You've used 28 entries,
+            2946 wiz_defined-function locations,
+            768 strings with 9569 characters,
+and the built_in function-call counts, 25417 in all, are:
+= -- 3116
+> -- 521
+< -- 10
++ -- 358
+- -- 186
+* -- 1104
+:= -- 2346
+add.period$ -- 31
+call.type$ -- 28
+change.case$ -- 186
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 30
+duplicate$ -- 2860
+empty$ -- 1528
+format.name$ -- 213
+if$ -- 5287
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 28
+missing$ -- 300
+newline$ -- 120
+num.names$ -- 56
+pop$ -- 1005
+preamble$ -- 1
+purify$ -- 146
 quote$ -- 0
-skip$ -- 0
+skip$ -- 1656
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 1270
+swap$ -- 2473
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+type$ -- 104
+warning$ -- 2
+while$ -- 127
+width$ -- 30
+write$ -- 285
+(There were 3 warnings)

@@ -64,8 +64,7 @@
 
 
 \maketitle
-\abstract{Each chapter should be preceded by an abstract (10--15 lines long) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.\newline\indent
-Please use the 'starred' version of the new Springer \texttt{abstract} command for typesetting the text of the online abstracts (cf. source file of this chapter template \texttt{abstract}) and include them with the source files of your manuscript. Use the plain \texttt{abstract} command if the abstract is also to appear in the printed version of the book.}
+\abstract{ECG annotation had been studied for decades as the development in signal processing and artificial intelligence methods in computer science.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -75,6 +74,7 @@ Please use the 'starred' version of the new Springer \texttt{abstract} command f
 \section{Background}
 The heart is comprised of myocardium which rhythmically contract and thus drive the circulation of blood throughout the human body.
 A wave of electrical current passes through the entire heart, which triggers myocardial contraction \cite{clifford2006advanced}.
+
 Electrical propagation spreads over the whole heart in a coordinated pattern generate changes on the body surface potentials which can be measured and illustrated as an electrocardiogram (ECG, or sometimes EKG).
 Metabolic abnormalities (a lack of oxygen, or ischemia etc.) and pathological changes of the heart engender variety of ECG, consequently ECG analysis has been a routine part of any complete medical evaluation or healthcare applications.
 
@@ -140,13 +140,11 @@ After the segmentation for the ECG records, we got plenty of ECG waveform sample
 \begin{tabular}{p{2.9cm}p{2.8cm}p{2.8cm}p{2.8cm}}
 \hline\noalign{\smallskip}
 Dataset & DS1 & DS2 & DS3   \\
+
 \noalign{\smallskip}\svhline\noalign{\smallskip}
 Useage & Pre-training & Fine-tuning & Test   \\
-Source(samples) & AECG (9,785,500)  &   &    \\
-  & AR (50,193)   & AR (33,663) & AR (16,831) \\
-  & LT (587,347)  & LT (50,000) & LT (30,000) \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Total & 10,423,040 & 83,633 & 46,831 \\
+
+
 \noalign{\smallskip}\hline\noalign{\smallskip}
 \end{tabular}
 \end{table}
@@ -193,7 +191,25 @@ In addition to the supervised learning methods, as the development in the past d
 Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The electrocardiography interpretation has been judged by the medical professionals, which was based on the abstractions of the perceptible features. In this model we consider the higher-level abstractions as the perceptible features, with whose composition the medical professionals can make arrhythmia judgement. The deep architecture automatic learning method is especially important for high-level abstractions, which human often do not know how to specify explicitly in terms of raw sensory input \cite{erhan}. As \cite{collobert} discussed, deep learning methods are bused on learning internal representations of data, another important advantage they offer is the ability to naturally leverage: (a) unsupervised data and (b) data from similar tasks to boost performance on large and challenging problems that routinely suffer from a poverty of labelled data. In the electrocardiography classification problem, we got plenty of unsupervised data, and the labelled data was limited as well, so it is a spontaneously idea to adapt deep learning method in this classification problem. 
 
 \subsection{Deep Neural Networks}
-The artificial neural network had been widely used in different applications, the basic 3-layer model (with only one hidden layer) is a fairly shallow network which means only shallow features can be learned via the structure. Deep neural networks were the structures in which we have multiple hidden layers, with which we can compute much more complex features from the input. Each hidden layer computes a non-linear transformation of the previous layer, a deep network can have significantly greater representational power (i.e., can learn significantly more complex functions) than a shallow one. A typical deep neural network structure makes no different from the normal multi layer neural network.
+The artificial neural network had been widely used in different applications, the basic 3-layer model (with only one hidden layer) is a fairly shallow network which means only shallow features can be learned via the structure. Deep neural networks were the structures in which we have multiple hidden layers, with which we can compute much more complex features from the input. Each hidden layer computes a non-linear transformation of the previous layer, a deep network can have significantly greater representational power (i.e., can learn significantly more complex functions) than a shallow one. A typical deep neural network structure as in Figure 3 makes no different from the normal multi layer neural network.
+
+% For figures use
+%
+\begin{figure}[t]
+\sidecaption
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the graphicx style use
+\includegraphics[scale=.5]{nnstructure}
+%
+% If no graphics program available, insert a blank space i.e. use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+\caption{A typical neural network structure.}
+\label{fig:3}       % Give a unique label
+\end{figure}
+
+
 
 \subsection{Autoencoders and Sparsity}
 An autoencoder is trained to encode the input $x$ into some representation $c(x)$ so that the inputs can be reconstructed from that representation. High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors and such "autoencoder" networks works better than principal components analysis as a tool to reduce the dimensionality of data \cite{hinton2006reducing}. Principal Component Analysis (PCA) is a linear reduction technique that seeks projection of the data into the directions of highest variability \cite{duda2012pattern}, while autoencoders do the same task in a different way with a wider scope (PCA is method that assumes linear systems where as autoencoders do not). Since in the neural network the hidden layer is nonlinear, the autoencoder behaves differently from PCA, which has the ability to capture multi-modal aspects of the input distribution (the representation of the input). The related literature experiments reported in \cite{bengio2007greedy} suggest that in practice, when trained with stochastic gradient descent, nonlinear autoencoders with more hidden units than inputs (called overcomplete) yield useful representations (in the sense of classification error measured on a network taking this representation in input). A farther defence of autoencoder can be accessed from \cite{bengio2009learning}. As the theory illustrated, the electrocardiography signal representations can be learned via the autoencoder structure and learning algorithms.
@@ -237,7 +253,26 @@ The above theories were cited from the recent research literatures \cite{zou2012
 
 
 \subsection{Representation Learning}
-The autoencoder base on neuron network had been used to learn representations (features) from unlabelled data. Autoencoders have been used as building blocks to build and initialize a deep multi-layer neural network. The training procedure would be \cite{bengio2009learning}:
+
+
+% For figures use
+%
+\begin{figure}[]
+\sidecaption
+% Use the relevant command for your figure-insertion program
+% to insert the figure file.
+% For example, with the graphicx style use
+\includegraphics[scale=.4]{autoencoder}
+%
+% If no graphics program available, insert a blank space i.e. use
+%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
+%
+\caption{A typical autoencoder neural network structure training process.}
+\label{fig:4}       % Give a unique label
+\end{figure}
+
+
+The autoencoder base on neuron network had been used to learn representations (features) from unlabelled data. Autoencoders have been used as building blocks to build and initialize a deep multi-layer neural network. The training procedure would be \cite{bengio2009learning} as illustrated in Figure \ref{fig:4}:
 \begin{enumerate}
 \item Train the first layer as an autoencoder to minimise some form for reconstruction error of the raw input. This is unsupervised.
 \item The hidden units' outputs of the autoencoder are now used as input for another layer, also trained to be an autoencoder. Here unlabelled representations were used as well.
@@ -574,13 +609,13 @@ To train an optimum classifier, an optimization gradient descent algorithm calle
 % Use the relevant command for your figure-insertion program
 % to insert the figure file.
 % For example, with the graphicx style use
-\includegraphics[scale=.65]{dbn}
+\includegraphics[scale=.3]{dbn}
 %
 % If no graphics program available, insert a blank space i.e. use
 %\picplace{5cm}{2cm} % Give the correct figure height and width in cm
 %
 \caption{The RBMs are stacked to from a deep belief network(DBN). The RBM can be trained layer by layer. It is easy to construct a DBN with the trained RBMs. Also, a softmax model to fine-tune all parameters behind the last layer.}
-\label{fig:2}       % Give a unique label
+\label{fig:5}       % Give a unique label
 \end{figure}
 
 Figure \ref{fig:2} shows that RBMs can be stacked and trained with a greedy manner to form a deep belief network(DBN)\cite{Juergen, Bengio2009}. In the last layer, a softmax classifier is connected with the DBN. DBN is the graphical model of a hierarchical architecture. The five layers network shows in Figure\ref{figure2} are used to the heartbeat classification. The procedures were:
@@ -767,32 +802,21 @@ All the annotations in the MIT-BIH arrhythmia database is use in our study and O
 
 
 
-% For figures use
-%
-\begin{figure}[b]
-\sidecaption
-% Use the relevant command for your figure-insertion program
-% to insert the figure file.
-% For example, with the graphicx style use
-\includegraphics[scale=.65]{dbn}
-%
-% If no graphics program available, insert a blank space i.e. use
-%\picplace{5cm}{2cm} % Give the correct figure height and width in cm
-%
-\caption{If the width of the figure is less than 7.8 cm use the \texttt{sidecapion} command to flush the caption on the left side of the page. If the figure is positioned at the top of the page, align the sidecaption with the top of the figure -- to achieve this you simply need to use the optional argument \texttt{[t]} with the \texttt{sidecaption} command}
-\label{fig:1}       % Give a unique label
-\end{figure}
+\section*{Conclusion}
+ECG annotation research had been developed for decades, the signal processing methods, feature extraction and classifier had been studied diffusely. In this paper, we first reviewed the technique roadmap for a ECG classification task, which composed most of the ECG classification research literatures. Then we make a  short summary on the classification methodology including supervised learning and unsupervised learning, which included most ECG classification methods.  Then two kinds of new methods in unsupervised learning had been proposed for ECG annotations, which improve the state-of-art in accuracy and special arrhythmia beat detection rate.
+
+Since the deep network autoencoder structure and deep belief network with the training algorithms had been widely used in modern computing science, an intuitionistic idea is the application in the large ECG recordings. This study proposed one possibility to adopt this method in the health informatics Big Data applications. From both the one lead deep autoencoder based ECG classification system and two-lead deep brief network based classification system, we both get higher performance than the recent research in this domain, and as the evolvability of the system, the performance could be improved as the dataset grows, form which a new possibility to make use of the large amount of unlabelled ECG data from the long-term clinical monitoring and healthcare monitoring had been proposed.
+
+
+
+
 
 
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
 %
 %
-When placed at the end of a chapter or contribution (as opposed to at the end of the book), the numbering of tables, figures, and equations in the appendix section continues on from that in the main text. Hence please \textit{do not} use the \verb|appendix| command when writing an appendix at the end of your chapter or contribution. If there is only one the appendix is designated ``Appendix'', or ``Appendix 1'', or ``Appendix 2'', etc. if there is more than one.
 
-\begin{equation}
-a \times b = c
-\end{equation}
 
 \input{referenc}
 \end{document}
