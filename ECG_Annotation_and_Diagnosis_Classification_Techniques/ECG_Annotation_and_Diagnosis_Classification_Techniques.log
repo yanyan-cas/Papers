@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.18)  25 JUN 2015 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.18)  25 JUN 2015 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -342,6 +342,13 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count136
 \@thisrulewidth=\dimen164
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count137
+)
 \@indexfile=\write4
 \openout4 = `ECG_Annotation_and_Diagnosis_Classification_Techniques.idx'.
 
@@ -350,35 +357,35 @@ Writing index file ECG_Annotation_and_Diagnosis_Classification_Techniques.idx
 (./ECG_Annotation_and_Diagnosis_Classification_Techniques.aux)
 \openout1 = `ECG_Annotation_and_Diagnosis_Classification_Techniques.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 44.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
+\scratchcounter=\count138
 \scratchdimen=\dimen165
 \scratchbox=\box58
-\nofMPsegments=\count138
-\nofMParguments=\count139
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count140
+\MPscratchCnt=\count141
 \MPscratchDim=\dimen166
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -429,57 +436,57 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 
 
-Package mathptmx Warning: There are no bold math fonts on input line 66.
+Package mathptmx Warning: There are no bold math fonts on input line 68.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 66.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 66
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 68
 .
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 66
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 68
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 66
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 68
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 66
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 68
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 
-Underfull \hbox (badness 1067) in paragraph at lines 66--66
+Underfull \hbox (badness 1067) in paragraph at lines 68--68
 \OT1/ptm/m/n/8.5 Lei, Shen-zhen In-sti-tutes of Ad-vanced Tech-nol-ogy, Chi-nes
 e Academy of Sci-ences, e-mail:
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 76.
 [1
 
 
@@ -487,7 +494,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 97.
+               Default added (so using `htbp') on input line 99.
 
 Package epstopdf Info: Source file: <classification.eps>
 (epstopdf)                    date: 2015-06-25 01:10:52
@@ -497,22 +504,22 @@ Package epstopdf Info: Source file: <classification.eps>
 (epstopdf)                    size: 67157 bytes
 (epstopdf)             Command: <repstopdf --outfile=classification-eps-convert
 ed-to.pdf classification.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 <classification-eps-converted-to.pdf, id=8, 1047.915pt x 216.81pt>
 File: classification-eps-converted-to.pdf Graphic file (type pdf)
 
 <use classification-eps-converted-to.pdf>
 Package pdftex.def Info: classification-eps-converted-to.pdf used on input line
- 107.
+ 109.
 (pdftex.def)             Requested size: 335.33965pt x 69.38062pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 107.
+using normal \caption on input line 109.
 
 
-Overfull \hbox (2.44241pt too wide) in paragraph at lines 107--107
+Overfull \hbox (2.44241pt too wide) in paragraph at lines 109--109
 [][] 
  []
 
@@ -522,10 +529,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 Overfull \hbox (0.61899pt too wide) in paragraph at lines 139--149
 [][] 
  []
-
-
-LaTeX Warning: Citation `osowski2001ecg' on page 4 undefined on input line 152.
-
 
 
 LaTeX Warning: No positions in optional float specifier.
@@ -541,7 +544,7 @@ Package epstopdf Info: Source file: <clustering.eps>
 o.pdf clustering.eps>
 (epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
-<clustering-eps-converted-to.pdf, id=32, 1047.915pt x 252.945pt>
+<clustering-eps-converted-to.pdf, id=33, 1047.915pt x 252.945pt>
 File: clustering-eps-converted-to.pdf Graphic file (type pdf)
 
 <use clustering-eps-converted-to.pdf>
@@ -570,7 +573,7 @@ to.pdf nnstructure.eps>
 (epstopdf)             \includegraphics on input line 207.
 Package epstopdf Info: Output file is already uptodate.
 
-<nnstructure-eps-converted-to.pdf, id=51, 650.43pt x 433.62pt>
+<nnstructure-eps-converted-to.pdf, id=52, 650.43pt x 433.62pt>
 File: nnstructure-eps-converted-to.pdf Graphic file (type pdf)
 
 <use nnstructure-eps-converted-to.pdf>
@@ -582,7 +585,7 @@ Package pdftex.def Info: nnstructure-eps-converted-to.pdf used on input line 20
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
 using normal \caption on input line 207.
 
-[5] [6 <./nnstructure-eps-converted-to.pdf>]
+[5] [6 <./nnstructure-eps-converted-to.pdf>] [7]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htbp') on input line 259.
@@ -597,7 +600,7 @@ Package epstopdf Info: Source file: <autoencoder.eps>
 to.pdf autoencoder.eps>
 (epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
-<autoencoder-eps-converted-to.pdf, id=112, 794.97pt x 722.7pt>
+<autoencoder-eps-converted-to.pdf, id=120, 794.97pt x 722.7pt>
 File: autoencoder-eps-converted-to.pdf Graphic file (type pdf)
 
 <use autoencoder-eps-converted-to.pdf>
@@ -609,24 +612,24 @@ Package pdftex.def Info: autoencoder-eps-converted-to.pdf used on input line 26
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
 using normal \caption on input line 269.
 
-[7] [8 <./autoencoder-eps-converted-to.pdf>] [9] [10]
+[8 <./autoencoder-eps-converted-to.pdf>] [9] [10]
 Overfull \hbox (0.61899pt too wide) in paragraph at lines 389--401
 [][] 
  []
 
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
 [11]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -638,27 +641,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 457--471
 [][]
  []
 
+
+LaTeX Warning: Reference `table9' on page 13 undefined on input line 503.
+
+
+Package natbib Warning: Citation `melgan' on page 13 undefined on input line 50
+3.
+
+
+LaTeX Warning: Reference `table9' on page 13 undefined on input line 504.
+
 [13]
 
-LaTeX Warning: Reference `table9' on page 14 undefined on input line 503.
+Package natbib Warning: Citation `mar' on page 14 undefined on input line 520.
 
 
-LaTeX Warning: Citation `melgan' on page 14 undefined on input line 503.
+Package natbib Warning: Citation `chaza' on page 14 undefined on input line 521
+.
 
 
-LaTeX Warning: Reference `table9' on page 14 undefined on input line 504.
+Package natbib Warning: Citation `melgan' on page 14 undefined on input line 52
+2.
 
 
-LaTeX Warning: Citation `mar' on page 14 undefined on input line 520.
-
-
-LaTeX Warning: Citation `chaza' on page 14 undefined on input line 521.
-
-
-LaTeX Warning: Citation `melgan' on page 14 undefined on input line 522.
-
-
-LaTeX Warning: Citation `jiang' on page 14 undefined on input line 523.
+Package natbib Warning: Citation `jiang' on page 14 undefined on input line 523
+.
 
 
 Overfull \hbox (0.9285pt too wide) in paragraph at lines 515--526
@@ -667,13 +674,16 @@ Overfull \hbox (0.9285pt too wide) in paragraph at lines 515--526
 
 [14] [15]
 
-LaTeX Warning: Citation `Leon' on page 16 undefined on input line 570.
+Package natbib Warning: Citation `Leon' on page 16 undefined on input line 570.
 
 
-LaTeX Warning: Citation `Hinton02' on page 16 undefined on input line 579.
+
+Package natbib Warning: Citation `Hinton02' on page 16 undefined on input line 
+579.
 
 
-LaTeX Warning: Citation `Peng' on page 16 undefined on input line 582.
+Package natbib Warning: Citation `Peng' on page 16 undefined on input line 582.
+
 
 [16]
 Package epstopdf Info: Source file: <dbn.eps>
@@ -703,10 +713,12 @@ Overfull \hbox (3.16086pt too wide) in paragraph at lines 616--616
  []
 
 
-LaTeX Warning: Citation `Juergen' on page 17 undefined on input line 620.
+Package natbib Warning: Citation `Juergen' on page 17 undefined on input line 6
+20.
 
 
-LaTeX Warning: Citation `Bengio2009' on page 17 undefined on input line 620.
+Package natbib Warning: Citation `Bengio2009' on page 17 undefined on input lin
+e 620.
 
 
 LaTeX Warning: Reference `figure2' on page 17 undefined on input line 620.
@@ -757,29 +769,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 747--768
  []
 
 
-LaTeX Warning: Citation `Andreao' on page 20 undefined on input line 773.
+Package natbib Warning: Citation `Andreao' on page 20 undefined on input line 7
+73.
 
 
-LaTeX Warning: Citation `Asl' on page 20 undefined on input line 773.
+Package natbib Warning: Citation `Asl' on page 20 undefined on input line 773.
 
 
-LaTeX Warning: Citation `Melgani' on page 20 undefined on input line 773.
+Package natbib Warning: Citation `Melgani' on page 20 undefined on input line 7
+73.
 
 
-LaTeX Warning: Citation `Sung' on page 20 undefined on input line 773.
+Package natbib Warning: Citation `Sung' on page 20 undefined on input line 773.
+
 
 [20]
 
-LaTeX Warning: Citation `Tadejko' on page 21 undefined on input line 786.
+Package natbib Warning: Citation `Tadejko' on page 21 undefined on input line 7
+86.
 
 
-LaTeX Warning: Citation `Banerjee' on page 21 undefined on input line 787.
+Package natbib Warning: Citation `Banerjee' on page 21 undefined on input line 
+787.
 
 
-LaTeX Warning: Citation `Can' on page 21 undefined on input line 788.
+Package natbib Warning: Citation `Can' on page 21 undefined on input line 788.
 
 
-LaTeX Warning: Citation `Osowski' on page 21 undefined on input line 789.
+Package natbib Warning: Citation `Osowski' on page 21 undefined on input line 7
+89.
 
 
 Overfull \hbox (0.61899pt too wide) in paragraph at lines 781--793
@@ -787,51 +805,60 @@ Overfull \hbox (0.61899pt too wide) in paragraph at lines 781--793
  []
 
 
-LaTeX Warning: Citation `Osowski' on page 21 undefined on input line 800.
+Package natbib Warning: Citation `Osowski' on page 21 undefined on input line 8
+00.
 
 
-LaTeX Warning: Citation `Can' on page 21 undefined on input line 800.
+Package natbib Warning: Citation `Can' on page 21 undefined on input line 800.
 
-[21] (./referenc.tex [22]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 36.
+[21] (./referenc.tex
+(./ECG_Annotation_and_Diagnosis_Classification_Techniques.bbl
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 23.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <8.5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8.5> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
- [23]) [24]
-(./ECG_Annotation_and_Diagnosis_Classification_Techniques.aux)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+ [22]
+Underfull \hbox (badness 6526) in paragraph at lines 97--99
+[]\OT1/ptm/m/n/10 Ng A, Ngiam J, Foo CY, Mai Y, Suen C (2010) UFLDL Tu-to-rial.
+
+ []
+
+[23]))
+
+Package natbib Warning: There were undefined citations.
+
+[24] (./ECG_Annotation_and_Diagnosis_Classification_Techniques.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3444 strings out of 493117
- 47475 string characters out of 6135432
- 167900 words of memory out of 5000000
- 6778 multiletter control sequences out of 15000+600000
- 50231 words of font info for 103 fonts, out of 8000000 for 9000
+ 3826 strings out of 493117
+ 52826 string characters out of 6135432
+ 175018 words of memory out of 5000000
+ 7154 multiletter control sequences out of 15000+600000
+ 49975 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,23p,1671b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,23p,1671b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/
-times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
-r8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+e/2014/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/ur
+w/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
 Output written on ECG_Annotation_and_Diagnosis_Classification_Techniques.pdf (2
-4 pages, 800228 bytes).
+4 pages, 789271 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 249 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
