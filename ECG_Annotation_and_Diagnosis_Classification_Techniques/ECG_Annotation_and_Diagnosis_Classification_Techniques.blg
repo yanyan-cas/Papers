@@ -4,62 +4,49 @@ The top-level auxiliary file: ECG_Annotation_and_Diagnosis_Classification_Techni
 The style file: spbasic.bst
 Database file #1: reference.bib
 Warning--entry type for "clifford2006web" isn't style-file defined
---line 195 of file reference.bib
-Warning--I didn't find a database entry for "Leon"
-Warning--I didn't find a database entry for "Hinton02"
-Warning--I didn't find a database entry for "Peng"
-Warning--I didn't find a database entry for "Juergen"
-Warning--I didn't find a database entry for "Bengio2009"
-Warning--I didn't find a database entry for "Andreao"
-Warning--I didn't find a database entry for "Asl"
-Warning--I didn't find a database entry for "Melgani"
-Warning--I didn't find a database entry for "Sung"
-Warning--I didn't find a database entry for "Tadejko"
-Warning--I didn't find a database entry for "Banerjee"
-Warning--I didn't find a database entry for "Can"
-Warning--I didn't find a database entry for "Osowski"
+--line 306 of file reference.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in bishop2006pattern
 Warning--can't use both volume and number fields in mark1982annotated
-You've used 35 entries,
+You've used 55 entries,
             3270 wiz_defined-function locations,
-            903 strings with 11624 characters,
-and the built_in function-call counts, 56919 in all, are:
-= -- 6538
-> -- 1152
-< -- 23
-+ -- 598
-- -- 363
-* -- 4075
-:= -- 6194
-add.period$ -- 35
-call.type$ -- 35
-change.case$ -- 307
-chr.to.int$ -- 34
-cite$ -- 37
-duplicate$ -- 5908
-empty$ -- 4232
-format.name$ -- 485
-if$ -- 11921
+            995 strings with 15355 characters,
+and the built_in function-call counts, 87836 in all, are:
+= -- 10247
+> -- 1637
+< -- 43
++ -- 886
+- -- 513
+* -- 6094
+:= -- 9427
+add.period$ -- 55
+call.type$ -- 55
+change.case$ -- 471
+chr.to.int$ -- 54
+cite$ -- 57
+duplicate$ -- 9225
+empty$ -- 6484
+format.name$ -- 701
+if$ -- 18416
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 385
-newline$ -- 115
-num.names$ -- 140
-pop$ -- 1466
+missing$ -- 588
+newline$ -- 175
+num.names$ -- 220
+pop$ -- 2323
 preamble$ -- 1
-purify$ -- 258
+purify$ -- 388
 quote$ -- 0
-skip$ -- 2489
+skip$ -- 3996
 stack$ -- 0
-substring$ -- 5795
-swap$ -- 3280
-text.length$ -- 12
+substring$ -- 8827
+swap$ -- 5299
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 303
+type$ -- 483
 warning$ -- 2
-while$ -- 337
+while$ -- 524
 width$ -- 0
-write$ -- 396
-(There were 16 warnings)
+write$ -- 623
+(There were 3 warnings)

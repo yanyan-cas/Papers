@@ -1,4 +1,4 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -16,7 +16,17 @@ Ai H, Cui X, Tang L, Zhu W, Ning X, Yang X (1996) [studies on the time domain
 \bibitem[{Andre{\~a}o et~al(2006)Andre{\~a}o, Dorizzi, and
   Boudy}]{andreao2006ecg}
 Andre{\~a}o RV, Dorizzi B, Boudy J (2006) Ecg signal analysis through hidden
-  markov models. Biomedical Engineering, IEEE Transactions on 53(8):1541--1549
+  markov models. IEEE Transactions on Biomedical Engineering 53(8):1541--1549
+
+\bibitem[{Andrew and Gao(2007)}]{andrew2007scalable}
+Andrew G, Gao J (2007) Scalable training of l 1-regularized log-linear models.
+  In: Proceedings of the 24th international conference on Machine learning,
+  ACM, pp 33--40
+
+\bibitem[{Banerjee and Mitra(2014)}]{banerjee2014app}
+Banerjee S, Mitra M (2014) Application of cross wavelet transform for ecg
+  pattern analysis and classification. IEEE Transactions on Instrumentation and
+  Measurement 63(2):326--333
 
 \bibitem[{Bengio(2009)}]{bengio2009learning}
 Bengio Y (2009) Learning deep architectures for ai. Foundations and
@@ -30,7 +40,7 @@ Bengio Y, Lamblin P, Popovici D, Larochelle H, et~al (2007) Greedy layer-wise
 
 \bibitem[{Bezdek and Pal(1998)}]{bezdek1998some}
 Bezdek JC, Pal NR (1998) Some new indexes of cluster validity. Systems, Man,
-  and Cybernetics, Part B: Cybernetics, IEEE Transactions on 28(3):301--315
+  and Cybernetics, Part B: IEEE Transactions on Cybernetics 28(3):301--315
 
 \bibitem[{Bishop et~al(2006)}]{bishop2006pattern}
 Bishop CM, et~al (2006) Pattern recognition and machine learning, vol~4.
@@ -41,6 +51,20 @@ Bishop CM, et~al (2006) Pattern recognition and machine learning, vol~4.
 Blanco-Velasco M, Weng B, Barner KE (2008) Ecg signal denoising and baseline
   wander correction based on the empirical mode decomposition. Computers in
   biology and medicine 38(1):1--13
+
+\bibitem[{Bottou(2010)}]{leon2010large}
+Bottou L (2010) Large-scale machine learning with stochastic gradient descent.
+  In: Proceedings of COMPSTAT'2010, Springer, pp 177--186
+
+\bibitem[{Carreira-Perpinan and Hinton(2005)}]{carreira2005contrastive}
+Carreira-Perpinan MA, Hinton GE (2005) On contrastive divergence learning. In:
+  Proceedings of the tenth international workshop on artificial intelligence
+  and statistics, Citeseer, pp 33--40
+
+\bibitem[{Charfi and Kraiem(2012)}]{charfi2012comparative}
+Charfi F, Kraiem A (2012) Comparative study of ecg classification performance
+  using decision tree algorithms. International Journal of E-Health and Medical
+  Communications (IJEHMC) 3(4):102--120
 
 \bibitem[{Chazal et~al(2004)Chazal, O'Dwyer, and Reilly}]{chaza}
 Chazal P, O'Dwyer M, Reilly R (2004) Automatic classification of heartbeats
@@ -65,11 +89,15 @@ Collobert R, Weston J (2008) A unified architecture for natural language
 \bibitem[{De~Chazal et~al(2004)De~Chazal, O'Dwyer, and
   Reilly}]{de2004automatic}
 De~Chazal P, O'Dwyer M, Reilly RB (2004) Automatic classification of heartbeats
-  using ecg morphology and heartbeat interval features. Biomedical Engineering,
-  IEEE Transactions on 51(7):1196--1206
+  using ecg morphology and heartbeat interval features. IEEE Transactions on
+  Biomedical Engineering 51(7):1196--1206
 
 \bibitem[{Duda et~al(2012)Duda, Hart, and Stork}]{duda2012pattern}
 Duda RO, Hart PE, Stork DG (2012) Pattern classification. John Wiley \& Sons
+
+\bibitem[{Engin(2004)}]{engin2004ecg}
+Engin M (2004) Ecg beat classification using neuro-fuzzy network. Pattern
+  Recognition Letters 25(15):1715--1722
 
 \bibitem[{Erhan et~al(2009)Erhan, Manzagol, Bengio, Bengio, and
   Vincent}]{erhan}
@@ -78,9 +106,14 @@ Erhan D, Manzagol PA, Bengio Y, Bengio S, Vincent P (2009) The difficulty of
   International Conference on Artificial Intelligence and Statistics, pp
   153--160
 
+\bibitem[{Fischer and Igel(2012)}]{fischer2012introduction}
+Fischer A, Igel C (2012) An introduction to restricted boltzmann machines. In:
+  Progress in Pattern Recognition, Image Analysis, Computer Vision, and
+  Applications, Springer, pp 14--36
+
 \bibitem[{Gacek and Pedrycz(2003)}]{gacek2003genetic}
-Gacek A, Pedrycz W (2003) A genetic segmentation of ecg signals. Biomedical
-  Engineering, IEEE Transactions on 50(10):1203--1208
+Gacek A, Pedrycz W (2003) A genetic segmentation of ecg signals. IEEE
+  Transactions on Biomedical Engineering 50(10):1203--1208
 
 \bibitem[{Goldberger et~al(2000)Goldberger, Amaral, Glass, Hausdorff, Ivanov,
   Mark, Mietus, Moody, Peng, and Stanley}]{PhysioNet}
@@ -89,25 +122,46 @@ Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PC, Mark RG, Mietus
   PhysioNet}: Components of a new research resource for complex physiologic
   signals. Circulation 101(23):e215--e220
 
+\bibitem[{Hinton(2002)}]{hinton2002training}
+Hinton G (2002) Training products of experts by minimizing contrastive
+  divergence. Neural computation 14(8):1771--1800
+
 \bibitem[{Hinton and Salakhutdinov(2006)}]{hinton2006reducing}
 Hinton GE, Salakhutdinov RR (2006) Reducing the dimensionality of data with
   neural networks. Science 313(5786):504--507
 
+\bibitem[{Homaeinezhad et~al(2012)Homaeinezhad, Atyabi, Tavakkoli, Toosi,
+  Ghaffari, and Ebrahimpour}]{homaeinezhad2012ecg}
+Homaeinezhad MR, Atyabi S, Tavakkoli E, Toosi HN, Ghaffari A, Ebrahimpour R
+  (2012) Ecg arrhythmia recognition via a neuro-svm--knn hybrid classifier with
+  virtual qrs image-based geometrical features. Expert Systems with
+  Applications 39(2):2047--2058
+
 \bibitem[{Jiang and Kong(2007)}]{jiang2007block}
 Jiang W, Kong S (2007) Block-based neural networks for personalized ecg signal
-  classification. Neural Networks, IEEE Transactions on 18(6):1750--1761
+  classification. IEEE Transactions on Neural Networks 18(6):1750--1761
+
+\bibitem[{Krasteva et~al(2014)Krasteva, Leber, Jekova, Schmid, and
+  Abacherli}]{krasteva2014classification}
+Krasteva V, Leber R, Jekova I, Schmid R, Abacherli R (2014) Classification of
+  supraventricular and ventricular beats by qrs template matching and decision
+  tree. In: Computing in Cardiology Conference (CinC), 2014, IEEE, pp 349--352
 
 \bibitem[{Lagerholm et~al(2000)Lagerholm, Peterson, Braccini, Edenbrandt, and
   S{\"o}rnmo}]{lagerholm2000clustering}
 Lagerholm M, Peterson C, Braccini G, Edenbrandt L, S{\"o}rnmo L (2000)
   Clustering ecg complexes using hermite functions and self-organizing maps.
-  Biomedical Engineering, IEEE Transactions on 47(7):838--848
+  IEEE Transactions on Biomedical Engineering 47(7):838--848
+
+\bibitem[{Liu and Nocedal(1989)}]{liu1989limited}
+Liu DC, Nocedal J (1989) On the limited memory bfgs method for large scale
+  optimization. Mathematical programming 45(1-3):503--528
 
 \bibitem[{Mar et~al(2011)Mar, Zaunseder, Martinez, Llamedo, and
   Poll}]{mar2011optimization}
 Mar T, Zaunseder S, Martinez JP, Llamedo M, Poll R (2011) Optimization of ecg
-  classification by means of feature selection. Biomedical Engineering, IEEE
-  Transactions on 58(8):2168--2177
+  classification by means of feature selection. IEEE Transactions on Biomedical
+  Engineering 58(8):2168--2177
 
 \bibitem[{Mark et~al(1982)Mark, Schluter, Moody, Devlin, and
   Chernoff}]{mark1982annotated}
@@ -117,9 +171,14 @@ Mark R, Schluter P, Moody G, Devlin P, Chernoff D (1982) An annotated ecg
 
 \bibitem[{Melgani and Bazi(2008)}]{melgan}
 Melgani F, Bazi Y (2008) Classification of electrocardiogram signals with
-  support vector machines and particle swarm optimization. Information
-  Technology in Biomedicine, IEEE Transactions on 12(5):667--677,
+  support vector machines and particle swarm optimization. IEEE Transactions on
+  Information Technology in Biomedicine 12(5):667--677,
   \doi{10.1109/TITB.2008.923147}
+
+\bibitem[{Minami et~al(1999)Minami, Nakajima, and Toyoshima}]{minami1999real}
+Minami Ki, Nakajima H, Toyoshima T (1999) Real-time discrimination of
+  ventricular tachyarrhythmia with fourier-transform neural network. IEEE
+  Transactions on Biomedical Engineering 46(2):179--185
 
 \bibitem[{Moody and Mark(1990)}]{moody1990bih}
 Moody GB, Mark RG (1990) The mit-bih arrhythmia database on cd-rom and software
@@ -137,7 +196,11 @@ Ngiam J, Coates A, Lahiri A, Prochnow B, Le QV, Ng AY (2011) On optimization
 
 \bibitem[{Osowski and Linh(2001)}]{osowski2001ecg}
 Osowski S, Linh TH (2001) Ecg beat recognition using fuzzy hybrid neural
-  network. Biomedical Engineering, IEEE Transactions on 48(11):1265--1271
+  network. IEEE Transactions on Biomedical Engineering 48(11):1265--1271
+
+\bibitem[{Peng et~al(2002)Peng, Lee, and Ingersoll}]{peng2002intro}
+Peng CYJ, Lee KL, Ingersoll GM (2002) An introduction to logistic regression
+  analysis and reporting. The Journal of Educational Research 96(1):3--14
 
 \bibitem[{Rodr{\'\i}guez-Sotelo et~al(2012)Rodr{\'\i}guez-Sotelo,
   Peluffo-Ordonez, Cuesta-Frau, and
@@ -151,6 +214,17 @@ Rodr{\'\i}guez-Sotelo JL, Peluffo-Ordonez D, Cuesta-Frau D,
 Sayadi O, Shamsollahi M (2009) A model-based bayesian framework for ecg beat
   segmentation. Physiological Measurement 30(3):335
 
+\bibitem[{Schmidhuber(2015)}]{jurgen2015review}
+Schmidhuber J (2015) Deep learning in neural networks: An overview. Neural
+  Networks 61:85--117
+
+\bibitem[{Shinwari et~al(2012)Shinwari, Ahmed, Humayun, ul~Haq, Haider, and
+  ul~Anam}]{shinwari2012classification}
+Shinwari MF, Ahmed N, Humayun H, ul~Haq I, Haider S, ul~Anam A (2012)
+  Classification algorithm for feature extraction using linear discriminant
+  analysis and cross-correlation on ecg signals. International Journal of
+  Advanced Science and Technology 48:149--161
+
 \bibitem[{Silipo et~al(1996)Silipo, Bortolan, and
   Marchesi}]{silipo1996supervised}
 Silipo R, Bortolan G, Marchesi C (1996) Supervised and unsupervised learning
@@ -161,6 +235,27 @@ Silipo R, Bortolan G, Marchesi C (1996) Supervised and unsupervised learning
 \bibitem[{Silva et~al(2011)Silva, Philominraj, and del R{\'\i}o}]{silva2011dsp}
 Silva CV, Philominraj A, del R{\'\i}o C (2011) A DSP Practical Application:
   Working on ECG Signal. INTECH Open Access Publisher
+
+\bibitem[{Tadejko and Rakowski(2007)}]{tadejko2007}
+Tadejko P, Rakowski W (2007) Hybrid wavelet-mathematical morphology feature
+  extraction for heartbeat classification. In: EUROCON, 2007. The International
+  Conference on \&\# 34; Computer as a Tool\&\# 34;, IEEE, pp 127--132
+
+\bibitem[{{\"U}beyli(2007)}]{ubeyli2007ecg}
+{\"U}beyli ED (2007) Ecg beats classification using multiclass support vector
+  machines with error correcting output codes. Digital Signal Processing
+  17(3):675--684
+
+\bibitem[{Vafaie et~al(2014)Vafaie, Ataei, and Koofigar}]{vafaie2014heart}
+Vafaie M, Ataei M, Koofigar H (2014) Heart diseases prediction based on ecg
+  signals’ classification using a genetic-fuzzy system and dynamical model of
+  ecg signals. Biomedical Signal Processing and Control 14:291--296
+
+\bibitem[{Vanitha and Suresh(2013)}]{vanitha2013hybrid}
+Vanitha L, Suresh G (2013) Hybrid svm classification technique to detect mental
+  stress in human beings using ecg signals. In: Advanced Computing and
+  Communication Systems (ICACCS), 2013 International Conference on, IEEE, pp
+  1--6
 
 \bibitem[{Vullings et~al(1997)Vullings, Verhaegen, and
   Verbruggen}]{vullings1997ecg}
@@ -175,14 +270,19 @@ Vullings H, Verhaegen M, Verbruggen H (1998) Automated ecg segmentation with
   Proceedings of the 20th Annual International Conference of the IEEE, IEEE, pp
   163--166
 
+\bibitem[{Ye et~al(2012)Ye, Kumar, and Coimbra}]{can2012heartbeat}
+Ye C, Kumar BV, Coimbra MT (2012) Heartbeat classification using morphological
+  and dynamic features of ecg signals. IEEE Transactions on Biomedical
+  Engineering 59(10):2930--2941
+
 \bibitem[{Yeh et~al(2012)Yeh, Chiou, and Lin}]{yeh2012analyzing}
 Yeh YC, Chiou CW, Lin HJ (2012) Analyzing ecg for cardiac arrhythmia using
   cluster analysis. Expert Systems with Applications 39(1):1000--1010
 
 \bibitem[{Zigel et~al(2000)Zigel, Cohen, and Katz}]{zigel2000weighted}
 Zigel Y, Cohen A, Katz A (2000) The weighted diagnostic distortion (wdd)
-  measure for ecg signal compression. Biomedical Engineering, IEEE Transactions
-  on 47(11):1422--1430
+  measure for ecg signal compression. IEEE Transactions on Biomedical
+  Engineering 47(11):1422--1430
 
 \bibitem[{Zou et~al(2012)Zou, Zhu, Yu, and Ng}]{zou2012deep}
 Zou W, Zhu S, Yu K, Ng AY (2012) Deep learning of invariant features via
