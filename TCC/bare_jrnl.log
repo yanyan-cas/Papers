@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.2)  2 NOV 2015 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.2)  2 NOV 2015 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -278,18 +278,18 @@ LaTeX Warning: Label `table6' multiply defined.
 )
 \openout1 = `bare_jrnl.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 373.
-LaTeX Font Info:    ... okay on input line 373.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 373.
-LaTeX Font Info:    ... okay on input line 373.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 373.
-LaTeX Font Info:    ... okay on input line 373.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 373.
-LaTeX Font Info:    ... okay on input line 373.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 373.
-LaTeX Font Info:    ... okay on input line 373.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 373.
-LaTeX Font Info:    ... okay on input line 373.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 -- Lines per column: 58 (exact).
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -307,13 +307,13 @@ LaTeX Font Info:    ... okay on input line 373.
 \everyMPtoPDFconversion=\toks23
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 458.
+(Font)              <9> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 458.
+(Font)              <6> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 458.
+(Font)              <5> on input line 71.
 
-Underfull \hbox (badness 1383) in paragraph at lines 466--468
+Underfull \hbox (badness 1383) in paragraph at lines 79--81
 []\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---big data, elec-tro-car-dio-g-ra-
 phy clas-si-fi-ca-tion,
  []
@@ -323,12 +323,12 @@ phy clas-si-fi-ca-tion,
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 536.
+(Font)              <8> on input line 149.
 
 [2]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 604.
+               Default added (so using `tbp') on input line 217.
 
 Package epstopdf Info: Source file: <eps/Figure1.eps>
 (epstopdf)                    date: 2015-08-06 19:48:04
@@ -338,22 +338,22 @@ Package epstopdf Info: Source file: <eps/Figure1.eps>
 (epstopdf)                    size: 158079 bytes
 (epstopdf)             Command: <repstopdf --outfile=eps/Figure1-eps-converted-
 to.pdf eps/Figure1.eps>
-(epstopdf)             \includegraphics on input line 606.
+(epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
 <eps/Figure1-eps-converted-to.pdf, id=15, 527.9725pt x 361.35pt>
 File: eps/Figure1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use eps/Figure1-eps-converted-to.pdf>
-Package pdftex.def Info: eps/Figure1-eps-converted-to.pdf used on input line 60
-6.
+Package pdftex.def Info: eps/Figure1-eps-converted-to.pdf used on input line 21
+9.
 (pdftex.def)             Requested size: 231.26378pt x 158.2777pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 614.
+(Font)              <7> on input line 227.
 
 Underfull \vbox (badness 1107) has occurred while \output is active []
 
  [3 <./eps/Figure1-eps-converted-to.pdf>]
-Underfull \hbox (badness 1824) in paragraph at lines 660--662
+Underfull \hbox (badness 1824) in paragraph at lines 273--275
  \OT1/ptm/m/it/10 4) Train-ing Stacked Au-toen-coders: [][] \OT1/ptm/m/n/10 Au-
 toen-coders have
  []
@@ -362,13 +362,13 @@ toen-coders have
 Missing character: There is no Î in font cmr10!
 Missing character: There is no ¸ in font cmr10!
 
-Overfull \hbox (8.50308pt too wide) in paragraph at lines 789--805
+Overfull \hbox (8.50308pt too wide) in paragraph at lines 402--418
  [] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 810.
+               Default added (so using `tbp') on input line 423.
 
 Package epstopdf Info: Source file: <eps/Figure2.eps>
 (epstopdf)                    date: 2015-08-06 19:48:04
@@ -378,14 +378,14 @@ Package epstopdf Info: Source file: <eps/Figure2.eps>
 (epstopdf)                    size: 61394 bytes
 (epstopdf)             Command: <repstopdf --outfile=eps/Figure2-eps-converted-
 to.pdf eps/Figure2.eps>
-(epstopdf)             \includegraphics on input line 812.
+(epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
 <eps/Figure2-eps-converted-to.pdf, id=36, 1171.37625pt x 701.62125pt>
 File: eps/Figure2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use eps/Figure2-eps-converted-to.pdf>
-Package pdftex.def Info: eps/Figure2-eps-converted-to.pdf used on input line 81
-2.
+Package pdftex.def Info: eps/Figure2-eps-converted-to.pdf used on input line 42
+5.
 (pdftex.def)             Requested size: 469.75499pt x 281.37152pt.
  [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -393,7 +393,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 852.
+               Default added (so using `tbp') on input line 465.
 
 Package epstopdf Info: Source file: <eps/Figure3.eps>
 (epstopdf)                    date: 2015-08-06 19:48:04
@@ -403,24 +403,24 @@ Package epstopdf Info: Source file: <eps/Figure3.eps>
 (epstopdf)                    size: 16531 bytes
 (epstopdf)             Command: <repstopdf --outfile=eps/Figure3-eps-converted-
 to.pdf eps/Figure3.eps>
-(epstopdf)             \includegraphics on input line 854.
+(epstopdf)             \includegraphics on input line 467.
 Package epstopdf Info: Output file is already uptodate.
 <eps/Figure3-eps-converted-to.pdf, id=40, 491.8375pt x 347.2975pt>
 File: eps/Figure3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use eps/Figure3-eps-converted-to.pdf>
-Package pdftex.def Info: eps/Figure3-eps-converted-to.pdf used on input line 85
-4.
+Package pdftex.def Info: eps/Figure3-eps-converted-to.pdf used on input line 46
+7.
 (pdftex.def)             Requested size: 216.81pt x 153.09222pt.
  [6 <./eps/Figure2-eps-converted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 880.
+               Default added (so using `tbp') on input line 493.
 
 <eps/bias.pdf, id=72, 449.68pt x 338.26375pt>
 File: eps/bias.pdf Graphic file (type pdf)
  <use eps/bias.pdf>
-Package pdftex.def Info: eps/bias.pdf used on input line 882.
+Package pdftex.def Info: eps/bias.pdf used on input line 495.
 (pdftex.def)             Requested size: 231.26378pt x 173.9626pt.
 Package epstopdf Info: Source file: <eps/chart.eps>
 (epstopdf)                    date: 2015-08-06 19:48:04
@@ -430,21 +430,21 @@ Package epstopdf Info: Source file: <eps/chart.eps>
 (epstopdf)                    size: 30350 bytes
 (epstopdf)             Command: <repstopdf --outfile=eps/chart-eps-converted-to
 .pdf eps/chart.eps>
-(epstopdf)             \includegraphics on input line 909.
+(epstopdf)             \includegraphics on input line 522.
 Package epstopdf Info: Output file is already uptodate.
 
 <eps/chart-eps-converted-to.pdf, id=73, 405.515pt x 227.85126pt>
 File: eps/chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use eps/chart-eps-converted-to.pdf>
-Package pdftex.def Info: eps/chart-eps-converted-to.pdf used on input line 909.
+Package pdftex.def Info: eps/chart-eps-converted-to.pdf used on input line 522.
 
 (pdftex.def)             Requested size: 231.26378pt x 129.94609pt.
  [7 <./eps/Figure3-eps-converted-to.pdf> <./eps/bias.pdf> <./eps/chart-eps-conv
 erted-to.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1004.
+               Default added (so using `tbp') on input line 617.
 
 Package epstopdf Info: Source file: <eps/Figure4.eps>
 (epstopdf)                    date: 2015-08-06 19:48:04
@@ -454,14 +454,14 @@ Package epstopdf Info: Source file: <eps/Figure4.eps>
 (epstopdf)                    size: 108896 bytes
 (epstopdf)             Command: <repstopdf --outfile=eps/Figure4-eps-converted-
 to.pdf eps/Figure4.eps>
-(epstopdf)             \includegraphics on input line 1006.
+(epstopdf)             \includegraphics on input line 619.
 Package epstopdf Info: Output file is already uptodate.
 <eps/Figure4-eps-converted-to.pdf, id=109, 561.09625pt x 422.57875pt>
 File: eps/Figure4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use eps/Figure4-eps-converted-to.pdf>
-Package pdftex.def Info: eps/Figure4-eps-converted-to.pdf used on input line 10
-06.
+Package pdftex.def Info: eps/Figure4-eps-converted-to.pdf used on input line 61
+9.
 (pdftex.def)             Requested size: 231.26378pt x 174.16757pt.
  [8 <./eps/Figure4-eps-converted-to.pdf>] (./bare_jrnl.bbl
 Missing character: There is no Ì in font ptmr7t!
@@ -504,7 +504,7 @@ e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_jrnl.pdf (10 pages, 641202 bytes).
+Output written on bare_jrnl.pdf (10 pages, 641175 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams

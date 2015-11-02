@@ -1,0 +1,272 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\usepackage{cite}
+
+
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+   \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+
+\fi
+
+\usepackage[cmex10]{amsmath}
+
+\interdisplaylinepenalty=2500
+\usepackage{array}
+
+\usepackage{threeparttable}
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+% Do not put math or special symbols in the title.
+%\title{Classification of Massive Electrocardiogram Signals with Autoencoder-Based Deep Neural Network}
+\title{Deep Learning-Based Classification of Massive Electrocardiogram Data}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+\author{Yan~Yan,~
+        Xingbin~Qin,~
+        Jianping~Fan,~
+        and~Lei~Wang~% <-this % stops a space
+\thanks{Y. Yan is with the Shenzhen Key Laboratory for Low-cost Healthcare, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. No. 1068, Xueyuan Road, Nanshan District,
+Shenzhen, Guangdong Province, China-mail: (yan.yan@siat.ac.cn).}% <-this % stops a space
+\thanks{X. Qin is with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
+No. 1068, Xueyuan Road, Nanshan District, Shenzhen, Guangdong Province, China.}% <-this % stops a space
+\thanks{J. Fan is with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. No. 1068, Xueyuan Road, Nanshan District, Shenzhen, Guangdong Province, China.}% <-this % stops a space
+\thanks{L. Wang is with the Shenzhen Key Laboratory for Low-cost Healthcare, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
+No. 1068, Xueyuan Road, Nanshan District,
+Shenzhen, Guangdong Province, China.}% <-this % stops a space
+\thanks{Manuscript received September 29, 2014; revised}}
+
+
+% The paper headers
+\markboth{IEEE Transactions on Cloud Computing,~Vol.~, No.~, December~2014}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+%A Big Data approach for the classification of heartbeat in electrocardiography analysis is presented. Based on massive heartbeat samples extracted from ambulatory ECG dataset, a deep neural network structure with a stacked autoencoder pre-training with fine-tuning algorithm is adopted for classification of normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat based on the ANSI/AAMI EC57: 1998/(R)2008 standard. The dataset proposed was mainly collected from the subjects in the division of cardiology of the hospital.The MIT-BIH arrhythmia database and MIT-BIH long term ECG database are regard as the standard reference for classifier. The sparse autoencoder algorithm is adopted for the automatical feature learning process instead of complex features extraction selection. From the massive unlabelled dataset, features learned from the raw sample were acquired by the algorithm's training process. A significant improvement of heartbeat classification from the state-of-the-art is attained for the classification task with the accuracy to $99.34\%$. The result shows that with two or three hidden layers and small number of hidden node can get a better performance in classification. A feedback-based system with initial parameters learned from the deep network is designed for real time classification. The system perform much better in personal ECG classification and consumed less in real time applications.
+
+%A Big Data approach for the classification of heartbeat in electrocardiography analysis is presented. Based on massive heartbeat wave samples extracted from ambulatory ECG dataset, a deep neural network structure with a stacked autoencoder pretraining with fine-tuning algorithm is adopted for classification of normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat based on the ANSI/AAMI EC57: 1998/(R)2008 standard. The MIT-BIH arrhythmia database and MIT-BIH long term ECG database are also involved in the database, with the unlabelled database they were divided into three datasets for unsupervised pretraining, supervised fine-tuning and test. From the massive unlabelled dataset, representations learned from the raw sample were acquired by the training algorithm and structure. A significant improvement from the reported results for heartbeat classification is attained for the classification task with the parameters: accuracy to $99.34\%$, normal heartbeat specificity $99.76\%$, supraventricular ectopic heartbeat sensitivity $82.29\%$, ventricular ectopic heartbeat sensitivity $98.31\%$ and fusion heartbeat sensitivity $87.71\%$. The proposed method might be generalized to other related applications with large amount of unlabelled data from the long-term clinical monitoring and healthcare monitoring. 
+
+
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+big data, electrocardiography classification, sparse autoencoder, deep learning, real-time classification.
+\end{IEEEkeywords}
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+ \ifCLASSOPTIONpeerreview
+ \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+ \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{A}{n} era of big data in healthcare is now under way, decades of progress in digitising medical records accumulate vast amounts of medical data, simultaneously mobile healthcare and wearable sensor technologies offer healthcare data from larger population coverage.
+The noninvasive, inexpensive and well-established technology of electrocardiographic signal in mobile health or personal health has the greatest popularity in heart function analysis.
+Automated electrocardiography classification provides indispensable assist in long-term clinical monitoring, and a large number of approaches have been proposed for the task, easing the diagnosis of arrhythmic changes as well as further inspection, e.g., heart rate variability or heart turbulence analysis \cite{mar}. 
+
+
+Lots of algorithms have been proposed for the classification and detection for electrocardiography signals. 
+The electrocardiography classification or detection task had been divided into two parts: the feature extraction process and classifier. 
+Simple classifier such as linear discriminants \cite{chaza} and kNN \cite{melgan}, more complex classifiers like neural networks \cite{jiang, olmez, lin, osowski}, fuzzy inference engines \cite{osowski, kundu}, hidden Markov model \cite{andreao, coast}, independent component analysis \cite{zhu} and support vector machine  \cite{melgan, kampoura, khandoker} were also adapted by lots of researchers.  
+
+ 
+Beyond the classifier, the performance of a recognition system highly depends on the determination of extracted electrocardiography features. Time domain features, frequency domain features, and statistical measures features for six fundamental waves (PQRSTU) had been used in feature extraction process \cite{chia}. 
+Time domain features like morphological features include shapes, amplitudes, and durations were adapted primarily in \cite{jekova, christove, can}, frequency domain features like wavelet transformation were widely used \cite{inan}, \cite{banerjee} stationary features like higher order statistics also had been developed. 
+Principal component analysis \cite{stam} and Hermite functions \cite{lager} have been used in electrocardiography classification and related analysis technologies as well.
+Almost every single published paper proposes a new set of features to be used, or a new combination of the existing ones \cite{mar}.
+
+
+The results from these algorithms or models were not amenable to expert labelling, as well as for the identification of complex relationships between subjects and clinical conditions \cite{clifford}.
+But for the ambulatory electrocardiography clinical application, as well as the normal application in daily healthcare monitoring for cardiac function or early warning of heart disease, an automated algorithm or model would have significant meaning.
+The application of artificial intelligence methods has become an important trend in electrocardiography for the recognition and classification of different arrhythmia types \cite{clifford}. 
+The data explosion puts forward the new request to the method of data processing and information mining.
+
+
+Over the past decades computational techniques proliferated in the pattern recognition field, simultaneously the applications in electrocardiography recognition, detection and classification for relevant trends, patterns, and outliers. 
+Most of the literatures in the electrocardiography classification task were focused on the supervised learning methods, as in unsupervised learning methods were infrequently used, which needs a lot of effort in labelling data. The MIT-BIH database \cite{physionet} was the most widely used data in the classification and detection algorithm developments, while mass unlabelled electrocardiography data had been ignored due to the supervise learning approaches essential. 
+Unsupervised learning methods become crucial in mining or analysing unlabelled data, as the unlabelled electrocardiography data accumulated. Unsupervised learning-based approaches and the application to electrocardiogram classification in literatures mainly include clustering-based techniques \cite{lager, nishizawa, maier}, self-adaptive neural network-based methods \cite{palreddy, risk} and some hybrid unsupervised learning systems \cite{tadejko}. 
+
+In this paper, we adopt a big data unsupervised learning approach of sparse autoencoder based deep neural network in large unlabelled ambulatory electrocardiography dataset to learn features automatically, with which the cardiac arrhythmia with electrocardiograms classification task was proposed. 
+
+In the following sections, we will first state the experimental setup in Section 2. In Section 3 the experimental methodology we propose the system and algorithm details. Then the experimental results and the discussion are given in Section 4 and Section 5 respectively.
+
+\section{Deep Learning, AE and SAE}
+\subsection{Deep Learning Methods}
+The backpropagation neural network architecture had been widely applied since 1989 by its multidimensional mapping ability: any $L_2$ function from $[0, 1]^n$ to $R^n$ can be implemented to any desired degree of accuracy with a three-layer backpropagation neural network \cite{hecht}. Until 2006, deep architectures have not been discussed much in the machine learning literature, because of poor training and generalisation errors obtained using the standard random initialization of the parameters \cite{bengio2009}. Great successes in speech recognition \cite{hinton2012deep}, image recognition\cite{ciresan2010deep} had been accomplished via this powerful structure due to the proposed proper training algorithms by Hinton\cite{hinton}. Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The network structure could be first layer-wise initialized via unsupervised training and then tuned with supervised learning methods. Deep models can generate more abstract features at higher levels than the lower ones,  better results could be achieved when pre-training each layer with an unsupervised learning algorithm, one layer after the other (the so layer-wised manner), starting with the first layer (that directly takes in input the observed $x$) \cite{bengio2009}.
+
+Lots of deep neural network architectures were proposed since the layer-wised training method was developed by Hinton. Typical structures include deep belief networks (DBNs)\cite{hinton2006fast}, deep Boltzmann machines (DBMs) \cite{salakhutdinov2009deep}, stacked autoencoders (SAEs) \cite{bengio2007greedy}, and stacked denoising AEs \cite{vincent2010stacked}. The autoencoder based deep learning model and stacked autoencoder as the corresponding architecture.
+ 
+\subsection{Autoencoders}
+The first research on the potential benefits of unsupervised learning based pre-training might date back to 1987, in which the first unsupervised autoencoder hierarchies were proposed \cite{ballard1987modular}. The lowest-level autoencoder neural network is a single hidden layer which is trained to map input patterns to themselves. Then the  $x$ $\hat{x}$
+
+
+
+
+
+\section{Electrocardiography Classification Problem}
+
+
+
+
+
+\section{Experiments Settings}
+
+
+
+
+\section{Classification With AE Structures}
+
+
+
+
+
+\section{Experimental Results}
+
+
+
+
+
+\section{Discussion and Conclusions}
+
+
+
+
+
+
+
+
+\section*{Acknowledgment}
+This study was financed partially by the National 863 Program of China (Grant No. 2012AA02A604), the Next generation communication technology Major project of National S\&T (Grant No. 2013ZX03005013), the Key Research Program of the Chinese Academy of Sciences, and the Guangdong Innovation Research Team Funds for Image-Guided Therapy and Low-cost Healthcare. 
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+\bibliographystyle{IEEEtran} % Style BST file
+\bibliography{bare_jrnl}  
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+%\begin{thebibliography}{2}
+
+%\bibitem{tanis}
+%T.~Mar, S.~Zaunseder, J.P.~Martinez, M.~Llamedo and R.~Poll, \emph{Optimization of electrocardiography Classification by Means of Feature Selection}.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+  
+%\bibitem{care}
+%H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+  
+%\end{thebibliography}
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{Jan Doe}
+Biography text here.
+\end{IEEEbiography}
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{John Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiographynophoto}{Jane Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+% that's all folks
+\end{document}
+
+
