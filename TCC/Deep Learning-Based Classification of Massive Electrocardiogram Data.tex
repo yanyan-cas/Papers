@@ -22,6 +22,8 @@
 \interdisplaylinepenalty=2500
 \usepackage{array}
 
+\usepackage{algorithm}\usepackage{algpseudocode}\usepackage{algpascal}
+
 \usepackage{threeparttable}
 \hyphenation{op-tical net-works semi-conduc-tor}
 
@@ -333,13 +335,111 @@ a^{(n + l)} = f(z^{(n + l)})
 \begin{equation}
 z^{(n + l + 1)} = \hat{W}^{(n - l)}a^{(n + l)} + \hat{b}^{(n - l)}
 \end{equation}
+
+Our goal is to minimize the cost function $J_{sparse}(W, b)$(with the sparse penalty term) as the function of $W$ and $b$. To train the network, 
+
 After training the network, the reconstruction layers are removed, then stacked autoencoder is constructed with encoders layer by layer. The learned features which we interested in is contained within $a(n)$, which is the activations of the deepest layer of hidden units. 
 
 
-This vector gives us a representation of the input in terms of higher-order features, which can be used for classification problems by feeding $a(n)$ to a classifier.
+This vector gives us a representation of the input in terms of higher-order features, which can be used for classification problems by feeding $a(n)$ to a classifier. First initialize each parameter $W^{(l)}_{ij}$ and each $b^{(l)}_i$ to a small random value near zero, and then apply an optimization algorithm such as batch gradient descent. Then the iteration of gradient descent updates of $W$ and $b$ were:
+\begin{equation}
+W_{ij}^{(l)}  := W_{ij}^{(l)} - \alpha \frac{\partial}{\partial W_{ij}^{(l)}} J_{sparse}(W,b) 
+\end{equation}
+and
+\begin{equation}
+b_{i}^{(l)}  := b_{i}^{(l)} - \alpha \frac{\partial}{\partial b_{i}^{(l)}} J_{sparse}(W,b)
+\end{equation}
+where $\alpha$ is the learning rate.
 
-\subsection{Fine-Tuning and Classification}
-To utilize the learned feature integrate the networks structure, we need to fine-tune the pre-trained network, which uses softmax as the output-layer activation. Softmax ensures the activation of each output unit sums to 1, so that we can deem the output as a set of conditional probabilities. Fine tuning treats all layers of a stacked autoencoder as one single model, so we can improve all the weight parameters in one iteration.
+Given the training example $(x,y)$(here in autoencoder $(x, \hat{x})$), we first run forward to compute the activations of the network, as the output values were the results of hypothesis $h_{W, b}(x)$ as in equation (9). For each node $i$ in layer $l$, let $\delta_i^{(l)}$ denotes the error term, then the output layer is $\delta^{(n_l)}_i $ means the difference between network's activation and $y$ ($\hat{x}$ in autoencoder) and the hidden layer $\delta^{(l)}_i$ based on the weighted average of the error terms of the nodes that uses $a^{(l)}_i$ as an input.
+
+\alglanguage{pseudocode}\begin{algorithm}\caption{The Backpropagation Algorithm}\begin{algorithmic}[1]
+\State Random initialize the parameters and adopt the feedforward calculation to compute the activations for layers $L_2$, $L_3$ to the output layer $L_{n_l}$.
+\State For the output layer unit $i$,
+\begin{equation}
+\begin{split}
+\delta^{(n_l)}_i = \frac{\partial}{\partial z^{(n_l)}_i}\frac{1}{2} \left\|y - h_{W,b}(x)\right\|^2 \\
+= - (y_i - a^{(n_l)}_i) \cdot f'(z^{(n_l)}_i)
+\end{split}
+\end{equation} 
+\State For the hidden layer $l$, 
+\begin{equation}
+\begin{split}
+\delta^{(l)}_i = \left( \sum_{j=1}^{s_{l+1}} W^{(l)}_{ji} \delta^{(l+1)}_j \right) f'(z^{(l)}_i) \\
++ \beta( - \frac{\rho}{\hat\rho_i} + \frac{1-\rho}{1-\hat\rho_i} ) ) f'(z^{(l)}_i)           
+\end{split}
+\end{equation}\State Compute the partial derivatives:
+\begin{equation}
+\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x, y) = a^{(l)}_j \delta_i^{(l+1)} 
+\end{equation}
+\begin{equation}
+\frac{\partial}{\partial b_{i}^{(l)}} J(W,b; x, y) = \delta_i^{(l+1)}
+\end{equation}
+\State Update the parameters:
+\begin{equation}
+\mathbf W^{(l)} = \mathbf W^{(l)} - \alpha [ (\frac{1}{m} \Delta \mathbf W^{(l)} ) + \lambda \mathbf W^{(l)}] 
+\end{equation}
+\begin{equation}
+\mathbf b^{(l)} = \mathbf b^{(l)} - \alpha [\frac{1}{m} \Delta \mathbf b^{(l)}]
+\end{equation}
+\end{algorithmic}\end{algorithm}
+
+\subsection{Fine-tuning and Classification}
+To utilize the learned feature integrate the networks structure, we need to fine-tune the pre-trained network, which uses softmax as the output-layer activation. 
+
+\subsubsection{Softmax model}The softmax ensures the activation of each output unit sums to 1, so that we can deem the output as a set of conditional probabilities. Softmax regression is a supervised learning algorithm, we use softmax regression as the Fine tuning treats all layers of a stacked autoencoder as one single model, so we can improve all the weight parameters in one iteration. 
+
+In the softmax regression model, the hypothesis function is set as:
+\begin{equation}
+h_{\theta}(x^{(i)}) = 
+\left[
+      \begin{array}{cccccc}
+        p(y^{(i)}=1|x^{(i)};\theta) \\
+        p(y^{(i)}=2|x^{(i)};\theta) \\
+        \vdots \\
+        p(y^{(i)}=k|x^{(i)};\theta)
+      \end{array}
+    \right]
+\end{equation}
+\begin{equation}
+= \frac{1}{\sum_{j=1}^ke^{\theta_j^Tx^{(i)}}}
+\left[
+      \begin{array}{cccccc}
+        e^{\theta_1^Tx^{(i)}}\\
+        e^{\theta_2^Tx^{(i)}}\\
+        \vdots \\
+        e^{\theta_k^Tx^{(i)}}
+      \end{array}
+    \right]
+\end{equation}
+in which output a $k$ dimensional vector denotes $k$ estimated probabilities which stand for $k$ different possible value of the probability. $\theta_1, \theta_2, \ldots, \theta_k \in \Re^{n+1}$ are the parameters of the model. The term $\frac{1}{ \sum_{j=1}^{k}{e^{ \theta_j^T x^{(i)} }} }$  normalizes the distribution which sums to one. The cost function in softmax supervised learning is:
+\begin{equation}
+\begin{split}
+J(\theta) = - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=1}^{k} 1\left\{y^{(i)} = j\right\} \log \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}  \right] \\
+              + \frac{\lambda}{2} \sum_{i=1}^k \sum_{j=0}^n \theta_{ij}^2
+\end{split}
+\end{equation}
+in which $1\{\cdot\}$ is the indicator function.
+Use the iterative optimization algorithm such as gradient descent method. Taking derivatives, the gradient is:
+\begin{equation}
+\nabla_{\theta_j} J(\theta) = - \frac{1}{m} \sum_{i=1}^{m}{ [ x^{(i)} ( 1\{ y^{(i)} = j\}  - p(y^{(i)} = j | x^{(i)}; \theta) ) ]}
+\end{equation}
+in which  $\nabla_{\theta_j} J(\theta)$ is a vector, so that its $l$-th element is $\frac{\partial J(\theta)}{\partial \theta_{jl}}$ the partial derivative of $J(\theta)$ with respect to the $l$-th element of $\theta_j$.
+Perform the update rule $\theta_j := \theta_j - \alpha \nabla_{\theta_j} J(\theta) (for each j=1,\ldots,k)$, we can get the parameters.
+
+\subsubsection{Fine-tuning with softmax regression}The output-layer size is set to be the same as the usual four categories of arrhythmia, and the input layer has the same size as the stacked autoencoder learned features. Since the softmax regression is implemented as a single-layer neural network, it can be merged with the former layers of networks to get a deep classifier. The fine-tuning step would use the whole combined architecture for optimization with the backpropagation algorithm as Algorithm 1 illustrated, which has a small learning rates on the former autoencoder layers due to the large amount of unsupervised learning process.
+
+
+
+\alglanguage{pseudocode}\begin{algorithm}\caption{Stacked Autoencoder with  Softmax Regression}\begin{algorithmic}[1]
+\State \bf{begin}
+\State
+\State \bf{end}
+\end{algorithmic}\end{algorithm}
+
+
+
+
 
 
 
