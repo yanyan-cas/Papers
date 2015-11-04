@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.2)  3 NOV 2015 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.2)  4 NOV 2015 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -260,6 +260,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen136
@@ -275,18 +285,18 @@ Package: threeparttable 2003/06/13  v 3.0
 \openout1 = `"Deep Learning-Based Classification of Massive Electrocardiogram D
 ata.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 -- Lines per column: 58 (exact).
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -303,7 +313,16 @@ LaTeX Font Info:    ... okay on input line 27.
 \makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks23
 )
-Underfull \hbox (badness 1383) in paragraph at lines 79--81
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 1383) in paragraph at lines 81--83
 []\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---big data, elec-tro-car-dio-g-ra-
 phy clas-si-fi-ca-tion,
  []
@@ -312,40 +331,116 @@ phy clas-si-fi-ca-tion,
 
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 143.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 143.
 
-(./Deep Learning-Based Classification of Massive Electrocardiogram Data.bbl
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 143.
+
+Package epstopdf Info: Source file: <eps/figure2.eps>
+(epstopdf)                    date: 2015-08-06 19:48:04
+(epstopdf)                    size: 674715 bytes
+(epstopdf)             Output file: <eps/figure2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-06 19:48:04
+(epstopdf)                    size: 61394 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/figure2-eps-converted-
+to.pdf eps/figure2.eps>
+(epstopdf)             \includegraphics on input line 145.
+Package epstopdf Info: Output file is already uptodate.
+<eps/figure2-eps-converted-to.pdf, id=11, 1171.37625pt x 701.62125pt>
+File: eps/figure2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use eps/figure2-eps-converted-to.pdf>
+Package pdftex.def Info: eps/figure2-eps-converted-to.pdf used on input line 14
+5.
+(pdftex.def)             Requested size: 505.89pt x 303.01877pt.
+ [2]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 203.
+
+<eps/figure2_ecg_beats.png, id=22, 827.09pt x 654.445pt>
+File: eps/figure2_ecg_beats.png Graphic file (type png)
+
+<use eps/figure2_ecg_beats.png>
+Package pdftex.def Info: eps/figure2_ecg_beats.png used on input line 205.
+(pdftex.def)             Requested size: 252.94499pt x 200.13968pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 205--209
+ [][] 
+ []
+
+[3 <./eps/figure2-eps-converted-to.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 215.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 268.
+
+Package epstopdf Info: Source file: <eps/figure3_classifier.eps>
+(epstopdf)                    date: 2015-11-04 13:17:11
+(epstopdf)                    size: 230640 bytes
+(epstopdf)             Output file: <eps/figure3_classifier-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-11-04 13:17:52
+(epstopdf)                    size: 29281 bytes
+(epstopdf)             Command: <repstopdf --outfile=eps/figure3_classifier-eps
+-converted-to.pdf eps/figure3_classifier.eps>
+(epstopdf)             \includegraphics on input line 270.
+Package epstopdf Info: Output file is already uptodate.
+<eps/figure3_classifier-eps-converted-to.pdf, id=52, 614.295pt x 376.40625pt>
+File: eps/figure3_classifier-eps-converted-to.pdf Graphic file (type pdf)
+
+<use eps/figure3_classifier-eps-converted-to.pdf>
+Package pdftex.def Info: eps/figure3_classifier-eps-converted-to.pdf used on in
+put line 270.
+(pdftex.def)             Requested size: 252.94499pt x 154.99379pt.
+
+Overfull \hbox (0.94499pt too wide) in paragraph at lines 270--274
+ [][] 
+ []
+
+[4 <./eps/figure2_ecg_beats.png> <./eps/figure3_classifier-eps-converted-to.pdf
+>] (./Deep Learning-Based Classification of Massive Electrocardiogram Data.bbl
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
 
-[2]) [3]
+[5]) [6] [7
+
+]
 (./Deep Learning-Based Classification of Massive Electrocardiogram Data.aux) ) 
 Here is how much of TeX's memory you used:
- 3109 strings out of 493089
- 48311 string characters out of 6134842
- 121212 words of memory out of 5000000
- 6565 multiletter control sequences out of 15000+600000
- 38473 words of font info for 68 fonts, out of 8000000 for 9000
+ 3473 strings out of 493089
+ 52696 string characters out of 6134842
+ 124753 words of memory out of 5000000
+ 6885 multiletter control sequences out of 15000+600000
+ 49674 words of font info for 103 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 42i,8n,28p,1542b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,17n,28p,1723b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {
 /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
+/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+
 Output written on "Deep Learning-Based Classification of Massive Electrocardiog
-ram Data.pdf" (3 pages, 99676 bytes).
+ram Data.pdf" (7 pages, 518300 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 147 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

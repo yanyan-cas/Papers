@@ -227,4 +227,20 @@ P.~Vincent, H.~Larochelle, I.~Lajoie, Y.~Bengio, and P.-A. Manzagol, ``Stacked
 D.~H. Ballard, ``Modular learning in neural networks.'' in \emph{AAAI}, 1987,
   pp. 279--284.
 
+\bibitem{jap}
+N.~Japkowicz, S.~Jose~Hanson, and M.~A. Gluck, ``Nonlinear autoassociation is
+  not equivalent to pca,'' \emph{Neural Comput.}, vol.~12, no.~3, pp. 531--545,
+  Mar. 2000.
+
+\bibitem{chen2014deep}
+Y.~Chen, Z.~Lin, X.~Zhao, G.~Wang, and Y.~Gu, ``Deep learning-based
+  classification of hyperspectral data,'' \emph{Selected Topics in Applied
+  Earth Observations and Remote Sensing, IEEE Journal of}, vol.~7, no.~6, pp.
+  2094--2107, 2014.
+
+\bibitem{bengio2013representation}
+Y.~Bengio, A.~Courville, and P.~Vincent, ``Representation learning: A review
+  and new perspectives,'' \emph{Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on}, vol.~35, no.~8, pp. 1798--1828, 2013.
+
 \end{thebibliography}
