@@ -243,4 +243,13 @@ Y.~Bengio, A.~Courville, and P.~Vincent, ``Representation learning: A review
   and new perspectives,'' \emph{Pattern Analysis and Machine Intelligence, IEEE
   Transactions on}, vol.~35, no.~8, pp. 1798--1828, 2013.
 
+\bibitem{afonso}
+V.~Afonso, W.~J. Tompkins, T.~Nguyen, and S.~Luo, ``Ecg beat detection using
+  filter banks,'' \emph{Biomedical Engineering, IEEE Transactions on}, vol.~46,
+  no.~2, pp. 192--202, Feb 1999.
+
+\bibitem{sornmo2006electrocardiogram}
+L.~S{\"o}rnmo and P.~Laguna, ``Electrocardiogram (ecg) signal processing,''
+  \emph{Wiley Encyclopedia of Biomedical Engineering}, 2006.
+
 \end{thebibliography}
