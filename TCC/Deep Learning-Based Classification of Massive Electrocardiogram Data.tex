@@ -74,10 +74,9 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-A Big Data approach for the classification of heartbeat in electrocardiography analysis is presented. Based on massive heartbeat samples extracted from ambulatory ECG dataset, a deep neural network structure with a stacked autoencoder pre-training with fine-tuning algorithm is adopted for classification of normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat based on the ANSI/AAMI EC57: 1998/(R)2008 standard. The dataset proposed was mainly collected from the subjects in the division of cardiology of the hospital.The MIT-BIH arrhythmia database and MIT-BIH long term ECG database are regard as the standard reference for classifier. The sparse autoencoder algorithm is adopted for the automatical feature learning process instead of complex features extraction selection. From the massive unlabelled dataset, features learned from the raw sample were acquired by the algorithm's training process. A significant improvement of heartbeat classification from the state-of-the-art is attained for the classification task with the accuracy to $99.34\%$. The result shows that with two or three hidden layers and small number of hidden node can get a better performance in classification. A feedback-based system with initial parameters learned from the deep network is designed for real time classification. The system perform much better in personal ECG classification and consumed less in real time applications.
+A deep learning model based approach for the classification of electrocardiography arrhythmia analysis was presented. Based on massive heartbeat samples extracted from ambulatory ECG dataset, a stacked autoencoder deep neural network structure with pre-training and fine-tuning training method is adopted to classify the normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat labels based on the ANSI/AAMI EC57: 1998/(R)2008 standard. A dataset mainly collected from the subjects in the division of cardiology of the hospital is involved, as well as the MIT-BIH arrhythmia database and MIT-BIH long term ECG database, which are regard as the standard reference for the classifier. The stacked autoencoder algorithm was adopted for feature learning process instead of complex features extraction selection. From the massive unlabeled dataset, features in the ECG samples were acquired. A significant improvement of heartbeat classification from the state-of-the-art is attained for the classification task with the accuracy to $99.34\%$ and ventricular ectopic abnormality sensitivity to 98.31\%. With its self-learning ability, the proposed method has great potential to generalize to other related applications with a large amount of unlabeled data from the long-term clinical monitoring and healthcare monitoring. 
 
-%A Big Data approach for the classification of heartbeat in electrocardiography analysis is presented. Based on massive heartbeat wave samples extracted from ambulatory ECG dataset, a deep neural network structure with a stacked autoencoder pretraining with fine-tuning algorithm is adopted for classification of normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat based on the ANSI/AAMI EC57: 1998/(R)2008 standard. The MIT-BIH arrhythmia database and MIT-BIH long term ECG database are also involved in the database, with the unlabelled database they were divided into three datasets for unsupervised pretraining, supervised fine-tuning and test. From the massive unlabelled dataset, representations learned from the raw sample were acquired by the training algorithm and structure. A significant improvement from the reported results for heartbeat classification is attained for the classification task with the parameters: accuracy to $99.34\%$, normal heartbeat specificity $99.76\%$, supraventricular ectopic heartbeat sensitivity $82.29\%$, ventricular ectopic heartbeat sensitivity $98.31\%$ and fusion heartbeat sensitivity $87.71\%$. The proposed method might be generalized to other related applications with large amount of unlabelled data from the long-term clinical monitoring and healthcare monitoring. 
-
+%A Big Data approach for the classification of heartbeat in electrocardiography analysis is presented. Based on massive heartbeat wave samples extracted from ambulatory ECG dataset, a deep neural network structure with a stacked autoencoder pretraining with fine-tuning algorithm is adopted for classification of normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat based on the ANSI/AAMI EC57: 1998/(R)2008 standard. The MIT-BIH arrhythmia database and MIT-BIH long term ECG database are also involved in the database, with the unlabelled database they were divided into three datasets for unsupervised pretraining, supervised fine-tuning and test. From the massive unlabelled dataset, representations learned from the raw sample were acquired by the training algorithm and structure. A significant improvement from the reported results for heartbeat classification is attained for the classification task with the parameters: accuracy to $99.34\%$, normal heartbeat specificity $99.76\%$, supraventricular ectopic heartbeat sensitivity $82.29\%$, ventricular ectopic heartbeat sensitivity $98.31\%$ and fusion heartbeat sensitivity $87.71\%$. 
 
 \end{abstract}
 
@@ -118,14 +117,13 @@ big data, electrocardiography classification, sparse autoencoder, deep learning,
 The noninvasive, inexpensive and well-established technology of electrocardiographic signal in mobile health or personal health has the greatest popularity in heart function analysis.
 Automated electrocardiography classification provides indispensable assist in long-term clinical monitoring, and a large number of approaches have been proposed for the task, easing the diagnosis of arrhythmic changes as well as further inspection, e.g., heart rate variability or heart turbulence analysis \cite{mar}. 
 
-
-Lots of algorithms have been proposed for the classification and detection for electrocardiography signals. 
+Lots of algorithms had been proposed for the classification and detection of electrocardiography signals. 
 The electrocardiography classification or detection task had been divided into two parts: the feature extraction process and classifier. 
-Simple classifier such as linear discriminants \cite{chaza} and kNN \cite{melgan}, more complex classifiers like neural networks \cite{jiang, olmez, lin, osowski}, fuzzy inference engines \cite{osowski, kundu}, hidden Markov model \cite{andreao, coast}, independent component analysis \cite{zhu} and support vector machine  \cite{melgan, kampoura, khandoker} were also adapted by lots of researchers.  
+Simple classifier such as linear discriminants \cite{chaza} and kNN \cite{melgan}, more complex classifiers like neural networks \cite{jiang, olmez, lin, osowski}, fuzzy inference engines \cite{osowski, kundu}, hidden Markov model \cite{andreao, coast}, independent component analysis \cite{zhu} and support vector machine  \cite{melgan, kampoura, khandoker} were also adopted by lots of researchers.  
 
  
 Beyond the classifier, the performance of a recognition system highly depends on the determination of extracted electrocardiography features. Time domain features, frequency domain features, and statistical measures features for six fundamental waves (PQRSTU) had been used in feature extraction process \cite{chia}. 
-Time domain features like morphological features include shapes, amplitudes, and durations were adapted primarily in \cite{jekova, christove, can}, frequency domain features like wavelet transformation were widely used \cite{inan}, \cite{banerjee} stationary features like higher order statistics also had been developed. 
+Time domain features like morphological features include shapes, amplitudes, and durations were adapted primarily in \cite{jekova, christove, can}, frequency domain features like wavelet transformation were widely used \cite{inan}, \cite{banerjee} stationary features like higher-order statistics also had been developed. 
 Principal component analysis \cite{stam} and Hermite functions \cite{lager} have been used in electrocardiography classification and related analysis technologies as well.
 Almost every single published paper proposes a new set of features to be used, or a new combination of the existing ones \cite{mar}.
 
@@ -140,9 +138,9 @@ Over the past decades computational techniques proliferated in the pattern recog
 Most of the literatures in the electrocardiography classification task were focused on the supervised learning methods, as in unsupervised learning methods were infrequently used, which needs a lot of effort in labelling data. The MIT-BIH database \cite{physionet} was the most widely used data in the classification and detection algorithm developments, while mass unlabelled electrocardiography data had been ignored due to the supervise learning approaches essential. 
 Unsupervised learning methods become crucial in mining or analysing unlabelled data, as the unlabelled electrocardiography data accumulated. Unsupervised learning-based approaches and the application to electrocardiogram classification in literatures mainly include clustering-based techniques \cite{lager, nishizawa, maier}, self-adaptive neural network-based methods \cite{palreddy, risk} and some hybrid unsupervised learning systems \cite{tadejko}. 
 
-In this paper, we adopt a big data unsupervised learning approach of sparse autoencoder based deep neural network in large unlabelled ambulatory electrocardiography dataset to learn features automatically, with which the cardiac arrhythmia with electrocardiograms classification task was proposed. 
+In this paper, we proposed an approach of stacked autoencoder based deep neural network in the unlabelled ambulatory electrocardiography dataset to learn features automatically, with which the cardiac arrhythmia with electrocardiograms classification task was proposed. 
 
-In the following sections, we will first state the experimental setup in Section 2. In Section 3 the experimental methodology we propose the system and algorithm details. Then the experimental results and the discussion are given in Section 4 and Section 5 respectively.
+In the following sections, we will first introduce the method and classification task in Section  \uppercase\expandafter{\romannumeral2}  and Section  \uppercase\expandafter{\romannumeral3} . In Section  \uppercase\expandafter{\romannumeral4}  the classification task are proposed, the experiments results would be illustrated in Section  \uppercase\expandafter{\romannumeral5} . Then the discussion are given in Section  \uppercase\expandafter{\romannumeral6} .
 
 \begin{figure*}[]
 \centering
@@ -158,13 +156,13 @@ In the following sections, we will first state the experimental setup in Section
 \subsection{Deep Learning Methods}
 The backpropagation neural network architecture had been widely applied since 1989 by its multidimensional mapping ability: any $L_2$ function from $[0, 1]^n$ to $\mathbf{R}^n$ can be implemented to any desired degree of accuracy with a three-layer backpropagation neural network \cite{hecht}. Until 2006, deep architectures have not been discussed much in the machine learning literature, because of poor training and generalisation errors obtained using the standard random initialization of the parameters \cite{bengio2009}. Great successes in speech recognition \cite{hinton2012deep}, image recognition\cite{ciresan2010deep} had been accomplished via this powerful structure due to the proposed proper training algorithms by Hinton\cite{hinton}. Deep learning methods attempt to learn feature hierarchies as higher-level features are formed by the composition of lower-level features. The network structure could be first layer-wise initialized via unsupervised training and then tuned with supervised learning methods. Deep models can generate more abstract features at higher levels than the lower ones,  better results could be achieved when pre-training each layer with an unsupervised learning algorithm, one layer after the other (the so layer-wised manner), starting with the first layer (that directly takes in input the observed $\mathbf{x}$) \cite{bengio2009}.
 
-Different kinds of deep neural network architectures were proposed since the layer-wised training method was developed by Hinton. Typical structures include deep belief networks (DBNs)\cite{hinton2006fast}, deep Boltzmann machines (DBMs) \cite{salakhutdinov2009deep}, stacked autoencoders (SAEs) \cite{bengio2007greedy}, and stacked denoising AEs \cite{vincent2010stacked}. The autoencoder based deep learning model and stacked autoencoder as the corresponding architecture.
+Different kinds of deep neural network architectures were proposed since the layer-wised training method developed by Hinton. Typical structures include deep belief networks (DBNs)\cite{hinton2006fast}, deep Boltzmann machines (DBMs) \cite{salakhutdinov2009deep}, stacked autoencoders (SAEs) \cite{bengio2007greedy}, and stacked denoising AEs \cite{vincent2010stacked}. The autoencoder based deep learning model and stacked autoencoder as the corresponding architecture.
  
 \subsection{Autoencoders}
-The first research on the potential benefits of unsupervised learning based pre-training might date back to 1987, in which the first unsupervised autoencoder hierarchies were proposed \cite{ballard1987modular}. The lowest-level autoencoder neural network is a single hidden layer which is trained to map input patterns to themselves. One visible layer of $n$ inputs, one hidden layer of $m$ units and one reconstruction layer of $n$ outputs, as well the activation functions form the one-hidden-layer autoencoder as illustrated in (a) part of Fig. \ref{figure1}.
+The first research on the potential benefits of unsupervised learning based pre-training might date back to 1987, in which the first unsupervised autoencoder hierarchies were proposed \cite{ballard1987modular}. The lowest-level autoencoder neural network is a single hidden layer that is trained to map input patterns to themselves. One visible layer of $n$ inputs, one hidden layer of $m$ units and one reconstruction layer of $n$ outputs, as well the activation functions consist the one-hidden-layer autoencoder as illustrated in (a) part of Fig. \ref{figure1}.
 
 
-In the training process, the input were mapped to the hidden layer and produce the hidden layer output $h\in{\mathbf{R}^m}$ which was called ``encoder". The hidden layer outputs were mapped to the output layer which were the reconstruction of input layer as the right part called ``decoder" (Fig. \ref{figure1}). An autoencoder is trained to encode the input $x\in{\mathbf{R}^n}$ into some representations $h\in{\mathbf{R}^m}$ so that the input can be reconstructed from that representation\cite{bengio2009}, the reconstructed values were denoted as $\hat{x}\in{\mathbf{R}^n}$. Mathematically, these two steps can be formulated as
+In the training process, the input were mapped to the hidden layer and produce the hidden layer output $h\in{\mathbf{R}^m}$ which was called ``encoder". The hidden layer outputs were mapped to the output layer that were the reconstruction of input layer as the right part called ``decoder" (Fig. \ref{figure1}). An autoencoder is trained to encode the input $x\in{\mathbf{R}^n}$ into some representations $h\in{\mathbf{R}^m}$ so that the input can be reconstructed from that representation\cite{bengio2009}, the reconstructed values were denoted as $\hat{x}\in{\mathbf{R}^n}$. Mathematically, these two steps can be formulated as
 
 \begin{equation}
 h = f(W_{1}x+b_{1})
@@ -173,13 +171,13 @@ h = f(W_{1}x+b_{1})
 \begin{equation}
 \hat{x}= f(\hat{W_{1}} + \hat{b_{1}})
 \end{equation}
-where $W_1$ and $\hat{W_1}$ denote the input-to-hidden and the hidden-to-output weights, $b_1$ and $\hat{b_1}$ denote the biases. $f(\cdot)$ denotes the activation function which could be sigmoid function, hyperbolic tangent, and rectified linear function. The autoencoder behaves differently from PCA, which has the ability to capture multi-modal aspects of the input distribution (the representation of the input) \cite{jap} due to the applying of these nonlinear activation functions.
+where $W_1$ and $\hat{W_1}$ denote the input-to-hidden and the hidden-to-output weights, $b_1$ and $\hat{b_1}$ denote the biases. $f(\cdot)$ denotes the activation function that could be a sigmoid function, hyperbolic tangent, and rectified linear function. The autoencoder behaves differently from PCA, which can capture multi-modal aspects of the input distribution (the representation of the input) \cite{jap} due to the applying of these nonlinear activation functions.
 
 Here we use $W$ and $b$ as the general parameters of the weights and biases, we use  $\hat{x}=h_{W,b}$ denote the reconstruction of the input with an autoencoder, the goal of training is to minimize the error between the input $x$ and reconstruction, i.e.,
 \begin{equation}
  \mathop{\argmin}_{W,b}{error(x,\hat{x})}
 \end{equation}
-so the parameters were $W$ and $b$ while the input $x$ is given. the error function can be defined in different ways like root mean square etc. Then the general way for stochastic gradient descent to optimize the parameters were:
+So the parameters were $W$ and $b$ while the input $x$  given. The error function can be defined in different ways like root mean square etc. Then the general way for stochastic gradient descent to optimize the parameters were:
 \begin{equation}
 W := W - \alpha \frac{\partial error(x, \hat{x})}{\partial W}
 \end{equation}
@@ -192,17 +190,40 @@ in which $\alpha $ stands for the learning rate.
 After the training process, the ``decoder" part would be removed while the learning features (output of the hidden layer) with weights and biases would be stored, which can be subsequently used for higher layers to produce deeper features.
 
 \subsection{Stacked autoencoder}
-Stacking the input and hidden layers of AEs together layer by layer constructs an SAE \cite{chen2014deep}, the reconstruction of the input with the stacking method is illustrated in (b) of Fig. \ref{figure1}. Deeper features could be generated from the raw input, then the feature could be adopted in a subsequent classifier. 
+Stacking the input and hidden layers of AEs together layer by layer constructs an SAE \cite{chen2014deep}, the reconstruction of the input with the stacking method is illustrated in (b) of Fig. \ref{figure1}. Deeper features could be generated from the raw input which could be adopted in a subsequent classifier. 
 
 For stacked autoencoder, we first train the first layer autoencoder, subsequently the outputs of the previous layers would be used as the input. Train the parameters of each layer individually while freezing parameters for the remainder of the model. This parameter training method was called greedy layer-wise training \cite{bengio2007greedy}.
 
 \section{Electrocardiography Annotation}
-The heart is comprised of myocardium which rhythmically contract and thus drive the circulation of blood throughout the human body. A wave of electrical current passes through the entire heart, which triggers myocardial contraction\cite{clifford}. Electrical propagation spreads over the whole heart in a coordinated pattern generate changes on the body surface potentials which can be measured and illustrated as an electrocardiogram (ECG, or sometimes EKG). Metabolic abnormalities (a lack of oxygen, or ischemia etc.) and pathological changes of the heart engender variety of ECG, consequently ECG analysis has been a routine part of any complete medical evaluation or healthcare applications. 
+The heart is comprised of the myocardium that rhythmically contract and thus drive the circulation of blood throughout the human body. A wave of electrical current passes through the entire heart, which triggers myocardial contraction\cite{clifford}. Electrical propagation spreads over the whole heart in a coordinated pattern generate changes on the body surface potentials which can be measured and illustrated as an electrocardiogram (ECG, or sometimes EKG). Metabolic abnormalities (a lack of oxygen, or ischemia, etc.) and pathological changes of the heart engender a variety of ECG. Consequently, ECG analysis has been a routine part of any complete medical evaluation or healthcare applications. 
 
-Lots of ECG annotation and diagnosis classification techniques had been proposed in industrial circles and academic communities. As the general steps in a classification problem in a machine learning task, the ECG classification includes data collection, preprocessing, feature extraction, and classification with a classifier. Most of literatures described models which were combined by different classifier with features extracted by different feature extraction algorithms. The ECG classification methods develops at the same pace with the development of classification theories in machine learning and pattern recognition. Due to the particularity in medical data collection and the medical background requirements for data annotation , the developments in ECG classification and detection were not as flourishing as the similar research topics like speech recognition, natural language processing, image recognition etc.
+Lots of ECG annotation and diagnosis classification techniques had been proposed in industrial circles and academic communities. As the general steps in a classification problem in a machine learning task, the ECG classification includes data collection, preprocessing, feature extraction, and classification with a classifier. Most of the literatures described models that were combined by different classifier with features extracted by different feature extraction algorithms. The ECG classification methods develop at the same pace with the development of classification theories in machine learning and pattern recognition. Due to the particularity in medical data collection and the medical background requirements for data annotation, the developments in ECG classification and detection were not as flourishing as the similar research topics like speech recognition, natural language processing, image recognition, etc. The framework of a classification problem that illustrated in Fig. \ref{figureX}.
 
-\subsection{Arrhythmia Categories}
-The MIT-BIH Arrhythmia Database was the first generally available set of standard test material for evaluation of arrhythmia detectors, and it has been used for that purpose as well as for basic research into cardiac dynamics at about 500 sites worldwide since 1980. It played an important role in stimulating manufacturers of arrhythmia analyzers to compete on the basis of objectively measurable performance. The annotations for the ECG categories adopted the ANSI/AAMI EC57: 1998/(R)2008 standard AAMI (2008), which recommended to group the heartbeats into five classes: on-ectopic beats (N as the Fig. \ref{figure2} (a)); supraventricular ectopic beat (S as the Fig. \ref{figure2} (b)); ventricular ectopic beat (V as the Fig. \ref{figure2} (c) and (d)); fusion of a V and a N (F); unknown beat type (Q). These classes or labels are widely used in the ECG classification tasks related literatures. Generally, the normal beat, supraventricular ectopic beat and the ventricular ectopic beat categories were used much more frequently while the unknown beat type were abandoned because of its clinical valueless.  
+\begin{figure*}[]
+\centering
+\includegraphics[width=7 in]{eps/figureX_classification.eps}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+\caption{The technology roadmap of an ECG classification task.}
+\label{figureX}
+\end{figure*}
+
+
+
+\subsection{Data Collection}
+Acquiring and storing ECG data were the base for an analyzing task. Errors might creep into an analysis at any possible stage. Thus, not only the acquisition hardware system but also the transmission and storage should be carefully designed. As for the signal acquiring process, different kinds of sample rates might be involved, for common ECG acquisition device the sample rate would be 128Hz, 250Hz, 340Hz or 500Hz even higher. In murine studies, a sampling rate as high as 2kHz is considered sufficiently. Arbitrary resizing would be an ideal procedure to handle with the different sampling rate from a different data source to build the datasets for analysis, which would be adopted in the experiment to keep data consistency.
+
+\subsection{Data Pre-processing}
+Before the segmentation and feature extraction process, the ECG signals were pre-processed. As in the procedure of collecting ECG signals, in addition to the ECG signals, the baseline wander (caused by Perspiration, respiration and body movements), power line interference and muscle noise were recorded as well, which had been described in lots of literature\cite{blanco2008ecg}. When the filtering methods were proposed and adopted in the preprocessing, the desired information should not be altered. The ECG typically exhibits persistent features like P-QRS- T morphology and average RR interval, and non-stationary features like individual RR and QT intervals, long-term heart rate trends\cite{clifford}. Possible distortions caused by filtering should be quantified in these features.
+The filtered ECG signals then were segmented into individual heartbeat waveforms depends on the detected R peaks in a classification task. The ECG segmentation can be seen as the decoding procedure of an observation sequence regarding beat waveforms\cite{andreao2006ecg}. Dynamic time warping\cite{vullings1998automated}, time warping\cite{vullings1997ecg}, Bayesian framework\cite{sayadi2009model}, hidden Markov models\cite{andreao2006ecg}, weighted diagnostic distortion \cite{zigel2000weighted}, morphology and heartbeat interval based methods\cite{de2004automatic} and genetic methods\cite{gacek2003genetic} had been used in this subtask. The state accuracies were close to 100\%, which would be accurate enough in most online and offline applications.
+
+\subsection{Feature Extraction}
+For supervised learning, the general structure of a learning system includes features and classifiers. For the feature part, time domain features like morphological features include shapes, amplitudes, and durations \cite{jekova, christove, can}, frequency domain features like wavelet transformation\cite{inan}, \cite{banerjee} stationary features like higher order statistics were widely used. With these features, lots of classifier solutions have been proposed for the automated systems to annotate the ECG data \cite{osowski, vullings1998automated, sayadi2009model}. Linear discriminate systems \cite{shinwari2012classification}, decision tree based methods \cite{krasteva2014classification, charfi2012comparative}, multilayer perceptron based methods, fuzzy or neuro-fuzzy systems\cite{erhan2009difficulty,vafaie2014heart }, support vector machines classifiers\cite{ubeyli2007ecg} and as well the hybrid systems\cite{homaeinezhad2012ecg, vanitha2013hybrid} were adopted extensively.
+
+\subsection{ECG Arrhythmia}
+
+After the segmentation for the ECG records, we got plenty of ECG waveform samples with variety categories. Since different physiological disorder may be reflected on the different type of abnormal heartbeat rhythms. For the task of classification, it is quite important to determine the classes would be used. In the early literature, there were no unified class labels for an ECG classification problem. The MIT-BIH Arrhythmia Database was the first available set of standard test material for evaluation of arrhythmia detectors; it played an important role in stimulating manufacturers of arrhythmia analyzers to compete by objectively measurable performance. The annotations in the open database for the ECG categories adopted the ANSI/AAMI EC57: 1998/(R)2008 standard AAMI (2008), which recommended to group the heartbeats into five classes: on-ectopic beats (N as the Fig. \ref{figure2} (a)); supraventricular ectopic beat (S as the Fig. \ref{figure2} (b)); ventricular ectopic beat (V as the Fig. \ref{figure2} (c) and (d)); fusion of a V and a N (F); unknown beat type (Q). These classes or labels have been widely used in the ECG classification tasks related literature. The normal beat, supraventricular ectopic beat and the ventricular ectopic beat categories were used much more frequently while the unknown beat type were abandoned because of its clinical valueless.  
 
 \begin{figure}[]
 \centering
@@ -214,7 +235,6 @@ The MIT-BIH Arrhythmia Database was the first generally available set of standar
 \label{figure2}
 \end{figure}
 
-\subsection{Electrocardiography Classification Tasks}
 
 \begin{table*}[]
 \begin{center}
@@ -257,7 +277,6 @@ The MIT-BIH Arrhythmia Database was the first generally available set of standar
 
 
 
-
 %The related experiments in this paper were carried out in two public databased available on Physionet, and a collected unlabelled ambulatory electrocardiography database (unlabelled means there were no electrocardiography experts involved in the interpretation). 
 
 %As Table I illustrated the detail of the MIT-BIH Arrhythmia Database and MIT-BIH Long-term Database which mapped to the AAMI heartbeat classes.
@@ -265,7 +284,7 @@ The MIT-BIH Arrhythmia Database was the first generally available set of standar
 
 
 \section{Classification With Deep learning Stacked Autoencoder Structures}
-Since the SAE based deep structure was capable to extract representations for the raw inputs, it is simpler and more convenient to extract the features for ECG classification instead of discovery or create features by researchers. Thought it should be mentioned that for clinical reasons some features from the researchers might be great of importance, the features were limited in the morphology aspect, which lacks of the ability to use some importance features in the transform-domain features or statistical representations. Another motivation for the deep features was, in the real use of the long-term ECG monitoring, the variances of the data collection devices and the difference among different objects. For example, different Holter manufactories use different collecting chips, or different analog-to-digital sampling rate, or even different digital signal filter parameters. Another factor is the physiological differences of the objects. According to these factors, using the single morphology or time domain features were insufficient, the probability distribution of a certain class is nonexclusive and has variations over multiple directions in the feature space, which makes it impossible to analyze the waveform point by point in the complicated real situation. More robust and invariant features should be extracted and used in the auto-analysis scenes. It is believed that deep architectures can potentially lead to progressively more abstract features at higher layers of feature, and more abstract features are generally invariant to most local changes of the input\cite{bengio2013representation}.
+Since the SAE based deep structure was capable of extracting representations for the raw inputs, it is simpler and more convenient to extract the features for ECG classification instead of discovery or create features by researchers. Thought it should be mentioned that for clinical reasons some features from the researchers might be great of importance, the features were limited in the morphology aspect, which lacks the ability to use some importance features in the transform-domain features or statistical representations. Another motivation for the deep features was, in the real use of the long-term ECG monitoring, the variances of the data collection devices and the difference in different objects. For example, different Holter manufactories use different collecting chips, or different analog-to-digital sampling rate, or even different digital signal filter parameters. Another factor is the physiological differences of the objects. According to these factors, using the single morphology or time domain features were insufficient, the probability distribution of a certain class is non-exclusive and has variations over multiple directions in the feature space, which makes it impossible to analyze the waveform point by point in the real complicated situation. More robust and invariant features should be extracted and used in the auto-analysis scenes. It is believed that deep architectures can potentially lead to progressively more abstract features at higher layers of the feature, and more abstract features are invariant to most local changes of the input\cite{bengio2013representation}.
 
 To tackle with these problems, with the stacked autoencoder model the deep invariant features of raw ECG samples can be learned layer by layer. Same as the traditional learning systems, after the feature extracting process, a classifier would be constructed behind the neural network to finish the classification task (Fig. \ref{figure3}). 
 
@@ -292,7 +311,7 @@ denotes the average activation of hidden unit $j$ (averaged over the training se
 \hat{\rho}_j = \rho
 \end{equation}
 where $\rho$ is a sparsity parameter, typically a small value close to zero (such as $\rho = 0.05$), which means the average activation of each hidden neuron $j$ to be close to zero (0.05 for instance). 
-To satisfy the constraint of sparsity, an extra penalty term to the optimisation objective that penalised $\hat{\rho}_j $ deviating significantly from $\rho$. The Kullback-Leibler (KL) divergence:
+To satisfy the constraint of sparsity, an extra penalty term to the optimization objective that penalized $\hat{\rho}_j $ deviating significantly from $\rho$. The Kullback-Leibler (KL) divergence:
 
 \begin{equation}
  \sum_{j=1}^{s_2}KL(\rho||\hat{\rho}) =  \sum_{j=1}^{s_2}\rho \text{log}{\frac{\rho}{\hat{\rho}_j}}+(1-\rho)\text{log}\frac{1-\rho}{1-\hat{{\rho}_j}}
@@ -307,7 +326,7 @@ J(W,b) = [\frac{1}{m}\sum_{i=1}^m(\frac{1}{2}{\|{h_{W,b}(x^{(i)})} - y^{(i)}\|}^
 + \frac{\lambda}{2}\sum_{l=1}^{n_l-1} \sum_{i=1}^{s_l} \sum_{j=1}^{s_l+1}{W_{ji}^{(l)}}^2
 \end{split}
 \end{equation}
-in the first part of which is an average sum-of-square error term: $x$ is the input as the training examples; $y$ denotes the output values (in the autoencoder case, $y$ was set as $y=x$); $(x^{(i)}, y^{(i)})$ denotes the $i$-th training example; $W^{(l)}_{(ij)}$ denotes the weights of the connections between unit $j$ in layer $l$, and unit $i$ in layer $l+1$; $b_i^{(l)}$ denotes the bias term associated with unit $i$ in layer $l+1$. For the regularization term which tends to decrease the magnitude of the weights and helps prevent of overfitting: $\lambda$ was adopted as the weight decay parameter while $n_l$ stands for number of layers, $s_l$ denotes number of units in layer $l$.
+in the first part of which is an average sum-of-square error term: $x$ is the input as the training examples; $y$ denotes the output values (in the autoencoder case, $y$ was set as $y=x$); $(x^{(i)}, y^{(i)})$ denotes the $i$-th training example; $W^{(l)}_{(ij)}$ denotes the weights of the connections between unit $j$ in layer $l$, and unit $i$ in layer $l+1$; $b_i^{(l)}$ denotes the bias term associated with unit $i$ in layer $l+1$. For the regularization term that tends to decrease the magnitude of the weights and helps prevent of overfitting: $\lambda$ was adopted as the weight decay parameter while $n_l$ stands for the number of layers, $s_l$ denotes the number of units in layer $l$.
 Add the sparsity parameters, in the autoencoder neural network training, the cost function of $J_{sparse}(W,b)$ was defined as:
 \begin{equation}
 J_{sparse}(W,b) = J(W,b) + \beta \sum_{j=1}^{s_2}KL(\rho||\hat{\rho_j})
@@ -340,10 +359,10 @@ z^{(n + l + 1)} = \hat{W}^{(n - l)}a^{(n + l)} + \hat{b}^{(n - l)}
 
 Our goal is to minimize the cost function $J_{sparse}(W, b)$(with the sparse penalty term) as the function of $W$ and $b$. To train the network, 
 
-After training the network, the reconstruction layers are removed, then stacked autoencoder is constructed with encoders layer by layer. The learned features which we interested in is contained within $a(n)$, which is the activations of the deepest layer of hidden units. 
+After training the network, the reconstruction layers are removed, then stacked autoencoder is constructed with encoders layer by layer. The learned features which we interested in are contained within $a(n)$, which is the activations of the deepest layer of hidden units. 
 
 
-This vector gives us a representation of the input in terms of higher-order features, which can be used for classification problems by feeding $a(n)$ to a classifier. First initialize each parameter $W^{(l)}_{ij}$ and each $b^{(l)}_i$ to a small random value near zero, and then apply an optimization algorithm such as batch gradient descent. Then the iteration of gradient descent updates of $W$ and $b$ were:
+The vector gives a representation of the input that can be used for classification problems by feeding $a(n)$ to a classifier. First initialize the parameters of $W^{(l)}_{ij}$ and each $b^{(l)}_i$ to random values near zero, and then apply an optimization algorithm such as mini-batch gradient descent. Then the iteration of gradient descent updates of $W$ and $b$ were:
 \begin{equation}
 W_{ij}^{(l)}  := W_{ij}^{(l)} - \alpha \frac{\partial}{\partial W_{ij}^{(l)}} J_{sparse}(W,b) 
 \end{equation}
@@ -394,7 +413,7 @@ Given the training example $(x,y)$(here in autoencoder $(x, \hat{x})$), we first
 \subsection{Fine-tuning and Classification}
 To utilize the learned feature integrate the networks structure, we need to fine-tune the pre-trained network, which uses softmax as the output-layer activation. 
 
-\subsubsection{Softmax model}The softmax ensures the activation of each output unit sums to 1, so that we can deem the output as a set of conditional probabilities. Softmax regression is a supervised learning algorithm, we use softmax regression as the Fine tuning treats all layers of a stacked autoencoder as one single model, so we can improve all the weight parameters in one iteration. 
+\subsubsection{Softmax model}The Softmax ensures the activation of each output unit sums to 1 as the outputs could be considered as a set of conditional probabilities. Softmax Regression is a supervised learning algorithm. We use Softmax regression as the fine tuning treats all layers of a stacked autoencoder as one single model, which we can improve all the weight parameters in one iteration. 
 
 In the softmax regression model, the hypothesis function is set as:
 \begin{equation}
@@ -432,11 +451,10 @@ Use the iterative optimization algorithm such as gradient descent method. Taking
 \nabla_{\theta_j} J(\theta) = - \frac{1}{m} \sum_{i=1}^{m}{ [ x^{(i)} ( 1\{ y^{(i)} = j\}  - p(y^{(i)} = j | x^{(i)}; \theta) ) ]}
 \end{equation}
 in which  $\nabla_{\theta_j} J(\theta)$ is a vector, so that its $l$-th element is $\frac{\partial J(\theta)}{\partial \theta_{jl}}$ the partial derivative of $J(\theta)$ with respect to the $l$-th element of $\theta_j$.
-Perform the update rule $\theta_j := \theta_j - \alpha \nabla_{\theta_j} J(\theta) (for each j=1,\ldots,k)$, we can get the parameters.
+Perform the update rule $\theta_j := \theta_j - \alpha \nabla_{\theta_j} J(\theta)$ (for each $j=1,\ldots,k$), we can get the parameters.
 
 \subsubsection{Fine-tuning with softmax regression}
-The output-layer size is set to be the same as the usual four categories of arrhythmia, and the input layer has the same size as the stacked autoencoder learned features. Since the softmax regression is implemented as a single-layer neural network, it can be merged with the former layers of networks to get a deep classifier. The fine-tuning step would use the whole combined architecture for optimization with the backpropagation algorithm as Algorithm 1 illustrated, which has a small learning rates on the former autoencoder layers due to the large amount of unsupervised learning process.
-
+The output layer size is set to be the same as the usual four categories of arrhythmia, and the input layer has the same size as the stacked autoencoder learned features. Since the Softmax regression is implemented as a single-layer neural network, it can be merged with the former layers of networks to get a deep classifier. The fine-tuning step would use the whole combined architecture for optimization with the backpropagation algorithm as Algorithm 1 illustrated, which has a small learning rate on the former autoencoder layers due to the unsupervised learning process.
 
 
 \alglanguage{pseudocode}
@@ -489,7 +507,7 @@ The output-layer size is set to be the same as the usual four categories of arrh
 
 \section{Experimental Results}
 
-In this study, method adopted is quite different from other ECG classification methods, which extract some features from the segmented ECG samples. This deep network based framework use all the sample points in the ECG samples and let the autoencoder learn the feature by itself.  Traditional systems adopted includes the feature extraction part to extract features by artificial design.
+In this study, the method adopted is quite different from other ECG classification methods, which extract some features from the segmented ECG samples. This deep network based framework use all the sample points in the ECG samples and let the autoencoder learn the feature by itself.  Traditional systems adopted includes the feature extraction part to extract features by artificial design.
 
 \subsection{Data Source}
 Data from the ambulatory electrocardiography database were used in this study, which includes recordings of 100 subjects with arrhythmia along with normal sinus rhythm. The database contains 100 recordings, each containing a 3- lead 24-hour long electrocardiography which were bandpass filtered at 0.1-100Hz and sampled at 128Hz. In this study, only the lead I data were adapted after preprocessing in the classification task. The reference average heart beats for each sample has 97,855 beats for the 24-hour long recording, and the reference arrhythmia average is 1,810 beats which were estimated by a commercial software (this statistics aim to indicate the existence for arrhythmia samples, which should not be consider as a experiment preset).
@@ -518,7 +536,7 @@ The MIT-BIT Long-term Database is also used in this study for training and verif
 
 
 \subsection{Data Preprocessing \& Sample Segementation}
-Similar to the routine of electrocardiography classification task, the workflow consists of the stages of prepossessing, processing  and the classifying. The prepossessing stage related technologies are not the focus of this study, so the classical methods for prepossessing were adapted and just a brief introduction of the details would be mentioned. 
+Similar to the routine of electrocardiography classification task, the workflow consists of the stages of prepossessing, processing  and the classifying. The prepossessing stage related technologies are not the focus of this study, so the classical methods for prepossessing were adapted, and just a brief introduction of the details would be mentioned. 
 
 In the preprocessing stage, filtering algorithms were adapted to remove the artefact signals from the ECG signal. The signals include baseline wander, power line interference, and high-frequency noise. For the unlabelled database of ambulatory ECG and the MITBIH LT database, the Lead I data were extracted and a resample from 128Hz to 360Hz procedure was adopted for data consistency.
 
@@ -549,12 +567,12 @@ In the heartbeat segmentation process, the segmentation program of Laguna \cite{
 \end{center}
 \end{table}
 
-As the algorithm of the deep structure training illustrated, both unsupervised learning and supervised learning are involved in the structure training. The pretraining mainly used the unlabelled data to train the autoencoder parts, which only need to set the outputs equal to the inputs. Training data adopted in the unsupervised learning step include the whole samples from the  ambulatory electrocardiography database and parts of the MIT-BHI database samples. In the supervised learning step the MIT-BHI database samples with labels were adopted.
-
+As the algorithm of the deep structure training illustrated, both unsupervised learning and supervised learning are involved in the training process. The pre-training mainly used the unlabelled data to train the autoencoder parts, which only need to set the outputs equal to the inputs. Training data adopted in the unsupervised learning step include the whole samples from the ambulatory electrocardiography database and parts of the MIT-BHI database samples. In the supervised learning step, the MIT-BHI database samples with labels were adopted.
 
 \subsection{Autoencoder Behaviour and Analysis}
 \subsubsection{Reconstruction and the Learned Features}
-Single layer AEs are basic building blocks of our proposed models, so we investigate the behaviour of one-layer autoencoder. We use a single-layer AE with 100 hidden units. It is shown that the AE do learn a reconstruction of the training sample. We can see that the learned hidden activity retains enough information from the input as part (c) in Fig. \ref{figure1}. Since in the classifier layer, the learned features are 
+Single layer AEs are basic building blocks in the model, so we investigate the behavior of one-layer autoencoder. We use a single-layer AE with 100 hidden units. It is shown that the AE do learn a reconstruction of the training sample. We can see that the learned hidden activity retains enough information from the input as part (c) in Fig. \ref{figure1}. Since in the classifier layer, the learned features are 
+
 
 
 
@@ -574,7 +592,8 @@ Single layer AEs are basic building blocks of our proposed models, so we investi
 
 
 \subsubsection{The Classification Test Results}
-Test and Classifier Performance Assessment: After the pretraining and fine-tuning process, the deep network parameters were acquired. Then we use the parameters and the test dataset C to predict the class of samples. It is necessary to mention that in A and B, the labelled data used in pretraining and fine-tuning were divided randomly, which satisfy the requirement of Holdout cross-validation scheme so that the test results were meaningful for the classification task performance improvement.The following statistical parameters of test performance were used in the study:
+Test and Classifier Performance Assessment: After the pretraining and fine-tuning process, the deep network parameters were acquired. Then we use the parameters and the test dataset C to predict the class of samples. It is necessary to mention that in A and B, the labeled data used in pre-training and fine-tuning were divided randomly, which satisfy the requirement of Holdout cross-validation scheme so that the test results were meaningful for the classification task performance improvement.
+The following statistical parameters of test performance were used in the study:
 \begin{enumerate}
 \item Specificity: number of correctly classified normal beats over total number of normal beats.
 \item Sensitivity: number of correctly classified abnormal beats over total number of the given abnormal beats.
@@ -610,7 +629,7 @@ We adopt a 4-hidden-layer autoencoder deep model for the feature learning for th
 
 
 \subsection{Comparisons with Other Work}
-In this study, we proposed a deep learning model based approach for the heartbeat arrhythmia classification, the arrhythmia classification problem had been discussed in lots of literatures as the reference listed. Different kinds of performance assessment criteria had been adopted. In the comparison part, we adopt several ordinary indicators for the performance assessment, which brought in the above sections. The accuracies, N-class specificities (N-spe), S-class sensitivities (S-sen), V-class sensitivities (V-sen) and the F-class sensitivities(F-sen) in Table \ref{table5} are presented for the comparison. The percentages are calculated from the literatures' test results, in which some of the classes are ignored like \cite{melgan}, we use a $*$ symbol to represent the result are not available. 
+In this study, we proposed a deep learning model based approach for the heartbeat arrhythmia classification, the arrhythmia classification problem had been discussed in lots of literature as the reference listed. Different kinds of performance assessment criteria had been adopted. In the comparison part, we adopt several ordinary indicators for the performance assessment, which brought in the above sections. The accuracies, N-class specificities (N-spe), S-class sensitivities (S-sen), V-class sensitivities (V-sen) and the F-class sensitivities(F-sen) in Table \ref{table5} are presented for the comparison. The percentages are calculated from the literature' test results, in which some of the classes are ignored like \cite{melgan}, we use a $*$ symbol to represent the result are not available. 
 In Table \ref{table5}, we use the highest value (2 to 4 hidden layers based structures) for the verification which illustrated in ``proposed" line.
 
 \begin{table}[!htbp]
@@ -638,11 +657,12 @@ Approaches            &  Accuracy & N-spe & S-sen & V-sen & F-sen \\
 \end{center}
 \end{table}
 
-Through the comparisons in Table \ref{table5}, we can see that the proposed method offers better accuracy of classification problem. Since accuracy in lots of the literatures are good enough, the verification parameter depends on mainly on the normal class detection, but on contrary with these methods, this approach provided better performance in other kind of arrhythmia waveforms classes. Especially in the ventricular ectopic beat sensitivity, a quite large improvement had been made by the proposed method.
-
+Through the comparisons in Table \ref{table5}, we can see that the proposed method offers better accuracy of the classification problem. Since accuracies in lots of the literature were good enough, the verification parameter depends on mainly on the normal class detection, but on the contrary with these methods, this approach provided better performance than other kinds of arrhythmia waveforms classes. Especially in the ventricular ectopic beat sensitivity, a quite large improvement had been made by the proposed method.
 
 \section{Discussion and Conclusions}
-Since the deep neural network structure and deep learning algorithms had been widely used in modern computing science especially in Big Data processes, this study proposed one possibility to adopt this method in the health informatics Big Data applications. In the above content, a stacked autoencoder based algorithm and deep neural network structure were proposed for the arrhythmia classification task. The MIT-BIH Arrhythmia Database, MIT Long-Term Database and an unlabelled ambulatory ECG dataset were used in this study to achieve the arrhythmia classification according to the AAMI standard. We test 46,831 samples randomly chosen from MIT-BIH AR(16,831) and MIT-BIH LT(30,000) and the highest classification accuracy is 99.33\%, for normal heartbeat the specificity attains 99.76\%, for supraventricular ectopic heartbeat the sensitivity reach 82.29\%, for ventricular ectopic heartbeat the sensitivity achieve 98.31\% and 87.71\% for fusion heartbeat.More than the achieved better performance for classification, we proposed a new possibility to make use of the large amount of unlabelled ECG data from the long-term clinical monitoring and healthcare monitoring. A real time second optimization prototype structure was presented. The healthcare data of ECG analysis based on Big Data acquired from wear- able devices could be one important occasion for the proposed method. Also in the traditional remote ECG diagnosis and hotter analysis applications, the proposed algorithm would be a significant improvement.
+The deep neural network structure and deep learning algorithms had been widely used in modern computing science especially in Big Data processes, this study proposed one possibility to adopt this method in the health informatics Big Data applications. In this paper, a stacked autoencoder based deep model was proposed for the electrocardiography arrhythmia classification task. It is shown that the features extracted by autoencoder structure are useful in arrhythmia analysis, even increase the accuracy and some abnormalities specification compare with other features like the morphology features or frequency features.
+
+For ECG data arrhythmia classification, the proposed SAE-SR method has been proven to provide statistically better performance than several state-of-art according to the AAMI standard generally. The classification accuracy is 99.34\%, for normal heartbeat the specificity attains 99.76\%, for supraventricular ectopic heartbeat the sensitivity reach 82.29\%, for ventricular ectopic heartbeat the sensitivity achieve 98.31\% and 87.71\% for fusion heartbeat. Especially in the abnormality type of ventricular ectopic heartbeat, the performance is quite a large improvement. Since the SAE model learned features are based on the unlabelled datasets with low percentage for the abnormalities due to the physiological property, the performance could be improved with more training data. Even though the disadvantage of the SAE-SR method is the training time, but the potential of better results for classification and the testing time efficiency are superior to other methods. 
 
 
 \section*{Acknowledgment}
@@ -700,21 +720,29 @@ This study was financed partially by the National 863 Program of China (Grant No
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{Jan Doe}
+\begin{IEEEbiography}{Yan Yan}
+received the B.eng. degree in the Harbin Institute of Technology, Wei Hai, and the master of engineering in the Harbin Institute of Technology in 2010 and 2012, respectively. He was a research assistance in the Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences from 2012 to 2014. Since 2014 he start pursuing his doctor's degree of computer science. His current research interests include digital signal processing, machine learning and biomedical engineering.
+\end{IEEEbiography} 
+
+\begin{IEEEbiography}{Xingbin Qin}
 Biography text here.
 \end{IEEEbiography}
-% if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
+
+\begin{IEEEbiography}{Jianping Fan}
 Biography text here.
-\end{IEEEbiographynophoto}
+\end{IEEEbiography}
+\begin{IEEEbiography}{Lei Wang}
+received the B.Eng. degree in information and control engineering, and the Ph.D. degree in biomedical engineering from Xi’an Jiaotong University, Xi’an, China, in 1995 and 2000, respectively. He was with the University of Glasgow, Glasgow, U.K., and Imperial College London, London, U.K., from 2000 to 2008. He is currently a Full Professor with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. He has published over 200 scientific papers, authored four book chapters, and holds 60 patents. His current research interests include body sensor network, digital signal processing, and biomedical engineering
+\end{IEEEbiography}
+
 
 % insert where needed to balance the two columns on the last page with
 % biographies
 %\newpage
 
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+%\begin{IEEEbiographynophoto}{Jane Doe}
+%Biography text here.
+%\end{IEEEbiographynophoto}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate

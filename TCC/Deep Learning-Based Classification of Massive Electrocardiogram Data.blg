@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Deep Learning-Based Classification of Massive Electrocardiogram Data.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bare_jrnl.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 59 entries,
+            4039 wiz_defined-function locations,
+            1158 strings with 18539 characters,
+and the built_in function-call counts, 55175 in all, are:
+= -- 4568
+> -- 1338
+< -- 603
++ -- 774
+- -- 207
+* -- 2725
+:= -- 7907
+add.period$ -- 122
+call.type$ -- 59
+change.case$ -- 58
+chr.to.int$ -- 1374
+cite$ -- 59
+duplicate$ -- 3797
+empty$ -- 4071
+format.name$ -- 261
+if$ -- 12891
+int.to.chr$ -- 0
+int.to.str$ -- 59
+missing$ -- 614
+newline$ -- 200
+num.names$ -- 59
+pop$ -- 1257
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 4276
+stack$ -- 0
+substring$ -- 3255
+swap$ -- 3480
+text.length$ -- 145
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 59
+warning$ -- 0
+while$ -- 250
+width$ -- 61
+write$ -- 638

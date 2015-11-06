@@ -238,6 +238,95 @@ Y.~Chen, Z.~Lin, X.~Zhao, G.~Wang, and Y.~Gu, ``Deep learning-based
   Earth Observations and Remote Sensing, IEEE Journal of}, vol.~7, no.~6, pp.
   2094--2107, 2014.
 
+\bibitem{blanco2008ecg}
+M.~Blanco-Velasco, B.~Weng, and K.~E. Barner, ``Ecg signal denoising and
+  baseline wander correction based on the empirical mode decomposition,''
+  \emph{Computers in biology and medicine}, vol.~38, no.~1, pp. 1--13, 2008.
+
+\bibitem{andreao2006ecg}
+R.~V. Andre{\~a}o, B.~Dorizzi, and J.~Boudy, ``Ecg signal analysis through
+  hidden markov models,'' \emph{Biomedical Engineering, IEEE Transactions on},
+  vol.~53, no.~8, pp. 1541--1549, 2006.
+
+\bibitem{vullings1998automated}
+H.~Vullings, M.~Verhaegen, and H.~Verbruggen, ``Automated ecg segmentation with
+  dynamic time warping,'' in \emph{Engineering in Medicine and Biology Society,
+  1998. Proceedings of the 20th Annual International Conference of the
+  IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 1998, pp. 163--166.
+
+\bibitem{vullings1997ecg}
+H.~Vullings, M.~Verhaegen, and H.~B. Verbruggen, ``Ecg segmentation using
+  time-warping,'' in \emph{Advances in Intelligent Data Analysis Reasoning
+  about Data}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 1997, pp.
+  275--285.
+
+\bibitem{sayadi2009model}
+O.~Sayadi and M.~Shamsollahi, ``A model-based bayesian framework for ecg beat
+  segmentation,'' \emph{Physiological Measurement}, vol.~30, no.~3, p. 335,
+  2009.
+
+\bibitem{zigel2000weighted}
+Y.~Zigel, A.~Cohen, and A.~Katz, ``The weighted diagnostic distortion (wdd)
+  measure for ecg signal compression,'' \emph{Biomedical Engineering, IEEE
+  Transactions on}, vol.~47, no.~11, pp. 1422--1430, 2000.
+
+\bibitem{de2004automatic}
+P.~De~Chazal, M.~O. Dwyer, and R.~B. Reilly, ``Automatic classification of
+  heartbeats using ecg morphology and heartbeat interval features,''
+  \emph{Biomedical Engineering, IEEE Transactions on}, vol.~51, no.~7, pp.
+  1196--1206, 2004.
+
+\bibitem{gacek2003genetic}
+A.~Gacek and W.~Pedrycz, ``A genetic segmentation of ecg signals,''
+  \emph{Biomedical Engineering, IEEE Transactions on}, vol.~50, no.~10, pp.
+  1203--1208, 2003.
+
+\bibitem{shinwari2012classification}
+M.~F. Shinwari, N.~Ahmed, H.~Humayun, I.~ul~Haq, S.~Haider, and A.~ul~Anam,
+  ``Classification algorithm for feature extraction using linear discriminant
+  analysis and cross-correlation on ecg signals,'' \emph{International Journal
+  of Advanced Science and Technology}, vol.~48, pp. 149--161, 2012.
+
+\bibitem{krasteva2014classification}
+V.~Krasteva, R.~Leber, I.~Jekova, R.~Schmid, and R.~Abacherli, ``Classification
+  of supraventricular and ventricular beats by qrs template matching and
+  decision tree,'' in \emph{Computing in Cardiology Conference (CinC),
+  2014}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2014, pp. 349--352.
+
+\bibitem{charfi2012comparative}
+F.~Charfi and A.~Kraiem, ``Comparative study of ecg classification performance
+  using decision tree algorithms,'' \emph{International Journal of E-Health and
+  Medical Communications (IJEHMC)}, vol.~3, no.~4, pp. 102--120, 2012.
+
+\bibitem{erhan2009difficulty}
+D.~Erhan, P.-A. Manzagol, Y.~Bengio, S.~Bengio, and P.~Vincent, ``The
+  difficulty of training deep architectures and the effect of unsupervised
+  pre-training,'' in \emph{International Conference on artificial intelligence
+  and statistics}, 2009, pp. 153--160.
+
+\bibitem{vafaie2014heart}
+M.~Vafaie, M.~Ataei, and H.~Koofigar, ``Heart diseases prediction based on ecg
+  signals’ classification using a genetic-fuzzy system and dynamical model of
+  ecg signals,'' \emph{Biomedical Signal Processing and Control}, vol.~14, pp.
+  291--296, 2014.
+
+\bibitem{ubeyli2007ecg}
+E.~D. {\"U}beyli, ``Ecg beats classification using multiclass support vector
+  machines with error correcting output codes,'' \emph{Digital Signal
+  Processing}, vol.~17, no.~3, pp. 675--684, 2007.
+
+\bibitem{homaeinezhad2012ecg}
+M.~R. Homaeinezhad, S.~Atyabi, E.~Tavakkoli, H.~N. Toosi, A.~Ghaffari, and
+  R.~Ebrahimpour, ``Ecg arrhythmia recognition via a neuro-svm--knn hybrid
+  classifier with virtual qrs image-based geometrical features,'' \emph{Expert
+  Systems with Applications}, vol.~39, no.~2, pp. 2047--2058, 2012.
+
+\bibitem{vanitha2013hybrid}
+L.~Vanitha and G.~Suresh, ``Hybrid svm classification technique to detect
+  mental stress in human beings using ecg signals,'' in \emph{Advanced
+  Computing and Communication Systems (ICACCS), 2013 International Conference
+  on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 1--6.
+
 \bibitem{bengio2013representation}
 Y.~Bengio, A.~Courville, and P.~Vincent, ``Representation learning: A review
   and new perspectives,'' \emph{Pattern Analysis and Machine Intelligence, IEEE

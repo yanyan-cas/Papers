@@ -41,62 +41,86 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Autoencoders}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Stacked autoencoder}{2}}
 \citation{clifford}
+\citation{blanco2008ecg}
+\citation{clifford}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The autoencoder and the staked autoencoder. (a) the one-layer autoencoder structure with the encoder and decoder for reconstruction of the raw input; (b) the multi-layer stacked autoencoder for input reconstruction; (c) an illustration of the input sample with the reconstruction.}}{3}}
 \newlabel{figure1}{{1}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Electrocardiography Annotation}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Arrhythmia Categories}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Data Collection}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Data Pre-processing}{3}}
+\citation{andreao2006ecg}
+\citation{vullings1998automated}
+\citation{vullings1997ecg}
+\citation{sayadi2009model}
+\citation{andreao2006ecg}
+\citation{zigel2000weighted}
+\citation{de2004automatic}
+\citation{gacek2003genetic}
+\citation{jekova,christove,can}
+\citation{inan}
+\citation{banerjee}
+\citation{osowski,vullings1998automated,sayadi2009model}
+\citation{shinwari2012classification}
+\citation{krasteva2014classification,charfi2012comparative}
+\citation{erhan2009difficulty,vafaie2014heart}
+\citation{ubeyli2007ecg}
+\citation{homaeinezhad2012ecg,vanitha2013hybrid}
 \citation{chaza}
 \citation{bengio2013representation}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Waveforms of the ECG beats: (a) Typical N label for normal beat; (b) Typical S label for congestive heart failure beat; (c) Typical V label of Ventricular tachyarryhthmia beat; (d) Typical V label of atrial fibrillation beat.}}{4}}
-\newlabel{figure2}{{2}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Electrocardiography Classification Tasks}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The technology roadmap of an ECG classification task.}}{4}}
+\newlabel{figureX}{{2}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Feature Extraction}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-D}}ECG Arrhythmia}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Waveforms of the ECG beats: (a) Typical N label for normal beat; (b) Typical S label for congestive heart failure beat; (c) Typical V label of Ventricular tachyarryhthmia beat; (d) Typical V label of atrial fibrillation beat.}}{4}}
+\newlabel{figure2}{{3}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Classification With Deep learning Stacked Autoencoder Structures}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The multi-layer autoencoder with a subsequent classifier.}}{4}}
-\newlabel{figure3}{{3}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Hierarchal Pre-training}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}1}Sparsity}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}2}Cost Function}{4}}
 \@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces AAMI Classes Mapped from MIT-BIH Arrhythmia \& Long-term Database Types}}{5}}
 \newlabel{Table1}{{I}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}3}Activation Function}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}4}Training}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Fine-tuning and Classification}{5}}
-\citation{physionet}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The multi-layer autoencoder with a subsequent classifier.}}{5}}
+\newlabel{figure3}{{4}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Hierarchal Pre-training}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}1}Sparsity}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}2}Cost Function}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}3}Activation Function}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}4}Training}{6}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces The Backpropagation Algorithm}}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Fine-tuning and Classification}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}Softmax model}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}Fine-tuning with softmax regression}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Results}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Data Source}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}Fine-tuning with softmax regression}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experimental Results}{7}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Stacked Autoencoder with Softmax Regression}}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Data Source}{7}}
+\citation{physionet}
 \citation{afonso}
 \citation{sornmo2006electrocardiogram}
 \citation{chaza}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Stacked Autoencoder with Softmax Regression}}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Samples after Segementation}}{7}}
-\newlabel{table2}{{II}{7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Data Preprocessing \& Sample Segementation}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Samples Dataset Settings}}{7}}
-\newlabel{table3}{{III}{7}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Samples after Segementation}}{8}}
+\newlabel{table2}{{II}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Data Preprocessing \& Sample Segementation}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The overlay chart of features learned by the deep model.}}{8}}
+\newlabel{figure4}{{5}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Samples Dataset Settings}}{8}}
+\newlabel{table3}{{III}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Autoencoder Behaviour and Analysis}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}1}Reconstruction and the Learned Features}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}The Classification Test Results}{8}}
 \citation{melgan}
 \citation{mar}
 \citation{chaza}
 \citation{melgan}
 \citation{jiang}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The overlay chart of features learned by the deep model.}}{8}}
-\newlabel{figure4}{{4}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Autoencoder Behaviour and Analysis}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}1}Reconstruction and the Learned Features}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}The Classification Test Results}{8}}
-\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Test Result for a 4-Hidden-Layer Deep Network}}{8}}
-\newlabel{table4}{{IV}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-D}}Comparisons with Other Work}{8}}
-\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Comparisons with Other Work}}{8}}
-\newlabel{table5}{{V}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Discussion and Conclusions}{8}}
 \bibstyle{IEEEtran}
 \bibdata{bare_jrnl}
 \bibcite{mar}{1}
 \bibcite{chaza}{2}
 \bibcite{melgan}{3}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Test Result for a 4-Hidden-Layer Deep Network}}{9}}
+\newlabel{table4}{{IV}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-D}}Comparisons with Other Work}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Comparisons with Other Work}}{9}}
+\newlabel{table5}{{V}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Discussion and Conclusions}{9}}
+\@writefile{toc}{\contentsline {section}{References}{9}}
 \bibcite{jiang}{4}
 \bibcite{olmez}{5}
 \bibcite{lin}{6}
@@ -124,7 +148,6 @@
 \bibcite{tadejko}{28}
 \bibcite{hecht}{29}
 \bibcite{bengio2009}{30}
-\@writefile{toc}{\contentsline {section}{References}{9}}
 \bibcite{hinton2012deep}{31}
 \bibcite{ciresan2010deep}{32}
 \bibcite{hinton}{33}
@@ -135,10 +158,27 @@
 \bibcite{ballard1987modular}{38}
 \bibcite{jap}{39}
 \bibcite{chen2014deep}{40}
-\bibcite{bengio2013representation}{41}
-\bibcite{afonso}{42}
-\bibcite{sornmo2006electrocardiogram}{43}
-\@writefile{toc}{\contentsline {section}{Biographies}{10}}
-\@writefile{toc}{\contentsline {subsection}{Jan Doe}{10}}
-\@writefile{toc}{\contentsline {subsection}{John Doe}{10}}
-\@writefile{toc}{\contentsline {subsection}{Jane Doe}{10}}
+\bibcite{blanco2008ecg}{41}
+\bibcite{andreao2006ecg}{42}
+\bibcite{vullings1998automated}{43}
+\bibcite{vullings1997ecg}{44}
+\bibcite{sayadi2009model}{45}
+\bibcite{zigel2000weighted}{46}
+\bibcite{de2004automatic}{47}
+\bibcite{gacek2003genetic}{48}
+\bibcite{shinwari2012classification}{49}
+\bibcite{krasteva2014classification}{50}
+\bibcite{charfi2012comparative}{51}
+\bibcite{erhan2009difficulty}{52}
+\bibcite{vafaie2014heart}{53}
+\bibcite{ubeyli2007ecg}{54}
+\bibcite{homaeinezhad2012ecg}{55}
+\bibcite{vanitha2013hybrid}{56}
+\bibcite{bengio2013representation}{57}
+\bibcite{afonso}{58}
+\bibcite{sornmo2006electrocardiogram}{59}
+\@writefile{toc}{\contentsline {section}{Biographies}{11}}
+\@writefile{toc}{\contentsline {subsection}{Yan Yan}{11}}
+\@writefile{toc}{\contentsline {subsection}{Xingbin Qin}{11}}
+\@writefile{toc}{\contentsline {subsection}{Jianping Fan}{11}}
+\@writefile{toc}{\contentsline {subsection}{Lei Wang}{11}}
