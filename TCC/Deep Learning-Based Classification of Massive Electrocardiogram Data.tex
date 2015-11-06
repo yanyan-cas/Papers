@@ -22,7 +22,9 @@
 \interdisplaylinepenalty=2500
 \usepackage{array}
 
-\usepackage{algorithm}\usepackage{algpseudocode}\usepackage{algpascal}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{algpascal}
 
 \usepackage{threeparttable}
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -353,7 +355,10 @@ where $\alpha$ is the learning rate.
 
 Given the training example $(x,y)$(here in autoencoder $(x, \hat{x})$), we first run forward to compute the activations of the network, as the output values were the results of hypothesis $h_{W, b}(x)$ as in equation (9). For each node $i$ in layer $l$, let $\delta_i^{(l)}$ denotes the error term, then the output layer is $\delta^{(n_l)}_i $ means the difference between network's activation and $y$ ($\hat{x}$ in autoencoder) and the hidden layer $\delta^{(l)}_i$ based on the weighted average of the error terms of the nodes that uses $a^{(l)}_i$ as an input.
 
-\alglanguage{pseudocode}\begin{algorithm}\caption{The Backpropagation Algorithm}\begin{algorithmic}[1]
+\alglanguage{pseudocode}
+\begin{algorithm}
+\caption{The Backpropagation Algorithm}
+\begin{algorithmic}[1]
 \State Random initialize the parameters and adopt the feedforward calculation to compute the activations for layers $L_2$, $L_3$ to the output layer $L_{n_l}$.
 \State For the output layer unit $i$,
 \begin{equation}
@@ -368,7 +373,8 @@ Given the training example $(x,y)$(here in autoencoder $(x, \hat{x})$), we first
 \delta^{(l)}_i = \left( \sum_{j=1}^{s_{l+1}} W^{(l)}_{ji} \delta^{(l+1)}_j \right) f'(z^{(l)}_i) \\
 + \beta( - \frac{\rho}{\hat\rho_i} + \frac{1-\rho}{1-\hat\rho_i} ) ) f'(z^{(l)}_i)           
 \end{split}
-\end{equation}\State Compute the partial derivatives:
+\end{equation}
+\State Compute the partial derivatives:
 \begin{equation}
 \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x, y) = a^{(l)}_j \delta_i^{(l+1)} 
 \end{equation}
@@ -382,7 +388,8 @@ Given the training example $(x,y)$(here in autoencoder $(x, \hat{x})$), we first
 \begin{equation}
 \mathbf b^{(l)} = \mathbf b^{(l)} - \alpha [\frac{1}{m} \Delta \mathbf b^{(l)}]
 \end{equation}
-\end{algorithmic}\end{algorithm}
+\end{algorithmic}
+\end{algorithm}
 
 \subsection{Fine-tuning and Classification}
 To utilize the learned feature integrate the networks structure, we need to fine-tune the pre-trained network, which uses softmax as the output-layer activation. 
@@ -427,11 +434,15 @@ Use the iterative optimization algorithm such as gradient descent method. Taking
 in which  $\nabla_{\theta_j} J(\theta)$ is a vector, so that its $l$-th element is $\frac{\partial J(\theta)}{\partial \theta_{jl}}$ the partial derivative of $J(\theta)$ with respect to the $l$-th element of $\theta_j$.
 Perform the update rule $\theta_j := \theta_j - \alpha \nabla_{\theta_j} J(\theta) (for each j=1,\ldots,k)$, we can get the parameters.
 
-\subsubsection{Fine-tuning with softmax regression}The output-layer size is set to be the same as the usual four categories of arrhythmia, and the input layer has the same size as the stacked autoencoder learned features. Since the softmax regression is implemented as a single-layer neural network, it can be merged with the former layers of networks to get a deep classifier. The fine-tuning step would use the whole combined architecture for optimization with the backpropagation algorithm as Algorithm 1 illustrated, which has a small learning rates on the former autoencoder layers due to the large amount of unsupervised learning process.
+\subsubsection{Fine-tuning with softmax regression}
+The output-layer size is set to be the same as the usual four categories of arrhythmia, and the input layer has the same size as the stacked autoencoder learned features. Since the softmax regression is implemented as a single-layer neural network, it can be merged with the former layers of networks to get a deep classifier. The fine-tuning step would use the whole combined architecture for optimization with the backpropagation algorithm as Algorithm 1 illustrated, which has a small learning rates on the former autoencoder layers due to the large amount of unsupervised learning process.
 
 
 
-\alglanguage{pseudocode}\begin{algorithm}\caption{Stacked Autoencoder with  Softmax Regression}\begin{algorithmic}[1]
+\alglanguage{pseudocode}
+\begin{algorithm}
+\caption{Stacked Autoencoder with  Softmax Regression}
+\begin{algorithmic}[1]
 \State \textbf{begin}
 	\State \textbf{initialize} training batch size $a$, pretraining learning rate $\alpha$, numbers of layers $n_l$, numbers of neurons in each hidden layer $s_l$, input dimension $X$, classification labels $k$.
 	\For {each layer ($1<=l<=n_l$)} 
@@ -467,7 +478,8 @@ Perform the update rule $\theta_j := \theta_j - \alpha \nabla_{\theta_j} J(\thet
 		\EndFor
 	\EndFor
 \State \textbf{end}
-\end{algorithmic}\end{algorithm}
+\end{algorithmic}
+\end{algorithm}
 
 
 
@@ -477,11 +489,14 @@ Perform the update rule $\theta_j := \theta_j - \alpha \nabla_{\theta_j} J(\thet
 
 \section{Experimental Results}
 
-In this study, method adopted is quite different from other ECG classification methods, which extract some features from the segmented ECG samples. This deep network based framework use all the sample points in the ECG samples and let the autoencoder learn the feature by itself. A plain comparison between the traditional methods and deep learning autoencoder based method is shown in Fig. \ref{figure4}
+In this study, method adopted is quite different from other ECG classification methods, which extract some features from the segmented ECG samples. This deep network based framework use all the sample points in the ECG samples and let the autoencoder learn the feature by itself.  Traditional systems adopted includes the feature extraction part to extract features by artificial design.
 
 \subsection{Data Source}
-Data from the ambulatory electrocardiography database were used in this study, which includes recordings of 100 subjects with arrhythmia along with normal sinus rhythm. The database contains 100 recordings, each containing a 3- lead 24-hour long electrocardiography which were bandpass filtered at 0.1-100Hz and sampled at 128Hz. In this study, only the lead I data were adapted after preprocessing in the classification task. The reference average heart beats for each sample has 97,855 beats for the 24-hour long recording, and the reference arrhythmia average is 1,810 beats which were estimated by a commercial software (this statistics aim to indicate the existence for arrhythmia samples, which should not be consider as a experiment preset).The MIT-BIH Arrhythmia Database \cite{physionet} contains 48 half- hour recordings each containing two 30-min ECG lead signals (lead A and lead B), sampled at 360Hz. As well only the lead I data were used in the proposed method. In agreement with the AAMI recommended practice, the four recordings with paced beats were removed from the analysis. Five records randomly selected were used to verify the real time application. The remaining recordings were divided into two datasets, with small part of which were used as the training set of the fine-tuning process.
-The MIT-BIT Long-term Database is also used in this study for training and verification, which contains 7 long-term ECG recordings (14 to 22 hours each), with manually reviewed beat annotations and sampled at 128Hz. Similarly, the 7 recordings were divided into two datasets, with part used as the fine-tuning training set. A description of the labelled datasets are illustrated in Table  \uppercase\expandafter{\romannumeral2} .
+Data from the ambulatory electrocardiography database were used in this study, which includes recordings of 100 subjects with arrhythmia along with normal sinus rhythm. The database contains 100 recordings, each containing a 3- lead 24-hour long electrocardiography which were bandpass filtered at 0.1-100Hz and sampled at 128Hz. In this study, only the lead I data were adapted after preprocessing in the classification task. The reference average heart beats for each sample has 97,855 beats for the 24-hour long recording, and the reference arrhythmia average is 1,810 beats which were estimated by a commercial software (this statistics aim to indicate the existence for arrhythmia samples, which should not be consider as a experiment preset).
+
+The MIT-BIH Arrhythmia Database \cite{physionet} contains 48 half- hour recordings each containing two 30-min ECG lead signals (lead A and lead B), sampled at 360Hz. As well only the lead I data were used in the proposed method. In agreement with the AAMI recommended practice, the four recordings with paced beats were removed from the analysis. Five records randomly selected were used to verify the real time application. The remaining recordings were divided into two datasets, with small part of which were used as the training set of the fine-tuning process.
+
+The MIT-BIT Long-term Database is also used in this study for training and verification, which contains 7 long-term ECG recordings (14 to 22 hours each), with manually reviewed beat annotations and sampled at 128Hz. Similarly, the 7 recordings were divided into two datasets, with part used as the fine-tuning training set. A description of the labelled datasets are illustrated in Table  \ref{table2} .
 
 
 \begin{table}[!htbp]
@@ -508,7 +523,8 @@ Similar to the routine of electrocardiography classification task, the workflow 
 In the preprocessing stage, filtering algorithms were adapted to remove the artefact signals from the ECG signal. The signals include baseline wander, power line interference, and high-frequency noise. For the unlabelled database of ambulatory ECG and the MITBIH LT database, the Lead I data were extracted and a resample from 128Hz to 360Hz procedure was adopted for data consistency.
 
 Before the segmentation procedure from the long-time monitoring ECG signalsHeartbeat Detection: For the heartbeat detection, the MIT-BIH database and unlabelled database, the positions of R waves are determined. The provided fiducial points of R wave had been used as the basis of wave segmentation. The details of the implementation of R wave detection would not be described in this study, and a reference for the R wave detection algorithms had been explored in \cite{afonso}.
-In the heartbeat segmentation process, the segmentation program of Laguna \cite{sornmo2006electrocardiogram} was adapted, which also had been validated by other related work\cite{chaza}. The segmentation process was focus on the Lead  \uppercase\expandafter{\romannumeral1} of the recordings. After the segmentation for the ambulatory ECG database, three parts of heartbeat samples listed in Table I were acquired for the classification task. As for the pretraining, fine-tuning for our proposed task and comparison, we divided all the samples into three groups: the pretraining group as dataset A, the fine-tuning group as dataset B and test group as dataset C (illustrated in Table \uppercase\expandafter{\romannumeral3}). Samples are chosen randomly from the original AR and LT database, the details of the sample class would be described in the experiment result analysis.
+
+In the heartbeat segmentation process, the segmentation program of Laguna \cite{sornmo2006electrocardiogram} was adapted, which also had been validated by other related work\cite{chaza}. The segmentation process was focus on the Lead  \uppercase\expandafter{\romannumeral1} of the recordings. After the segmentation for the ambulatory ECG database, three parts of heartbeat samples listed in Table \ref{table2} were acquired for the classification task. As for the pretraining, fine-tuning for our proposed task and comparison, we divided all the samples into three groups: the pretraining group as dataset A, the fine-tuning group as dataset B and test group as dataset C (illustrated in Table \ref{table3}). Samples are chosen randomly from the original AR and LT database, the details of the sample class would be described in the experiment result analysis.
 
      
 \begin{table}[!htbp]
@@ -536,9 +552,13 @@ Before the segmentation procedure from the long-time monitoring ECG signalsHeart
 As the algorithm of the deep structure training illustrated, both unsupervised learning and supervised learning are involved in the structure training. The pretraining mainly used the unlabelled data to train the autoencoder parts, which only need to set the outputs equal to the inputs. Training data adopted in the unsupervised learning step include the whole samples from the  ambulatory electrocardiography database and parts of the MIT-BHI database samples. In the supervised learning step the MIT-BHI database samples with labels were adopted.
 
 
-
-
 \subsection{Autoencoder Behaviour and Analysis}
+\subsubsection{Reconstruction and the Learned Features}
+Single layer AEs are basic building blocks of our proposed models, so we investigate the behaviour of one-layer autoencoder. We use a single-layer AE with 100 hidden units. It is shown that the AE do learn a reconstruction of the training sample. We can see that the learned hidden activity retains enough information from the input as part (c) in Fig. \ref{figure1}. Since in the classifier layer, the learned features are 
+
+
+
+
 
 
 \begin{figure}[]
@@ -547,17 +567,82 @@ As the algorithm of the deep structure training illustrated, both unsupervised l
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
-\caption{1}
-\label{figure5}
+\caption{The overlay chart of features learned by the deep model.}
+\label{figure4}
 \end{figure}
 
+
+
+\subsubsection{The Classification Test Results}
+Test and Classifier Performance Assessment: After the pretraining and fine-tuning process, the deep network parameters were acquired. Then we use the parameters and the test dataset C to predict the class of samples. It is necessary to mention that in A and B, the labelled data used in pretraining and fine-tuning were divided randomly, which satisfy the requirement of Holdout cross-validation scheme so that the test results were meaningful for the classification task performance improvement.The following statistical parameters of test performance were used in the study:
+\begin{enumerate}
+\item Specificity: number of correctly classified normal beats over total number of normal beats.
+\item Sensitivity: number of correctly classified abnormal beats over total number of the given abnormal beats.
+\item Overall classification accuracy: number of correctly classified beats over number of total beat.
+\end{enumerate}
+
+We adopt a 4-hidden-layer autoencoder deep model for the feature learning for the classification task. Since the labelled data were divided randomly, in the test dataset C, we have 41,886 normal heartbeats, 559 supraventricular ectopic beats, 4,137 ventricular ectopic beats and 244 fusion heartbeats as illustrated in Table \ref{table4}. Based on the recognition results we got an accuracy of $99.34\%$. For the N class the specificity is $99.74\%$, the sensitivity of S class is $82.29\%$, the sensitivity of V class is $98.31\%$, the sensitivity of F class is $87.71\%$.
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{threeparttable}
+\caption{Test Result for a 4-Hidden-Layer Deep Network}
+\label{table4}
+\begin{tabular}{cccccccc}
+\hline
+\multicolumn{6}{r}{Algorithm label} \\
+\cline{3-7}
+		&  & N & S      & V    & F     & Q   & T\\
+\hline
+ Reference & N & 41,778 &  38  &  48   & 17  & 5  &  41,886 \\
+	label  & S &  93    & 460  &   3   & 1   & 2  &  559\\
+		   & V &  52    & 1    & 4,067 & 11  & 6  &  4,137\\
+		   & F &  15    & 0    & 13    & 214 & 2  &  244\\
+		   & Q &  1     & 0    & 1     & 1   & 1  &  5\\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\item The test accuracy is about $99.34\%$.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table}
+
+
+\subsection{Comparisons with Other Work}
+In this study, we proposed a deep learning model based approach for the heartbeat arrhythmia classification, the arrhythmia classification problem had been discussed in lots of literatures as the reference listed. Different kinds of performance assessment criteria had been adopted. In the comparison part, we adopt several ordinary indicators for the performance assessment, which brought in the above sections. The accuracies, N-class specificities (N-spe), S-class sensitivities (S-sen), V-class sensitivities (V-sen) and the F-class sensitivities(F-sen) in Table \ref{table5} are presented for the comparison. The percentages are calculated from the literatures' test results, in which some of the classes are ignored like \cite{melgan}, we use a $*$ symbol to represent the result are not available. 
+In Table \ref{table5}, we use the highest value (2 to 4 hidden layers based structures) for the verification which illustrated in ``proposed" line.
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{threeparttable}
+\caption{Comparisons with Other Work}
+\label{table5}
+\begin{tabular}{lllllll}
+\hline
+
+Approaches            &  Accuracy & N-spe & S-sen & V-sen & F-sen \\
+\hline
+ Proposed             & \textbf{99.34\%}  & \textbf{99.76\%} &  82.29\% & \textbf{98.31\%} & 87.71\% \\
+ Mar\cite{mar}        & 84.63\%  & 84.85\% & 82.90\%  & 86.72\% & 51.55\% \\
+ Chazal\cite{chaza}   & 86.19 \% & 86.86\% & \textbf{83.83\%}  & 77.74\% & \textbf{89.43\%} \\
+ Melgani\cite{melgan} & 90.52\%  & 89.12\% & *$^a$    & 89.97\% & * \\
+ Jiang \cite{jiang}   & 94.51\%  & 98.73\% & 50.59\%  & 86.61\% & 35.78\% \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\item [a] * means the results were not available.
+\item [b] The listed percentages are based on the previous described rules.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table}
+
+Through the comparisons in Table \ref{table5}, we can see that the proposed method offers better accuracy of classification problem. Since accuracy in lots of the literatures are good enough, the verification parameter depends on mainly on the normal class detection, but on contrary with these methods, this approach provided better performance in other kind of arrhythmia waveforms classes. Especially in the ventricular ectopic beat sensitivity, a quite large improvement had been made by the proposed method.
+
+
 \section{Discussion and Conclusions}
-
-
-
-
-
-
+Since the deep neural network structure and deep learning algorithms had been widely used in modern computing science especially in Big Data processes, this study proposed one possibility to adopt this method in the health informatics Big Data applications. In the above content, a stacked autoencoder based algorithm and deep neural network structure were proposed for the arrhythmia classification task. The MIT-BIH Arrhythmia Database, MIT Long-Term Database and an unlabelled ambulatory ECG dataset were used in this study to achieve the arrhythmia classification according to the AAMI standard. We test 46,831 samples randomly chosen from MIT-BIH AR(16,831) and MIT-BIH LT(30,000) and the highest classification accuracy is 99.33\%, for normal heartbeat the specificity attains 99.76\%, for supraventricular ectopic heartbeat the sensitivity reach 82.29\%, for ventricular ectopic heartbeat the sensitivity achieve 98.31\% and 87.71\% for fusion heartbeat.More than the achieved better performance for classification, we proposed a new possibility to make use of the large amount of unlabelled ECG data from the long-term clinical monitoring and healthcare monitoring. A real time second optimization prototype structure was presented. The healthcare data of ECG analysis based on Big Data acquired from wear- able devices could be one important occasion for the proposed method. Also in the traditional remote ECG diagnosis and hotter analysis applications, the proposed algorithm would be a significant improvement.
 
 
 \section*{Acknowledgment}
