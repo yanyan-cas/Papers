@@ -74,7 +74,7 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-A deep learning model based approach for the classification of electrocardiography arrhythmia analysis was presented. Based on massive heartbeat samples extracted from ambulatory ECG dataset, a stacked autoencoder deep neural network structure with pre-training and fine-tuning training method is adopted to classify the normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat labels based on the ANSI/AAMI EC57: 1998/(R)2008 standard. A dataset mainly collected from the subjects in the division of cardiology of the hospital is involved, as well as the MIT-BIH arrhythmia database and MIT-BIH long term ECG database, which are regard as the standard reference for the classifier. The stacked autoencoder algorithm was adopted for feature learning process instead of complex features extraction selection. From the massive unlabeled dataset, features in the ECG samples were acquired. A significant improvement of heartbeat classification from the state-of-the-art is attained for the classification task with the accuracy to $99.34\%$ and ventricular ectopic abnormality sensitivity to 98.31\%. With its self-learning ability, the proposed method has great potential to generalize to other related applications with a large amount of unlabeled data from the long-term clinical monitoring and healthcare monitoring. 
+A deep learning model based approach for the classification of electrocardiography arrhythmia analysis was presented. Based on massive heartbeat samples extracted from ambulatory ECG database, a stacked autoencoder deep neural network model with pre-training and fine-tuning training method is adopted to classify the heartbeat. The labels were all based on the ANSI/AAMI EC57: 1998/(R)2008 standard: normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat . As well, the labeled MIT-BIH arrhythmia  and MIT-BIH long term ECG databases were involved, which are regard as the standard reference for the classifier. The stacked autoencoder algorithm was adopted for feature learning process instead of complex features extraction selection. From the massive unlabelled dataset, features in the ECG samples were acquired. A significant improvement of heartbeat classification performance is attained that the accuracy reached $99.34\%$ and ventricular ectopic abnormality sensitivity accomplished 98.31\%. With its self-learning ability, the proposed method has great potential to generalize to other related applications with a large amount of unlabelled data from the long-term clinical monitoring and healthcare monitoring. 
 
 %A Big Data approach for the classification of heartbeat in electrocardiography analysis is presented. Based on massive heartbeat wave samples extracted from ambulatory ECG dataset, a deep neural network structure with a stacked autoencoder pretraining with fine-tuning algorithm is adopted for classification of normal heartbeat, supraventricular ectopic heartbeat, ventricular ectopic heartbeat, fusion heartbeat based on the ANSI/AAMI EC57: 1998/(R)2008 standard. The MIT-BIH arrhythmia database and MIT-BIH long term ECG database are also involved in the database, with the unlabelled database they were divided into three datasets for unsupervised pretraining, supervised fine-tuning and test. From the massive unlabelled dataset, representations learned from the raw sample were acquired by the training algorithm and structure. A significant improvement from the reported results for heartbeat classification is attained for the classification task with the parameters: accuracy to $99.34\%$, normal heartbeat specificity $99.76\%$, supraventricular ectopic heartbeat sensitivity $82.29\%$, ventricular ectopic heartbeat sensitivity $98.31\%$ and fusion heartbeat sensitivity $87.71\%$. 
 
@@ -82,7 +82,7 @@ A deep learning model based approach for the classification of electrocardiograp
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-big data, electrocardiography classification, sparse autoencoder, deep learning, real-time classification.
+electrocardiography classification, electrocardiography annotation, autoencoder, deep learning.
 \end{IEEEkeywords}
 
 % For peer review papers, you can put extra information on the cover
@@ -666,6 +666,7 @@ For ECG data arrhythmia classification, the proposed SAE-SR method has been prov
 
 
 \section*{Acknowledgment}
+The ambulatory ECG database was provided by the Biomedical Instruments Co.,Ltd.
 This study was financed partially by the National 863 Program of China (Grant No. 2012AA02A604), the Next generation communication technology Major project of National S\&T (Grant No. 2013ZX03005013), the Key Research Program of the Chinese Academy of Sciences, and the Guangdong Innovation Research Team Funds for Image-Guided Therapy and Low-cost Healthcare. 
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
@@ -725,14 +726,14 @@ received the B.eng. degree in the Harbin Institute of Technology, Wei Hai, and t
 \end{IEEEbiography} 
 
 \begin{IEEEbiography}{Xingbin Qin}
-Biography text here.
+is pursuing his master degree of computer science at the University of Chinese Academy of Sciences. His current research interests include digital signal processing, machine learning and biomedical engineering.
 \end{IEEEbiography}
 
 \begin{IEEEbiography}{Jianping Fan}
-Biography text here.
+received the B.Eng. degree in the Nankai University, and the Ph.D. degree from the Chinese Academy of Sciences. He is now a researcher with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. His current research interests include cloud computing, high performance computing.
 \end{IEEEbiography}
 \begin{IEEEbiography}{Lei Wang}
-received the B.Eng. degree in information and control engineering, and the Ph.D. degree in biomedical engineering from Xi’an Jiaotong University, Xi’an, China, in 1995 and 2000, respectively. He was with the University of Glasgow, Glasgow, U.K., and Imperial College London, London, U.K., from 2000 to 2008. He is currently a Full Professor with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. He has published over 200 scientific papers, authored four book chapters, and holds 60 patents. His current research interests include body sensor network, digital signal processing, and biomedical engineering
+received the B.Eng. degree in information and control engineering, and the Ph.D. degree in biomedical engineering from Xi’an Jiaotong University, Xi’an, China, in 1995 and 2000, respectively. He was with the University of Glasgow, Glasgow, U.K., and Imperial College London, London, U.K., from 2000 to 2008. He is currently a full professor with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. He has published over 200 scientific papers, authored four book chapters, and holds 60 patents. His current research interests include body sensor network, digital signal processing, and biomedical engineering
 \end{IEEEbiography}
 
 
