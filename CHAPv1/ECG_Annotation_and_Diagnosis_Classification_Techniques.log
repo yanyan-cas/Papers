@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.6)  15 FEB 2016 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.6)  15 FEB 2016 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,17 +633,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 428--442
+Underfull \hbox (badness 10000) in paragraph at lines 430--444
 [][]
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
 []\OT1/ptm/m/n/8.5 Melgani and Bazi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--494
+Underfull \hbox (badness 10000) in paragraph at lines 496--496
 []\OT1/ptm/m/n/8.5 Jiang and Kong
  []
 
@@ -656,75 +656,75 @@ Package epstopdf Info: Source file: <dbn.eps>
 (epstopdf)                    size: 180570 bytes
 (epstopdf)             Command: <repstopdf --outfile=dbn-eps-converted-to.pdf d
 bn.eps>
-(epstopdf)             \includegraphics on input line 585.
+(epstopdf)             \includegraphics on input line 586.
 Package epstopdf Info: Output file is already uptodate.
  <dbn-eps-converted-to.pdf, id=170, 1120.185pt x 578.16pt>
 File: dbn-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dbn-eps-converted-to.pdf>
-Package pdftex.def Info: dbn-eps-converted-to.pdf used on input line 585.
+Package pdftex.def Info: dbn-eps-converted-to.pdf used on input line 586.
 (pdftex.def)             Requested size: 336.05809pt x 173.44933pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 585.
+using normal \caption on input line 586.
 
 
-Overfull \hbox (3.16086pt too wide) in paragraph at lines 585--585
+Overfull \hbox (3.16086pt too wide) in paragraph at lines 586--586
 [][] 
  []
 
 [17 <./dbn-eps-converted-to.pdf>] [18] [19]
-Overfull \hbox (2.687pt too wide) in paragraph at lines 662--662
+Overfull \hbox (2.687pt too wide) in paragraph at lines 661--661
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 666--666
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 665--665
 []\OT1/ptm/m/n/8.5 1,104| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--678
+Underfull \hbox (badness 10000) in paragraph at lines 655--677
 [][]
  []
 
 
-Overfull \hbox (2.687pt too wide) in paragraph at lines 694--694
+Overfull \hbox (2.687pt too wide) in paragraph at lines 693--693
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 698--698
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 697--697
 []\OT1/ptm/m/n/8.5 1,048| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--709
+Underfull \hbox (badness 10000) in paragraph at lines 687--708
 [][]
  []
 
 
-Overfull \hbox (2.687pt too wide) in paragraph at lines 723--723
+Overfull \hbox (2.687pt too wide) in paragraph at lines 722--722
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 727--727
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 726--726
 []\OT1/ptm/m/n/8.5 1,108| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--738
+Underfull \hbox (badness 10000) in paragraph at lines 716--737
 [][]
  []
 
-
-Overfull \hbox (0.61899pt too wide) in paragraph at lines 751--763
+[20]
+Overfull \hbox (0.61899pt too wide) in paragraph at lines 747--759
 [][]
  []
 
-[20] [21] (./referenc.tex
+[21] (./referenc.tex
 (./ECG_Annotation_and_Diagnosis_Classification_Techniques.bbl [22]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 33.
 
@@ -761,28 +761,32 @@ Underfull \hbox (badness 6526) in paragraph at lines 188--190
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [25])) [26] (./ECG_Annotation_and_Diagnosis_Classification_Techniques.aux) ) 
+ [25])) [26] (./ECG_Annotation_and_Diagnosis_Classification_Techniques.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  3896 strings out of 493089
  54878 string characters out of 6134842
- 179926 words of memory out of 5000000
+ 176926 words of memory out of 5000000
  7246 multiletter control sequences out of 15000+600000
  49975 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,25p,1657b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/
-usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
-mes/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
 Output written on ECG_Annotation_and_Diagnosis_Classification_Techniques.pdf (2
-6 pages, 794667 bytes).
+6 pages, 795347 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  128 compressed objects within 2 object streams
