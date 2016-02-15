@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.6)  15 FEB 2016 09:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.6)  15 FEB 2016 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,7 +494,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 99.
+               Default added (so using `htbp') on input line 98.
 
 Package epstopdf Info: Source file: <classification.eps>
 (epstopdf)                    date: 2016-01-06 20:52:37
@@ -504,31 +504,31 @@ Package epstopdf Info: Source file: <classification.eps>
 (epstopdf)                    size: 67157 bytes
 (epstopdf)             Command: <repstopdf --outfile=classification-eps-convert
 ed-to.pdf classification.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
 <classification-eps-converted-to.pdf, id=8, 1047.915pt x 216.81pt>
 File: classification-eps-converted-to.pdf Graphic file (type pdf)
 
 <use classification-eps-converted-to.pdf>
 Package pdftex.def Info: classification-eps-converted-to.pdf used on input line
- 109.
+ 108.
 (pdftex.def)             Requested size: 335.33965pt x 69.38062pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 109.
+using normal \caption on input line 108.
 
 
-Overfull \hbox (2.44241pt too wide) in paragraph at lines 109--109
+Overfull \hbox (2.44241pt too wide) in paragraph at lines 108--108
 [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 114.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 113.
 [2 <./classification-eps-converted-to.pdf>] [3]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 143.
+               Default added (so using `htbp') on input line 142.
 
 Package epstopdf Info: Source file: <clustering.eps>
 (epstopdf)                    date: 2016-01-06 20:52:37
@@ -538,22 +538,22 @@ Package epstopdf Info: Source file: <clustering.eps>
 (epstopdf)                    size: 24547 bytes
 (epstopdf)             Command: <repstopdf --outfile=clustering-eps-converted-t
 o.pdf clustering.eps>
-(epstopdf)             \includegraphics on input line 153.
+(epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
 <clustering-eps-converted-to.pdf, id=33, 1047.915pt x 252.945pt>
 File: clustering-eps-converted-to.pdf Graphic file (type pdf)
 
 <use clustering-eps-converted-to.pdf>
-Package pdftex.def Info: clustering-eps-converted-to.pdf used on input line 153
+Package pdftex.def Info: clustering-eps-converted-to.pdf used on input line 152
 .
 (pdftex.def)             Requested size: 335.33965pt x 80.94405pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 153.
+using normal \caption on input line 152.
 
 
-Overfull \hbox (2.44241pt too wide) in paragraph at lines 153--153
+Overfull \hbox (2.44241pt too wide) in paragraph at lines 152--152
 [][] 
  []
 
@@ -566,7 +566,7 @@ Package epstopdf Info: Source file: <nnstructure.eps>
 (epstopdf)                    size: 321023 bytes
 (epstopdf)             Command: <repstopdf --outfile=nnstructure-eps-converted-
 to.pdf nnstructure.eps>
-(epstopdf)             \includegraphics on input line 186.
+(epstopdf)             \includegraphics on input line 185.
 Package epstopdf Info: Output file is already uptodate.
 
 <nnstructure-eps-converted-to.pdf, id=52, 650.43pt x 433.62pt>
@@ -574,17 +574,17 @@ File: nnstructure-eps-converted-to.pdf Graphic file (type pdf)
 
 <use nnstructure-eps-converted-to.pdf>
 Package pdftex.def Info: nnstructure-eps-converted-to.pdf used on input line 18
-6.
+5.
 (pdftex.def)             Requested size: 325.2142pt x 216.80946pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 186.
+using normal \caption on input line 185.
 
 [5] [6 <./nnstructure-eps-converted-to.pdf>] [7]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 238.
+               Default added (so using `htbp') on input line 237.
 
 Package epstopdf Info: Source file: <autoencoder.eps>
 (epstopdf)                    date: 2016-01-06 20:52:37
@@ -594,22 +594,22 @@ Package epstopdf Info: Source file: <autoencoder.eps>
 (epstopdf)                    size: 50963 bytes
 (epstopdf)             Command: <repstopdf --outfile=autoencoder-eps-converted-
 to.pdf autoencoder.eps>
-(epstopdf)             \includegraphics on input line 248.
+(epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
 <autoencoder-eps-converted-to.pdf, id=120, 794.97pt x 722.7pt>
 File: autoencoder-eps-converted-to.pdf Graphic file (type pdf)
 
 <use autoencoder-eps-converted-to.pdf>
 Package pdftex.def Info: autoencoder-eps-converted-to.pdf used on input line 24
-8.
+7.
 (pdftex.def)             Requested size: 317.98236pt x 289.07487pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 248.
+using normal \caption on input line 247.
 
 [8 <./autoencoder-eps-converted-to.pdf>] [9] [10]
-Overfull \hbox (0.61899pt too wide) in paragraph at lines 368--380
+Overfull \hbox (0.61899pt too wide) in paragraph at lines 367--379
 [][] 
  []
 
@@ -633,17 +633,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 436--450
+Underfull \hbox (badness 10000) in paragraph at lines 435--449
 [][]
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 501--501
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 []\OT1/ptm/m/n/8.5 Melgani and Bazi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
+Underfull \hbox (badness 10000) in paragraph at lines 501--501
 []\OT1/ptm/m/n/8.5 Jiang and Kong
  []
 
@@ -656,71 +656,71 @@ Package epstopdf Info: Source file: <dbn.eps>
 (epstopdf)                    size: 180570 bytes
 (epstopdf)             Command: <repstopdf --outfile=dbn-eps-converted-to.pdf d
 bn.eps>
-(epstopdf)             \includegraphics on input line 593.
+(epstopdf)             \includegraphics on input line 592.
 Package epstopdf Info: Output file is already uptodate.
  <dbn-eps-converted-to.pdf, id=170, 1120.185pt x 578.16pt>
 File: dbn-eps-converted-to.pdf Graphic file (type pdf)
 
 <use dbn-eps-converted-to.pdf>
-Package pdftex.def Info: dbn-eps-converted-to.pdf used on input line 593.
+Package pdftex.def Info: dbn-eps-converted-to.pdf used on input line 592.
 (pdftex.def)             Requested size: 336.05809pt x 173.44933pt.
 
 
 Class SVMult Warning: \sidecaption: No sufficient room for the legend; 
-using normal \caption on input line 593.
+using normal \caption on input line 592.
 
 
-Overfull \hbox (3.16086pt too wide) in paragraph at lines 593--593
+Overfull \hbox (3.16086pt too wide) in paragraph at lines 592--592
 [][] 
  []
 
 [17 <./dbn-eps-converted-to.pdf>] [18] [19]
-Overfull \hbox (2.687pt too wide) in paragraph at lines 670--670
+Overfull \hbox (2.687pt too wide) in paragraph at lines 669--669
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 674--674
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 673--673
 []\OT1/ptm/m/n/8.5 1,104| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--686
+Underfull \hbox (badness 10000) in paragraph at lines 663--685
 [][]
  []
 
 
-Overfull \hbox (2.687pt too wide) in paragraph at lines 702--702
+Overfull \hbox (2.687pt too wide) in paragraph at lines 701--701
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 706--706
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 705--705
 []\OT1/ptm/m/n/8.5 1,048| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--717
+Underfull \hbox (badness 10000) in paragraph at lines 695--716
 [][]
  []
 
 
-Overfull \hbox (2.687pt too wide) in paragraph at lines 731--731
+Overfull \hbox (2.687pt too wide) in paragraph at lines 730--730
 []\OT1/ptm/m/n/8.5 NORMAL| 
  []
 
 
-Overfull \hbox (2.05318pt too wide) in paragraph at lines 735--735
+Overfull \hbox (2.05318pt too wide) in paragraph at lines 734--734
 []\OT1/ptm/m/n/8.5 1,108| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--746
+Underfull \hbox (badness 10000) in paragraph at lines 724--745
 [][]
  []
 
 
-Overfull \hbox (0.61899pt too wide) in paragraph at lines 759--771
+Overfull \hbox (0.61899pt too wide) in paragraph at lines 758--770
 [][]
  []
 
@@ -765,7 +765,7 @@ Missing character: There is no ô in font ptmr7t!
 Here is how much of TeX's memory you used:
  3896 strings out of 493089
  54878 string characters out of 6134842
- 179925 words of memory out of 5000000
+ 179926 words of memory out of 5000000
  7246 multiletter control sequences out of 15000+600000
  49975 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -782,7 +782,7 @@ pe1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on ECG_Annotation_and_Diagnosis_Classification_Techniques.pdf (2
-6 pages, 794631 bytes).
+6 pages, 794654 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  128 compressed objects within 2 object streams
