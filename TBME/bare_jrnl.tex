@@ -348,18 +348,13 @@
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-
-
 \begin{document}
 %
 % paper title
 % Titles are generally capitalized except for words such as a, an, and, as,
 % at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
 % not capitalized unless they are the first or last word of the title.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
-\title{Electrocardiography Classification and Arrhythmia Detection Based on Deep Learning Methods}
-%
+\title{Improve Computer-Aided Arrhythmia Diagnosis with Deep Learning Techniques \\ Using Undiagnosed Electrocardiography Samples}
 %
 % author names and IEEE memberships
 % note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
@@ -371,8 +366,6 @@
 %
 
 \author{Yan~Yan,~\IEEEmembership{Student Member, IEEE},
- %       Xingbin~Qin,~
-   %     Jianping~Fan,~
         and~Lei~Wang~% <-this % stops a space
 \thanks{Y. Yan is with the Shenzhen Key Laboratory for Low-cost Healthcare, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. No. 1068, Xueyuan Road, Nanshan District,
 Shenzhen, Guangdong Province, China-mail: (yan.yan@siat.ac.cn).}% <-this % stops a space
@@ -382,7 +375,7 @@ Shenzhen, Guangdong Province, China-mail: (yan.yan@siat.ac.cn).}% <-this % stops
 \thanks{L. Wang is with the Shenzhen Key Laboratory for Low-cost Healthcare, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
 No. 1068, Xueyuan Road, Nanshan District,
 Shenzhen, Guangdong Province, China.}% <-this % stops a space
-\thanks{Manuscript received September 29, 2014; revised}}
+\thanks{Manuscript received ; }}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -405,8 +398,8 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 
 
 % The paper headers
-\markboth{IEEE Transactions on Information Technology in Biomedicine,~Vol.~, No.~, December~2014}%
-{Shell \MakeLowercase{\textit{et al.}}: Electrocardiography Heartbeat Classification with Deep Learning Methods}
+\markboth{IEEE Transactions on Biomedical Engineering,~Vol.~, No.~, December~2014}%
+{Shell \MakeLowercase{\textit{et al.}}: }
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
 % 
@@ -414,8 +407,6 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 % *** name in the headers of peer review papers.                   ***
 % You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
 % you desire.
-
-
 
 
 % If you want to put a publisher's ID mark on the page you can do it like
@@ -438,17 +429,13 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-The abstract goes here.
+
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-IEEE, IEEEtran, journal, \LaTeX, paper, template.
+ECG Classification, Deep Learning, Arrythmia Analysis
 \end{IEEEkeywords}
-
-
-
-
 
 
 % For peer review papers, you can put extra information on the cover
@@ -464,6 +451,8 @@ IEEE, IEEEtran, journal, \LaTeX, paper, template.
 
 
 \section{Introduction}
+
+
 % The very first letter is a 2 line initial drop letter followed
 % by the rest of the first word in caps.
 % 
@@ -481,26 +470,55 @@ IEEE, IEEEtran, journal, \LaTeX, paper, template.
 % and "HIS" in caps to complete the first word.
 \IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
 for IEEE journal papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8b and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
 
-\hfill mds
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-
  
-\hfill August 26, 2015
 
-\subsection{Subsection Heading Here}
-Subsection text here.
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+
+\section{Dataset and Pre-processing}
+
+digm, which trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-digm, which trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-
+
+\section{Representations Learning with Deep Learning Methods}
+\subsection{Sparse Autoencoder}
+digm, which trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-digm, which trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-
+\subsection{Restricted Boltzmann Machine}
 
 
-% An example of a floating figure using the graphicx package.
+ch trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-digm, which trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-\section{Hybrid System with Deep Learning Features}
+
+
+
+\section{Experiments}
+
+ch trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi
+\section{Conclusions}
+
+
+
+ch trains two classifiers through letting them label the unlabeled examples for each other. In co-training the data should be described by two sufficient and redundant attribute subsets, each of which is sufficient for learning and independent to the other given class label.
+Although co-training has already been successfully applied to some fields [4] [25] [30], the requirement on two sufficient and redundant attribute subsets is too strong to be met in many real-world applications. Goldman and Zhou [17] extended co-training by replacing the requirement on two sufficient and redundant attribute subsets with the requirement on two different supervised learning algorithms whose hypotheses partition the instance space into a set of equivalence classes. Ten-fold cross validation is frequently applied to find the confident examples to label in every training iteration and produce the final hypothesis, which makes both the learning process and prediction time-consuming.
+In this paper, a new co-training style algorithm named Co- Forest, i.e. CO-trained random FOREST, is proposed. It ex- tends the co-training paradigm by incorporating a well-known ensemble learning [13] algorithm named Random Forest [7] to tackle the problems of how to determine the most confident examples to label and how to produce the final hypothesis. Since ensemble learning has been successfully applied to many medical problems [35] [41] [42], the particular settings enables Co-Forest to exploit the power of ensemble for better perfor- mance of the learned hypothesis in semi-supervised learning. Since Co-Forest requires neither the data be described by sufficient and redundant attribute subsets nor special learning algorithms which frequently employ time-consuming cross validation in learning, it could be easily applied in CAD systems. Experiments on UCI data sets verify the effectiveness of the proposed algorithm. Case studies on three medical diagnosis tasks and a successful application to microcalcifi-
+
+% An example of a floatin figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
 % Note that IEEEtran v1.7 and later has special internal code that
@@ -597,8 +615,6 @@ Subsubsection text here.
 
 
 
-\section{Conclusion}
-The conclusion goes here.
 
 
 
@@ -644,8 +660,6 @@ The authors would like to thank...
 
 
 
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
 %\IEEEtriggeratref{8}
@@ -687,8 +701,16 @@ The authors would like to thank...
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
+\begin{IEEEbiography}{Yan Yan}
+received the B.Eng. degree and the MSc in Instrument Engineering at the Harbin Institute of Technology in 2010 and 2012 respectively. 
+He worked as research assistance at the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences from 2012 to 2014. 
+He is working on his PhD in Computer Science started from 2014.
+His research interests are digital signal processing, machine learning, and control system.
+\end{IEEEbiography}
+
+
+\begin{IEEEbiography}{Lei Wang}
+received the B.Eng. degree in information and control engineering, and the Ph.D. degree in biomedical engineering from Xi’an Jiaotong University, Xi’an, China, in 1995 and 2000, respectively. He was with the University of Glasgow, Glasgow, U.K., and Imperial College London, London, U.K., from 2000 to 2008. He is currently a full professor with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. He has published over 200 scientific papers, authored four book chapters, and holds 60 patents. His current research interests include body sensor network, digital signal processing, and biomedical engineering
 \end{IEEEbiography}
 
 % if you will not have a photo at all:
