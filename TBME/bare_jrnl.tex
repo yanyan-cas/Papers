@@ -356,7 +356,7 @@
 % Titles are generally capitalized except for words such as a, an, and, as,
 % at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
 % not capitalized unless they are the first or last word of the title.
-\title{Improve Computer-Aided Arrhythmia Diagnosis with Deep Learning Techniques \\ Using Undiagnosed Electrocardiography Samples}
+\title{Arrhythmia Heartbeat Classification Using \\Deep Learning Hybrid Structure with Massive Unannotated Electrocardiography Samples}
 %
 % author names and IEEE memberships
 % note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
@@ -371,9 +371,9 @@
         and~Lei~Wang~% <-this % stops a space
 \thanks{Y. Yan is with the Shenzhen Key Laboratory for Low-cost Healthcare, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. No. 1068, Xueyuan Road, Nanshan District,
 Shenzhen, Guangdong Province, China-mail: (yan.yan@siat.ac.cn).}% <-this % stops a space
-%\thanks{X. Qin is with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
-%No. 1068, Xueyuan Road, Nanshan District, Shenzhen, Guangdong Province, China.}% <-this % stops a space
-%\thanks{J. Fan is with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. No. 1068, Xueyuan Road, Nanshan District, Shenzhen, Guangdong Province, China.}% <-this % stops a space
+\thanks{X. Qin is with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
+No. 1068, Xueyuan Road, Nanshan District, Shenzhen, Guangdong Province, China.}% <-this % stops a space
+\thanks{J. Fan is with the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences. No. 1068, Xueyuan Road, Nanshan District, Shenzhen, Guangdong Province, China.}% <-this % stops a space
 \thanks{L. Wang is with the Shenzhen Key Laboratory for Low-cost Healthcare, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
 No. 1068, Xueyuan Road, Nanshan District,
 Shenzhen, Guangdong Province, China.}% <-this % stops a space
@@ -400,7 +400,7 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 
 
 % The paper headers
-\markboth{IEEE Transactions on Biomedical Engineering,~Vol.~, No.~, December~2014}%
+\markboth{IEEE Transactions on Biomedical Engineering,~Vol.~, No.~, April ~2016}%
 {Shell \MakeLowercase{\textit{et al.}}: }
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
@@ -431,6 +431,11 @@ Shenzhen, Guangdong Province, China.}% <-this % stops a space
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
+
+Plenty of samples with the diagnosis can be used to improve the CAD systems' performance. 
+These ECG signal samples were able to be easily acquired from routine medical examinations or Holter monitoring applications. 
+However, making annotations one by one for the massive ECG signal samples could be time-consuming and inefficient, which would bring heavy burden for medical experts. 
+In the mobile healthcare or e-healthcare applications, the medical experts based ECG analysis method would be impossible to handle the growing data from the large user population.
 
 \end{abstract}
 
@@ -470,38 +475,71 @@ ECG Classification, Deep Learning, Arrythmia Analysis
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{T}{}{he} research of the electrocardiogram (ECG) signal provides important insights for cardiac function and condition understandings.
-Heart function analysis is of special concern in the diagnosis of cardiovascular disease. 
-The ECG computer-aided diagnosis (CAD) systems provides indispensable assist in long-term clinical monitoring, and a large number of approaches have been proposed for the task, easing the diagnosis of arrhythmic changes as well as further inspection, e.g., heart rate variability or heart turbulence analysis. As the wearable techniques promoted the accumulation of ECG data from personal and mobile healthcare applications, the automated ECG signal analysis techniques featured CAD systems tend to be more important.
-
+\IEEEPARstart{T}{}{he} research of the electrocardiogram (ECG) signal provides valuable insights for cardiac function and condition understandings.
+Heart function analysis is of particular concern in the diagnosis of cardiovascular disease. 
+The ECG computer-aided diagnosis (CAD) systems provide indispensable assist in long-term clinical monitoring, and a large number of approaches had been proposed for the task, easing the determination of arrhythmic changes as well as further inspection, e.g., heart rate variability or heart turbulence analysis\cite{mar2011}. As the wearable techniques promoted the accumulation of ECG data from personal and mobile healthcare applications, the automated ECG signal analysis techniques featured CAD systems tend to be more important \cite{jankowski2003, winokur2013}.
 Machine learning techniques had been widely used in data analysis and applied in ECG-CAD systems.
-These methods learn representations from the diagnosed samples collected from medical examinations, in order to assist the decision making of medical experts.
+These methods learn representations from the diagnosed samples collected from medical examinations, to assist the decision making of medical experts.
 
-A large amount of samples with diagnosis can be used to improve the CAD systems' performance. 
-These ECG signal samples can be easily acquired from routine medical examinations or Holter monitoring applications. 
+Plenty of samples with the diagnosis can be used to improve the CAD systems' performance. 
+These ECG signal samples were able to be easily acquired from routine medical examinations or Holter monitoring applications. 
 However, making annotations one by one for the massive ECG signal samples could be time-consuming and inefficient, which would bring heavy burden for medical experts. 
-Especially in the mobile healthcare or e-healthcare applications, the medical experts-based ECG analysis method would be impossible.
+In the mobile healthcare or e-healthcare applications, the medical experts based ECG analysis method would be impossible to handle the growing data from the large user population.
 
-The possible solution for massive ECG automated analysis is to learn hypothesis from a small amount of samples annotated by medical experts (the labeled data) and then utilize the massive undiagnosed samples (the unlabeled data) to enhance the performance of the learned hypothesis.
+The possible solution for massive ECG automated analysis is to learn hypothesis from a few of samples annotated by medical experts (the labeled data) and then utilize the massive undiagnosed samples (the unlabeled data) to enhance the performance of the learned hypothesis.
+In machine learning, this technique is called learning with labeled (supervised learning) and unlabeled data (unsupervised learning).
+While the semi-supervised learning method could enhance the performance of the learned hypothesis by using the labeled and unlabeled data together.
+Deep learning is one kind of machine learning methods which becomes quite popular in recent research in computer vision and acoustic signal analysis applications. Deep learning refers to a rather broad class of machine learning techniques and architectures, with the hallmark of using many layers of non-linear information processing that are hierarchical in nature \cite{deng2014deeplearning} . 
 
-In machine learning, this technique is called learning with labeled (supervised learning) and unlabeled data (unsupervised learning).Enhance the performance of the learned hypothesis by using the labeled and unlabeled data together is known as semi-supervised learning, where an initial hypothesis is usually learned from labeled data and then refined with the information derived from the unlabeled ones.
-Deep learning refers to a rather wide class of machine learning techniques and architectures, with the hallmark of using many layers of non-linear information processing that are hierarchical in nature. 
-As [] described the deep learning methods can be categorized as three categories: deep networks for unsupervised learning, deep networks for supervised learning, and hybrid deep networks. 
+The results from the intelligent algorithms or models were not amenable to expert labelling, as well as for the identification of complex relationships between subjects and clinical conditions \cite{clifford2006}. But for the ambulatory electrocardiography clinical application, as well as the usual use in daily healthcare monitoring for cardiac function or early warning of heart disease, an automated algorithm or model would have significant meaning. The application of artificial intelligence methods has become a significant trend in electrocardiography for the recognition and classification of different arrhythmia types  \cite{clifford2006}. The data explosion puts forward the new request to the method of data processing and information mining. Deep learning techniques are super-star in the recent years for its ability in 
+%%%%%%%%%%%
 
-Deep learning methods had been widely used in other domains like computer vision and acoustic signal analysis. In this paper, the deep learning methods are applied in ECG analysis. A deep feature based hybrid systems are proposed for ECG arrhythmia diagnosis. 
-
-The rest of the paper is organized as follows: Section II briefly reviews the arrhythmia diagnosis methods. Section III presents the datasets description. Section IV reports the experimental methods of deep learning techniques. Section V describes the results and performance assessment. Finally, Section VI concludes the paper.
+The rest of the paper is organized as follows: Section II briefly reviews the arrhythmia diagnosis methods and deep learning techniques. Section III presents the datasets description. Section IV reports the experimental methods of deep learning techniques. Section V describes the results and performance assessment. Finally, Section VI concludes the paper.
 
 \section{Background}
+Over the past decades computational techniques proliferated in the pattern recognition field, simultaneously the applications in ECG recognition, detection and classification of relevant trends, patterns, and outliers. Most of the literature in the ECG classification task were focused on the supervised learning methods, as in unsupervised scenarios lots of effort needed in labelling data. In this part, we first review the typical methods in the classification task, then deep learning methods are illustrated shortly.
+
+\subsection{Related Works}
+Since ECG is an essential diagnostic tool in cardiac disease, the development of accurate automated ECG analysis computational algorithms or models have been a challenge for decades. Most of the approaches are based on the supervised machine learning perspective, features were extracted and then through the optimizing process to train a classifier.
+The classifiers include the simple classifier such as linear discriminatns \cite{shinwari2012classification} and kNN \cite{homaeinezhad2012ecg}, more complex classifiers like neural networks\cite{jiang2007nn, olmez1997ga, lin2012werable, osowski2001hybrid}, fuzzy inference engines \cite{osowski2001hybrid, kundu1998fuzzy}, hidden Markov models\cite{andreao2006hmm, coast1990hmm}, independent component analysis\cite{zhu2008ica}, and support vector machine \cite{melgan2008svmpso, kampoura2009svm, khandoker2009svm}.
+
+The performance of a recognition system highly depends on the determination of extracted electrocardiography features. The extracted features can be divided into two categories: features based on the ECG morphology, and those features based on the cardiac rhythm or inter-beat intervals \cite{oster2015semiSKF}. 
+Time domain features like morphological features include shapes, amplitudes, and durations were adapted primarily in \cite{jekova2008assessment, christove2006morph, can2012morph}, frequency domain features like wavelet transformation were used \cite{inan2006wavelet, banerjee2014wavelet}, in \cite{Übeyli2009} stationary features like higher-order statistics also had been developed. Principal component analysis \cite{stam1998pca} and Hermite functions \cite{lager2000} have been used in electrocardiography classification and related analysis technologies as well. Most literature proposed several new features in classification task, or a new combination rule with the existing ones \cite{mar2011}.
+
+\subsection{Deep Learning}
+%In traditional supervised learning algorithms, all training data should be labeled before the learning process, the classifiers are then trained on these labeled data. The deep learning techniques
+
+The backpropagation neural network architecture had been widely applied since 1989 by its multidimensional mapping ability \cite{hecht1989bp}. The deep learning techniques are based on the research on artificial neural network. Until 2006, deep architectures have not been discussed much in the machine learning literature, because of poor training and generalisation errors obtained using the standard random initialization of the parameters \cite{bengio2009daai}. Great successes in speech recognition \cite{hinton2012deep}, image recognition \cite{ciresan2010deep} had been accomplished via this powerful structure due to the proposed proper training algorithms by Hinton \cite{hinton2006dimen}. 
+
+%Three kinds of architectures in deep learning were deep networks for unsupervised learning, deep networks for supervised learning, and hybrid deep networks as mentioned above.
+%\emph{Unsupervised learning} deep networks or \emph{generative} deep networks are intended to capture high-order correlation of the observed or visible data for pattern analysis when no information about target class labels is available, which were called \emph{unsupervised feature} learning or \emph{representation} learning \cite{deng2014deeplearning}.
+%In \emph{supervised learning} deep networks, the target label data are always available in direct or indirect forms.
+%\emph{Hybrid} deep networks utilize the training results of generative or unsupervised deep networks in the supervised learning models.
+In this paper, the deep learning techniques involved are base on the three categories of deep networks. From the massive unlabeled ECG samples, the deep networks were trained for high accuracy classification for heartbeat classification in arrhythmia analysis.
+
+\section{Datasets and Pre-processing}
+The heart is comprised of the myocardium that rhythmically contract and thus drive the circulation of blood throughout the human body. A wave of electrical current passes through the entire heart, which triggers myocardial contraction \cite{clifford2006}. Electrical propagation spreads over the whole heart in a coordinated pattern generate changes on the body surface potentials which can be measured and illustrated as an electrocardiogram (ECG, or sometimes EKG). Metabolic abnormalities (a lack of oxygen, or ischemia, etc.) and pathological changes of the heart engender a variety of ECG. Consequently, ECG analysis has been a routine part of any complete medical evaluation or healthcare applications.
+
+In this study, part of the ECG datasets adapted are from the MIT/BIH arrhythmia database. The benchmark database contain 48 records, each containing two-channel ECG signals for 30-min duration selected from 24-hour recordings of 47 individuals. The continus ECG signals are band-pass filtered at 0.1-100 Hz. The database contains annotation for both timing information and beat class information verified by independent experts.
+
+\section{Deep Learning Methods}
+%Here we need hundreds of words for the short description of deep learning method.
+
+%Deep features extracting
+%Hybrid system 
+
+\subsection{Deep Autoencoder for unsupervised learning}
+The first research on the potential benefits of unsupervised learning based pre-training might date back to 1987, in which the first unsupervised autoencoder hierarchies were proposed \cite{ballard1987modular}. The deep autoencoder is a special type of the deep neural networks, whose output vectors have the same dimensionality as the input vectors. For example, the lowest-level autoencoder neural network is a single hidden layer that is trained to map input patterns to themselves.
+
+\subsection{From Autoencoder to Restricted Boltzmann Machines}
 
 
-\section{Dataset and Pre-processing}
+
+\subsection{Deep Feature based Hybrid Structure}
 
 
-\section{Representations Learning with Deep Learning Methods}
-\subsection{Sparse Autoencoder}
+%\subsection{Deep Stack Networks}
 
-\subsection{Restricted Boltzmann Machine}
 
 \section{Experiments}
 

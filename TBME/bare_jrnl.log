@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.6)  5 APR 2016 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.6)  11 APR 2016 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -224,30 +224,35 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-No file bare_jrnl.bbl.
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<yanyan.pdf, id=10, 74.679pt x 105.2733pt>
+(./bare_jrnl.bbl
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no Â in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
+ [2]) <yanyan.pdf, id=13, 74.679pt x 105.2733pt>
 File: yanyan.pdf Graphic file (type pdf)
- <use yanyan.pdf>
-Package pdftex.def Info: yanyan.pdf used on input line 688.
-(pdftex.def)             Requested size: 64.08821pt x 90.34372pt.
-File: yanyan.pdf Graphic file (type pdf)
- <use yanyan.pdf>
-Package pdftex.def Info: yanyan.pdf used on input line 688.
-(pdftex.def)             Requested size: 64.08821pt x 90.34372pt.
 
-<wanglei.pdf, id=13, 207.77625pt x 207.77625pt>
+<use yanyan.pdf>
+Package pdftex.def Info: yanyan.pdf used on input line 725.
+(pdftex.def)             Requested size: 64.08821pt x 90.34372pt.
+File: yanyan.pdf Graphic file (type pdf)
+ <use yanyan.pdf>
+Package pdftex.def Info: yanyan.pdf used on input line 725.
+(pdftex.def)             Requested size: 64.08821pt x 90.34372pt.
+ [3 <./yanyan.pdf>]
+<wanglei.pdf, id=30, 207.77625pt x 207.77625pt>
 File: wanglei.pdf Graphic file (type pdf)
  <use wanglei.pdf>
-Package pdftex.def Info: wanglei.pdf used on input line 703.
+Package pdftex.def Info: wanglei.pdf used on input line 740.
 (pdftex.def)             Requested size: 72.2694pt x 72.2694pt.
 File: wanglei.pdf Graphic file (type pdf)
 
 <use wanglei.pdf>
-Package pdftex.def Info: wanglei.pdf used on input line 703.
+Package pdftex.def Info: wanglei.pdf used on input line 740.
 (pdftex.def)             Requested size: 72.2694pt x 72.2694pt.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
@@ -255,26 +260,26 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [2
+ [4
 
- <./yanyan.pdf> <./wanglei.pdf>] (./bare_jrnl.aux) ) 
+ <./wanglei.pdf>] (./bare_jrnl.aux) ) 
 Here is how much of TeX's memory you used:
- 2307 strings out of 493089
- 38070 string characters out of 6134842
- 104176 words of memory out of 5000000
- 5792 multiletter control sequences out of 15000+600000
- 38473 words of font info for 68 fonts, out of 8000000 for 9000
+ 2351 strings out of 493089
+ 38777 string characters out of 6134842
+ 112299 words of memory out of 5000000
+ 5833 multiletter control sequences out of 15000+600000
+ 39609 words of font info for 69 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 37i,10n,37p,669b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/te
-xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
-times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
-r8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_jrnl.pdf (2 pages, 352754 bytes).
+ 37i,10n,37p,865b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/
+enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
+/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bare_jrnl.pdf (4 pages, 372916 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  35 words of extra memory for PDF output out of 10000 (max. 10000000)
 

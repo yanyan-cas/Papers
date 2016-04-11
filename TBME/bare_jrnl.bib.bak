@@ -1,0 +1,458 @@
+% This file was created with JabRef 2.11b3.
+% Encoding: UTF8
+
+
+@Article{andreao2006hmm,
+  Title                    = {ECG signal analysis through hidden Markov models},
+  Author                   = {Andreao, R.V. and Dorizzi, B. and Boudy, J.},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {8},
+  Pages                    = {1541-1549},
+  Volume                   = {53}
+}
+
+@InProceedings{ballard1987modular,
+  Title                    = {Modular Learning in Neural Networks.},
+  Author                   = {Ballard, Dana H},
+  Booktitle                = {AAAI},
+  Year                     = {1987},
+  Pages                    = {279--284}
+}
+
+@Article{banerjee2014wavelet,
+  Title                    = {Application of Cross Wavelet Transform for ECG Pattern Analysis and Classification},
+  Author                   = {Banerjee, S. and Mitra, M.},
+  Journal                  = {IEEE Transactions on Instrumentation and Measurement},
+  Year                     = {2014},
+  Number                   = {2},
+  Pages                    = {326-333},
+  Volume                   = {63}
+}
+
+@Article{bengio2009daai,
+  Title                    = {Learning Deep Architectures for AI},
+  Author                   = {Bengio, Yoshua},
+  Journal                  = {Found. Trends Mach. Learn.},
+  Year                     = {2009},
+
+  Month                    = jan,
+  Number                   = {1},
+  Pages                    = {1-127},
+  Volume                   = {2},
+
+  Address                  = {Hanover, MA, USA},
+  ISSN                     = {1935-8237},
+  Issue_date               = {January 2009},
+  Numpages                 = {127},
+  Publisher                = {Now Publishers Inc.}
+}
+
+@Article{can2012morph,
+  Title                    = {Heartbeat Classification Using Morphological and Dynamic Features of ECG Signals},
+  Author                   = {Can Ye and Kumar, B.V.K.V. and Coimbra, M.T.},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {2012},
+
+  Month                    = {Oct},
+  Number                   = {10},
+  Pages                    = {2930-2941},
+  Volume                   = {59},
+
+  Doi                      = {10.1109/TBME.2012.2213253},
+  ISSN                     = {0018-9294},
+  Keywords                 = {electrocardiography;feature extraction;independent component analysis;medical signal processing;support vector machines;wavelet transforms;ECG lead;ECG signal dynamic feature;ECG signal morphological feature;RR interval information;automatic heartbeat classification;baseline MIT-BIH arrhythmia database;class-oriented evaluation;final classification decision;heartbeat classification;independent component analysis;subject-oriented evaluation;support vector machine classifier;wavelet transform;Databases;Electrocardiography;Feature extraction;Heart beat;Heart rate variability;Support vector machines;Training;Heartbeat classification;independent component analysis;support vector machine;wavelet transform;Arrhythmias, Cardiac;Databases, Factual;Electrocardiography, Ambulatory;Heart Rate;Humans;Principal Component Analysis;Support Vector Machines;Wavelet Analysis}
+}
+
+@Article{christove2006morph,
+  Title                    = {Comparative study of morphological and time frequency ECG descriptors for heartbeat classification},
+  Author                   = {Christov, I. and Gomez-Herrero, G. and Krasteva, I. and Jekova, I. and Gotchev, A. and Egiazarian, K},
+  Journal                  = {Medical Engineering \& Physics},
+  Year                     = {2006},
+  Number                   = {9},
+  Pages                    = {876-887},
+  Volume                   = {28}
+}
+
+@Article{ciresan2010deep,
+  Title                    = {Deep, big, simple neural nets for handwritten digit recognition},
+  Author                   = {Ciresan, Dan Claudiu and Meier, Ueli and Gambardella, Luca Maria and Schmidhuber, J{\"u}rgen},
+  Journal                  = {Neural computation},
+  Year                     = {2010},
+  Number                   = {12},
+  Pages                    = {3207--3220},
+  Volume                   = {22},
+
+  Publisher                = {MIT Press}
+}
+
+@Book{clifford2006,
+  Title                    = {Advanced Methods And Tools for ECG Data Analysis},
+  Author                   = {Clifford, Gari D. and Azuaje, Francisco and McSharry, Patrick},
+  Publisher                = {Artech House, Inc.},
+  Year                     = {2006},
+
+  Address                  = {Norwood, MA, USA},
+
+  ISBN                     = {1580539661}
+}
+
+@Article{coast1990hmm,
+  Title                    = {An approach to cardiac arrhythmia analysis using hidden Markov models},
+  Author                   = {Coast, D.A and Stern, R.M. and Cano, G.G. and Briller, S.A},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {1990},
+  Number                   = {9},
+  Pages                    = {826-836},
+  Volume                   = {37},
+
+  Doi                      = {10.1109/10.58593},
+  ISSN                     = {0018-9294}
+}
+
+@Article{deng2014deeplearning,
+  Title                    = {Deep Learning: Methods and Applications},
+  Author                   = {Deng, Li and Yu, Dong},
+  Journal                  = {Found. Trends Signal Process.},
+  Year                     = {2014},
+
+  Month                    = jun,
+  Number                   = {3\&\#8211;4},
+  Pages                    = {197--387},
+  Volume                   = {7},
+
+  Acmid                    = {2692918},
+  Address                  = {Hanover, MA, USA},
+  Doi                      = {10.1561/2000000039},
+  ISSN                     = {1932-8346},
+  Issue_date               = {June 2014},
+  Keywords                 = {Artificial intelligence, Autoencoders, Computer vision, Deep learning, Deep neural networks, Deep stacking networks, Hybrid deep networks, Language models, Machine learning, Multi-modal processing, Multi-task learning, Natural language processing, Neural networks, Object recognition, Supervised learning, Unsupervised learning},
+  Numpages                 = {191},
+  Publisher                = {Now Publishers Inc.},
+  Url                      = {http://dx.doi.org/10.1561/2000000039}
+}
+
+@InProceedings{hecht1989bp,
+  Title                    = {Theory of the backpropagation neural network},
+  Author                   = {Hecht-Nielsen, R.},
+  Booktitle                = {Neural Networks, 1989. IJCNN., International Joint Conference on},
+  Year                     = {1989},
+  Pages                    = {593-605 vol.1},
+
+  Doi                      = {10.1109/IJCNN.1989.118638},
+  Keywords                 = {biocybernetics;neural nets;neurophysiology;parallel architectures;physiological models;architecture;backpropagation neural network;cerebral cortex;corticocortical learning;function approximation;mammalian brain;neurophysiological model;performance measurement;Biological system modeling;Cybernetics;Nervous system;Neural networks;Parallel architectures}
+}
+
+@Article{hinton2006dimen,
+  Title                    = {Reducing the dimensionality of data with neural networks},
+  Author                   = {Hinton, G E and Salakhutdinov, R R},
+  Journal                  = {Science},
+  Year                     = {2006},
+
+  Month                    = Jul,
+  Number                   = {5786},
+  Pages                    = {504-507},
+  Volume                   = {313},
+
+  Biburl                   = {http://www.bibsonomy.org/bibtex/2135bbce97b449ddf5fca7be88102b53c/tmalsburg},
+  Description              = {Reducing the dimensionality of data with neural ne...[Science. 2006] - PubMed Result},
+  Pmid                     = {16873662},
+  Timestamp                = {2008-07-15T10:05:18.000+0200}
+}
+
+@Article{hinton2012deep,
+  Title                    = {Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups},
+  Author                   = {Hinton, Geoffrey and Deng, Li and Yu, Dong and Dahl, George E and Mohamed, Abdel-rahman and Jaitly, Navdeep and Senior, Andrew and Vanhoucke, Vincent and Nguyen, Patrick and Sainath, Tara N and others},
+  Journal                  = {Signal Processing Magazine, IEEE},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {82--97},
+  Volume                   = {29},
+
+  Publisher                = {IEEE}
+}
+
+@Article{homaeinezhad2012ecg,
+  Title                    = {ECG arrhythmia recognition via a neuro-SVM--KNN hybrid classifier with virtual QRS image-based geometrical features},
+  Author                   = {Homaeinezhad, Mohammad R and Atyabi, SA and Tavakkoli, E and Toosi, Hamid Najjaran and Ghaffari, Ali and Ebrahimpour, Reza},
+  Journal                  = {Expert Systems with Applications},
+  Year                     = {2012},
+  Number                   = {2},
+  Pages                    = {2047--2058},
+  Volume                   = {39},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{inan2006wavelet,
+  Title                    = {Robust neural-network-based classification of premature ventricular contractions using wavelet transform and timing interval features},
+  Author                   = {Inan, O. T. and Giovangrandi, L. and Kovacs, G. T. A},
+  Journal                  = {IEEE Transactions on Biomedical Engineering},
+  Year                     = {2006},
+  Number                   = {12},
+  Pages                    = {2507-2515},
+  Volume                   = {53}
+}
+
+@InProceedings{jankowski2003,
+  Title                    = {Computer-aided morphological analysis of Holter ECG recordings based on support vector learning system},
+  Author                   = {S. Jankowski and A. Oreziak and A. Skorupski and H. Kowalski and Z. Szymanski and E. Piatkowska-Janko},
+  Booktitle                = {Computers in Cardiology, 2003},
+  Year                     = {2003},
+  Month                    = {Sept},
+  Pages                    = {597-600},
+
+  Doi                      = {10.1109/CIC.2003.1291226},
+  ISSN                     = {0276-6547},
+  Keywords                 = {C++ listings;electrocardiography;learning systems;medical signal processing;optimisation;pattern classification;support vector machines;Borland C++ Builder;Central Teaching Hospital;Chair and Department of Internal Medicine and Cardiology;Holter ECG recordings;Poland;Warsaw;computational efficiency;computer-aided morphological analysis;pattern classification;pattern recognition;sequential minimal optimisation;signal approximation;signal shape;support vector learning system;support vector machines;Cardiology;Computational efficiency;Computer aided analysis;Electrocardiography;Learning systems;Pattern classification;Pattern recognition;Shape;Support vector machine classification;Support vector machines}
+}
+
+@Article{jekova2008assessment,
+  Title                    = {Assessment and comparison of different methods for heartbeat classification},
+  Author                   = {Jekova, I. and Bortolan, G. and Christov, I},
+  Journal                  = {Medical Engineering \& Physics},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {248-257},
+  Volume                   = {30}
+}
+
+@Article{jiang2007nn,
+  Title                    = {Block-Based Neural Networks for Personalized ECG Signal Classification},
+  Author                   = {Wei Jiang and Kong, S.G.},
+  Journal                  = {Neural Networks, IEEE Transactions on},
+  Year                     = {2007},
+  Number                   = {6},
+  Pages                    = {1750-1761},
+  Volume                   = {18}
+}
+
+@Article{kampoura2009svm,
+  Title                    = {Heartbeat Time Series Classification With Support Vector Machines},
+  Author                   = {Kampouraki, A and Manis, G. and Nikou, C.},
+  Journal                  = {Information Technology in Biomedicine, IEEE Transactions on},
+  Year                     = {2009},
+  Number                   = {4},
+  Pages                    = {512-518},
+  Volume                   = {13},
+
+  Doi                      = {10.1109/TITB.2008.2003323},
+  ISSN                     = {1089-7771}
+}
+
+@Article{khandoker2009svm,
+  Title                    = {Support Vector Machines for Automated Recognition of Obstructive Sleep Apnea Syndrome From ECG Recordings},
+  Author                   = {Khandoker, AH. and Palaniswami, M. and Karmakar, C.K.},
+  Journal                  = {Information Technology in Biomedicine, IEEE Transactions on},
+  Year                     = {2009},
+
+  Month                    = {Jan},
+  Number                   = {1},
+  Pages                    = {37-48},
+  Volume                   = {13},
+
+  Doi                      = {10.1109/TITB.2008.2004495},
+  ISSN                     = {1089-7771},
+  Keywords                 = {bioinformatics;electrocardiography;feature extraction;learning (artificial intelligence);medical signal processing;pattern classification;pneumodynamics;sleep;support vector machines;wavelet transforms;ECG derived respiration;EDR;HRV;QRS amplitude;R waves;RR intervals;SVM;apnea index;automated OSAS recognition;cardiovascular morbidity;feature extraction;heart rate variability;hypopnea index;leave one out technique;machine learning technique;maximum classification accuracy;nocturnal ECG recordings;obstructive sleep apnea syndrome;support vector machines;wavelet decomposition;ECG-derived respiration (EDR);heart rate variability (HRV);obstructive sleep apnea;support vector machines (SVMs);wavelet;Adult;Aged;Algorithms;Artificial Intelligence;Bayes Theorem;Diagnosis, Computer-Assisted;Diagnostic Errors;Electrocardiography;Electrocardiography, Ambulatory;Female;Heart Rate;Humans;Male;Middle Aged;Pattern Recognition, Automated;ROC Curve;Reproducibility of Results;Sensitivity and Specificity;Sleep Apnea, Obstructive}
+}
+
+@Article{kundu1998fuzzy,
+  Title                    = {A knowledge-based approach to ECG interpretation using fuzzy logic},
+  Author                   = {Kundu, M. and Nasipuri, M. and Basu, D.K.},
+  Journal                  = {Systems, Man, and Cybernetics, Part B: Cybernetics, IEEE Transactions on},
+  Year                     = {1998},
+
+  Month                    = {Apr},
+  Number                   = {2},
+  Pages                    = {237-243},
+  Volume                   = {28},
+
+  Doi                      = {10.1109/3477.662764},
+  ISSN                     = {1083-4419},
+  Keywords                 = {electrocardiography;fuzzy logic;medical expert systems;medical signal processing;ECG interpretation;GMP;bioelectric signals;fuzzy logic;generalized modus ponens;inference;input ECG patterns;rhythm disorder;rule-based expert system;rulebase;Bioelectric phenomena;Cardiology;Computer science;Diagnostic expert systems;Electrocardiography;Fuzzy logic;Heart beat;Humans;Pattern analysis;Rhythm}
+}
+
+@Article{lager2000,
+  Title                    = {Clustering ECG complexes using Hermite functions and self-organizing maps},
+  Author                   = {Lagerholm, M. and Peterson, C. and Braccini, G. and Edenbrandt, L. and Sornmo, L.},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {2000},
+
+  Month                    = {Jul},
+  Number                   = {7},
+  Pages                    = {838-848},
+  Volume                   = {47},
+
+  Doi                      = {10.1109/10.846677},
+  ISSN                     = {0018-9294},
+  Keywords                 = {electrocardiography;medical signal processing;self-organising feature maps;ECG complexes clustering;Hermite functions;MIT-BIH arrhythmia database;conventional template cross-correlation clustering method;electrodiagnostics;integrated method;misclassification;supervised learning method;width parameter;Artificial neural networks;Clustering methods;Databases;Electrocardiography;Neural networks;Physics;Self organizing feature maps;Self-organizing networks;Signal processing;Supervised learning}
+}
+
+@Article{lin2012werable,
+  Title                    = {A Wearable Sensor Module With a Neural-Network-Based Activity Classification Algorithm for Daily Energy Expenditure Estimation},
+  Author                   = {Che-Wei Lin and Yang, Y.-T.C. and Jeen-Shing Wang and Yi-Ching Yang},
+  Journal                  = {Information Technology in Biomedicine, IEEE Transactions on},
+  Year                     = {2012},
+
+  Month                    = {Sept},
+  Number                   = {5},
+  Pages                    = {991-998},
+  Volume                   = {16},
+
+  Doi                      = {10.1109/TITB.2012.2206602},
+  ISSN                     = {1089-7771},
+  Keywords                 = {biomechanics;body sensor networks;electrocardiography;feature extraction;medical signal processing;radial basis function networks;ECG signal data;EER models;GRNN;RBFN;basis function network;daily energy expenditure estimation;data collection;data preprocessing;energy expenditure regression;feature selection;generalized regression neural network;neural-network-based activity classification algorithm;physical activities;wearable sensor modules;Acceleration;Classification algorithms;Electrocardiography;Estimation;Heart rate;Low pass filters;Wearable sensors;Accelerometer;electrocardiogram (ECG);energy expenditure;feature selection;generalized regression neural network (GRNN);radial basis function network (RBFN);Accelerometry;Adult;Algorithms;Clothing;Electrocardiography;Energy Metabolism;Female;Human Activities;Humans;Male;Monitoring, Ambulatory;Motor Activity;Neural Networks (Computer);Regression Analysis;Signal Processing, Computer-Assisted}
+}
+
+@Article{mar2011,
+  Title                    = {Optimization of ECG Classification by Means of Feature Selection},
+  Author                   = {T. Mar and S. Zaunseder and J. P. MartÃ­nez and M. Llamedo and R. Poll},
+  Journal                  = {IEEE Transactions on Biomedical Engineering},
+  Year                     = {2011},
+
+  Month                    = {Aug},
+  Number                   = {8},
+  Pages                    = {2168-2177},
+  Volume                   = {58},
+
+  Doi                      = {10.1109/TBME.2011.2113395},
+  ISSN                     = {0018-9294},
+  Keywords                 = {electrocardiography;medical computing;multilayer perceptrons;optimisation;patient monitoring;ECG arrhythmia classification;SFFS algorithm;ambulatory monitoring;ambulatory settings;computational resources;feature selection;feature set;interpatient division scheme;linear discriminants;multilayer perceptron;optimization;quality indicator;real-world performance;robustness;sequential forward floating search algorithm;Accuracy;Artificial neural networks;Electrocardiography;Heart beat;Indexes;Sensitivity;Training;Association for the Advancement of Medical Instrumentation (AAMI);ECG;classification;feature selection (FS);linear discriminant analysis (LDA);multilayer perceptron (MLP);sequential forward floating search (SFFS);Algorithms;Arrhythmias, Cardiac;Artificial Intelligence;Diagnosis, Computer-Assisted;Electrocardiography;Humans;Pattern Recognition, Automated;Reproducibility of Results;Sensitivity and Specificity}
+}
+
+@Article{melgan2008svmpso,
+  Title                    = {Classification of Electrocardiogram Signals With Support Vector Machines and Particle Swarm Optimization},
+  Author                   = {Melgani, F. and Bazi, Y.},
+  Journal                  = {Information Technology in Biomedicine, IEEE Transactions on},
+  Year                     = {2008},
+
+  Month                    = {Sept},
+  Number                   = {5},
+  Pages                    = {667-677},
+  Volume                   = {12},
+
+  Doi                      = {10.1109/TITB.2008.923147},
+  ISSN                     = {1089-7771},
+  Keywords                 = {electrocardiography;medical image processing;particle swarm optimisation;support vector machines;ECG beat automatic classification;Massachusetts Institute of Technology-Beth Israel Hospital;PSO-SVM classification system;SVM classifier;SVM generalization capability;arrhythmia database;eectrocardiogram signal classification;particle swarm optimization;support vector machines;ECG signal classification;Electrocardiogram (ECG) signal classification;feature detection;feature reduction;generalization capability;model selection issue;particle swarm optimization (PSO);support vector machine (SVM);Algorithms;Arrhythmias, Cardiac;Artificial Intelligence;Diagnosis, Computer-Assisted;Electrocardiography;Humans;Pattern Recognition, Automated;Reproducibility of Results;Sensitivity and Specificity}
+}
+
+@Article{olmez1997ga,
+  Title                    = {Classification of ECG waveforms by using RCE neural network and genetic algorithms},
+  Author                   = {Olmez, T.},
+  Journal                  = {Electronics Letters},
+  Year                     = {1997},
+
+  Month                    = {Aug},
+  Number                   = {18},
+  Pages                    = {1561-1562},
+  Volume                   = {33},
+
+  Doi                      = {10.1049/el:19971019},
+  ISSN                     = {0013-5194},
+  Keywords                 = {electrocardiography;genetic algorithms;medical signal processing;neural nets;pattern classification;waveform analysis;electrocardiogram waveform classification;genetic algorithm;hypersphere;optimisation;restricted Coulomb energy neural network}
+}
+
+@Article{osowski2001hybrid,
+  Title                    = {ECG beat recognition using fuzzy hybrid neural network},
+  Author                   = {Osowski, Stainslaw and Tran Hoai Linh},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {2001},
+
+  Month                    = {Nov},
+  Number                   = {11},
+  Pages                    = {1265-1271},
+  Volume                   = {48},
+
+  Doi                      = {10.1109/10.959322},
+  ISSN                     = {0018-9294},
+  Keywords                 = {electrocardiography;fuzzy neural nets;higher order statistics;medical signal processing;multilayer perceptrons;ECG beat recognition;Gustafson-Kessel algorithm;c-means algorithm;classification algorithm;electrodiagnostics;fourth order;fuzzy hybrid neural network;heart beats classification;second order;third order;Classification algorithms;Electric variables measurement;Electrocardiography;Fuzzy neural networks;Heart beat;Helium;Higher order statistics;Morphology;Multilayer perceptrons;Neural networks}
+}
+
+@Article{oster2015semiSKF,
+  Title                    = {Semisupervised ECG Ventricular Beat Classification With Novelty Detection Based on Switching Kalman Filters},
+  Author                   = {J. Oster and J. Behar and O. Sayadi and S. Nemati and A. E. W. Johnson and G. D. Clifford},
+  Journal                  = {IEEE Transactions on Biomedical Engineering},
+  Year                     = {2015},
+
+  Month                    = {Sept},
+  Number                   = {9},
+  Pages                    = {2125-2134},
+  Volume                   = {62},
+
+  Doi                      = {10.1109/TBME.2015.2402236},
+  ISSN                     = {0018-9294},
+  Keywords                 = {Kalman filters;diseases;electrocardiography;filtering theory;medical signal processing;patient monitoring;signal classification;signal denoising;F1 scores;Incart databases;MIT-BIH arrhythmia;X-factor;accurate diagnosis;accurate online filtering;appropriate prior knowledge;automate ECG analysis;automatic processing;automatic selection;long-term ECG recordings;model-based ECG filtering approach;morphological analysis;morphologies;noise level;pathological electrocardiogram signals;physiological signals;remote monitoring technology usage;semisupervised ECG ventricular beat classification;switching Kalman filters;ventricular heartbeat classification;ventricular heartbeats;Covariance matrices;Databases;Electrocardiography;Heart beat;Heart rate variability;Morphology;Noise;Electrocardiogram;heartbeat classification;switching Kalman filter}
+}
+
+@Article{shinwari2012classification,
+  Title                    = {Classification algorithm for feature extraction using Linear Discriminant Analysis and Cross-Correlation on ECG signals},
+  Author                   = {Shinwari, Muhammad Fahad and Ahmed, Naveed and Humayun, Hassan and ul Haq, Ihsan and Haider, Sajjad and ul Anam, Atiq},
+  Journal                  = {International Journal of Advanced Science and Technology},
+  Year                     = {2012},
+  Pages                    = {149--161},
+  Volume                   = {48}
+}
+
+@Article{stam1998pca,
+  Title                    = {ECG analysis using nonlinear PCA neural networks for ischemia detection},
+  Author                   = {Stamkopoulos, T. and Diamantaras, K. and Maglaveras, N. and Strintzis, M.},
+  Journal                  = {Signal Processing, IEEE Transactions on},
+  Year                     = {1998},
+
+  Month                    = {Nov},
+  Number                   = {11},
+  Pages                    = {3058-3067},
+  Volume                   = {46},
+
+  Doi                      = {10.1109/78.726818},
+  ISSN                     = {1053-587X},
+  Keywords                 = {electrocardiography;feature extraction;feedforward neural nets;medical signal processing;pattern classification;signal detection;ECG analysis;European ST-T database;ST segment;abnormal patterns;algorithm training phase;beat classification;correct classification rate;electrocardiogram;feature extraction;ischemia detection;ischemic cardiac beats;linear principal component analysis;multilayer neural network;nonlinear PCA neural networks;nonlinear principal component analysis;normal patterns;performance;radial basis function network;training set;Biomedical signal processing;Electrocardiography;Feature extraction;Ischemic pain;Multi-layer neural network;Neural networks;Patient monitoring;Principal component analysis;Radial basis function networks;Signal processing algorithms}
+}
+
+@Article{Übeyli2009,
+  Title                    = {Detecting variabilities of ECG signals by Lyapunov exponents},
+  Author                   = {{\"U}beyli, Elif Derya},
+  Journal                  = {Neural Computing and Applications},
+  Year                     = {2009},
+  Number                   = {7},
+  Pages                    = {653--662},
+  Volume                   = {18},
+
+  Abstract                 = {An approach based on the consideration that electrocardiogram (ECG) signals are chaotic signals was presented for automated diagnosis of electrocardiographic changes. This consideration was tested successfully using the nonlinear dynamics tools, like the computation of Lyapunov exponents. Multilayer perceptron neural network (MLPNN) architectures were formulated and used as basis for detection of variabilities of ECG signals. Four types of ECG beats (normal beat, congestive heart failure beat, ventricular tachyarrhythmia beat, atrial fibrillation beat) obtained from the Physiobank database were classified. The computed Lyapunov exponents of the ECG signals were used as inputs of the MLPNNs trained with backpropagation, delta-bar-delta, extended delta-bar-delta, quick propagation, and Levenberg--Marquardt algorithms. The performances of the MLPNN classifiers were evaluated in terms of classification accuracies. The results confirmed that the MLPNN trained with the Levenberg--Marquardt algorithm has potential in detecting the variabilities of the ECG signals (total classification accuracy was 95.00\%).},
+  Doi                      = {10.1007/s00521-008-0229-8},
+  ISSN                     = {1433-3058},
+  Url                      = {http://dx.doi.org/10.1007/s00521-008-0229-8}
+}
+
+@Article{winokur2013,
+  Title                    = {A Wearable Cardiac Monitor for Long-Term Data Acquisition and Analysis},
+  Author                   = {E. S. Winokur and M. K. Delano and C. G. Sodini},
+  Journal                  = {IEEE Transactions on Biomedical Engineering},
+  Year                     = {2013},
+
+  Month                    = {Jan},
+  Number                   = {1},
+  Pages                    = {189-192},
+  Volume                   = {60},
+
+  Doi                      = {10.1109/TBME.2012.2217958},
+  ISSN                     = {0018-9294},
+  Keywords                 = {biomedical electrodes;electrocardiography;patient monitoring;wearable computers;PhysioNet WAVE;PhysioNet waveform viewer;WQRS detection algorithm;custom PCB;electrodes;long term data acquisition;wearable ECG monitoring system;wearable cardiac monitor;Biomedical monitoring;Electrocardiography;Electrodes;Heart;Monitoring;Standards;Wires;Ambulatory monitoring;ECG;QRS;WQRS;low power;wearable devices;Adult;Clothing;Electrocardiography, Ambulatory;Electrodes;Equipment Design;Female;Humans;Male;Middle Aged;Signal Processing, Computer-Assisted}
+}
+
+@Article{zhu2008ica,
+  Title                    = {Analyzing High-Density ECG Signals Using ICA},
+  Author                   = {Yi Zhu and Shayan, A and Wanping Zhang and Tong Lee Chen and Tzyy-Ping Jung and Jeng-Ren Duann and Makeig, S. and Chung-Kuan Cheng},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
+  Year                     = {2008},
+
+  Month                    = {Nov},
+  Number                   = {11},
+  Pages                    = {2528-2537},
+  Volume                   = {55},
+
+  Doi                      = {10.1109/TBME.2008.2001262},
+  ISSN                     = {0018-9294},
+  Keywords                 = {electrocardiography;independent component analysis;medical signal processing;patient diagnosis;cardiac diagnosis;heart;high-density ECG signals;independent component analysis;Blind source separation;Computer science;Electric variables measurement;Electrocardiography;Electrodes;Heart;Independent component analysis;Noninvasive treatment;Principal component analysis;Rhythm;Signal analysis;Source separation;Blind signal separation;ECG;high-density surface ECG;independent component analysis (ICA);noninvasive imaging;Algorithms;Diagnosis, Computer-Assisted;Electrocardiography;Heart;Humans;Principal Component Analysis;Reproducibility of Results;Sensitivity and Specificity}
+}
+
