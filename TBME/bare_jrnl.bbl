@@ -205,4 +205,10 @@ G.~E. Hinton and R.~R. Salakhutdinov, ``Reducing the dimensionality of data
 D.~H. Ballard, ``Modular learning in neural networks.'' in \emph{AAAI}, 1987,
   pp. 279--284.
 
+\bibitem{goodfellow2016deeplearning}
+\BIBentryALTinterwordspacing
+G.~Ian, B.~Yoshua, and C.~Aaron, ``Deep learning,'' 2016, book in preparation
+  for MIT Press. [Online]. Available: \url{http://www.deeplearningbook.org}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
