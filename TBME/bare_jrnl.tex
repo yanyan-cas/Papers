@@ -10,7 +10,7 @@
 %% (requires IEEEtran.cls version 1.8b or later) with an IEEE
 %% journal paper.
 %%
-%% Support sites:
+%% Support sites: 
 %% http://www.michaelshell.org/tex/ieeetran/
 %% http://www.ctan.org/pkg/ieeetran
 %% and
@@ -546,7 +546,7 @@ Consequently, ECG analysis has been a routine part of any complete medical evalu
 In this study, part of the ECG datasets adapted are from the MIT/BIH arrhythmia database. 
 The benchmark database contain 48 records, each containing two-channel ECG signals for 30-min duration selected from 24-hour recordings of 47 individuals. 
 The continues ECG signals are band-pass filtered at 0.1-100 Hz.
- The database contains annotation for both timing information and beat class information verified by independent experts.
+The database contains annotation for both timing information and beat class information verified by independent experts.
 
 \section{Methodology}
 %Here we need hundreds of words for the short description of deep learning method.
@@ -567,18 +567,12 @@ The outputs of the decoder are not typically our concern, while the outs of the 
 Useful features can be learned by constraining $\boldsymbol{h}$ to have smaller dimension than the input $\boldsymbol{x}$, which can be called undercomplete autoencoder \cite{goodfellow2016deeplearning}. 
 The regularized autoencoders use a loss function that encourages the mode to learn useful properties when the dimension of $\boldsymbol{h}$ bigger than the input $\boldsymbol{x}$, which are called overcomplete. 
 The encodings are useful because the models were trained to reconstruct the inputs rather than a simple copy process.
+The 
 
 Sparse autoencoders are typically used to learn features for classification tasks. 
 
 \subsubsection{Training method for deep neural networks}
  
-
-
-
-
-
-
-
 
 
 
@@ -732,8 +726,6 @@ The authors would like to thank...
 \ifCLASSOPTIONcaptionsoff
   \newpage
 \fi
-
-
 
 % adjust value as needed - may need to be readjusted if
 % the document is modified later
