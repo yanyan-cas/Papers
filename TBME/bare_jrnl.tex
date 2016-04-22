@@ -543,10 +543,20 @@ Electrical propagation spreads over the whole heart in a coordinated pattern gen
 Metabolic abnormalities (a lack of oxygen, or ischemia, etc.) and pathological changes of the heart engender a variety of ECG. 
 Consequently, ECG analysis has been a routine part of any complete medical evaluation or healthcare applications.
 
-In this study, part of the ECG datasets adapted are from the MIT/BIH arrhythmia database. 
+In this study, we use the MIT/BIH arrhythmia database as a standard test data set, and in the model training step, we use the collected data from a real-world collected data.
+The MIT/BIH data set had been quite popular in the research of ECG signal processing and machine learning literatures.
 The benchmark database contain 48 records, each containing two-channel ECG signals for 30-min duration selected from 24-hour recordings of 47 individuals. 
-The continues ECG signals are band-pass filtered at 0.1-100 Hz.
+These continues ECG signals are band-pass filtered at 0.1-100 Hz.
 The database contains annotation for both timing information and beat class information verified by independent experts.
+%Need more description
+As the deep learing methods are capable of learning features from unlabel data, wo collect hundreds pieces of Holter records from a cardiovascular specialist hospital.
+Setting of the recordings were based on Lead I same as in the MIT/BHI database, signals filter were set as 0.1-75 Hz.
+For the specific classification task, the signal frequence higher than 75 Hz has little effect on the classification of an ECG sample, since the 
+%A description of the data set could be checked in Table 1.
+
+
+
+
 
 \section{Methodology}
 %Here we need hundreds of words for the short description of deep learning method.
